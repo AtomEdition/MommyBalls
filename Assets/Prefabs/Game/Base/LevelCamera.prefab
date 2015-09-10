@@ -86,7 +86,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed2aa84fa527484884aa8d0c4207af0, type: 3}
+  m_Script: {fileID: 11500000, guid: 161b05bfc90302e4d9672d3e274e425f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 100000, guid: 6c40abf28a6862e46841a9088f957964, type: 2}
@@ -94,6 +94,7 @@ MonoBehaviour:
   basket: {fileID: 100000, guid: 6fc923ebd19b3f344a4b09cae1815736, type: 2}
   textScore: {fileID: 100000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
   textBalls: {fileID: 100000, guid: 32e2d912d02fd9a49a1e2b52550632ba, type: 2}
+  levelData: 03000000030000000200000001000000
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
@@ -112,4 +113,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
-  m_IsExploded: 1

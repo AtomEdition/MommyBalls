@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Rotate : MonoBehaviour {
+public class RotateBehaviour : MonoBehaviour {
 
 	private float rotation = 0F;
 	private const float rotatePower = 0.8F;

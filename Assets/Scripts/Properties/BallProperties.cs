@@ -1,8 +1,6 @@
-using System.Collections;
-
-public class BallPreferences
+public static class BallProperties
 {	
-	public const float ballPowerMultipler = 800F;
-	public const float ballPowerMaximum = 1100F;	
-	public const float ballMoveSpeed = 20F;
+	public const float BALL_POWER_MULTIPLIER = 800F;
+	public const float BALL_POWER_MAXIMUM = 1100F;	
+	public const float BALL_MOVE_SPEED = 20F;
 }

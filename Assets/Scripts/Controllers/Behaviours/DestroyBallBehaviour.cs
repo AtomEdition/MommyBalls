@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Spikes : MonoBehaviour {
+public class DestroyBallBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

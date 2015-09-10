@@ -10,14 +10,19 @@ public class CameraController : MonoBehaviour {
 	public GameObject textScore;
 	public GameObject textBalls;
 
-	public LevelService levelService = Singleton<LevelService>.getInstance();
+	public int[] levelData = new int[4];
+
+	private LevelService levelService = Singleton<LevelService>.getInstance();
 
 	private GameObject pressedBall = null;
 	private bool isBallPressed = false;
 
 	// Use this for initialization
 	void Start () {
-
+		levelService.BallCount = levelData [0];
+		levelService.ScoreStars3 = levelData [1];
+		levelService.ScoreStars2 = levelData [2];
+		levelService.ScoreStars1 = levelData [3];
 	}
 	
 	// Update is called once per frame
@@ -31,7 +36,7 @@ public class CameraController : MonoBehaviour {
 
 				if (Input.GetMouseButtonDown (0)) 
 
-					if (Basket.checkCollisionBasket())
+					if (BasketController.checkCollisionBasket())
 					{
 						createBall(vec.x, vec.y);	
 						BasketClickListener.setNewPoints(vec.x, vec.y);
@@ -43,7 +48,7 @@ public class CameraController : MonoBehaviour {
 
 				if (!Input.GetMouseButtonUp (0)) 
 				{
-					if (Basket.checkCollisionBasket())
+					if (BasketController.checkCollisionBasket())
 						moveBallToPressedPosition(vec);
 					else
 						releaseBall();

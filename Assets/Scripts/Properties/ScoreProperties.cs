@@ -1,5 +1,5 @@
-public class ScorePreferences {
+public static class ScoreProperties {
 	
-	public const string levelCompleteName = "LevelCompleteScreen";
+	public const string SCREEN_NAME_LEVEL_COMPLETE = "LevelCompleteScreen";
 	
 }

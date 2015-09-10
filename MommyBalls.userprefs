@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\Behaviours\JumperBehaviour.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Controllers\Behaviours\JumperBehaviour.cs" Line="20" Column="6" />
+      <File FileName="Assets\Scripts\Properties\JumperProperties.cs" Line="3" Column="40" />
+      <File FileName="Assets\Scripts\Controllers\StarCreateListener.cs" Line="39" Column="5" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

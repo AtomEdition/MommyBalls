@@ -5,11 +5,11 @@ public class InterfaceService {
 
 	public string getTextBallCount()
 	{		
-		return GameUiPreferences.textBallCount + levelService.BallCount;
+		return InterfaceProperties.TEXT_BALLS_COUNT + levelService.BallCount;
 	}
 	
 	public string getTextScore()
 	{
-		return GameUiPreferences.textScore + scoreService.Score;
+		return InterfaceProperties.TEXT_SCORE + scoreService.Score;
 	}
 }

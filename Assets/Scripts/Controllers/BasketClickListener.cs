@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public abstract class BallClickListener {
+public abstract class BasketClickListener {
 
 	private static float x1 = 0, x2 = 0, y1 = 0, y2 = 0;
 	private static float adjacentCathetus;
@@ -38,18 +38,18 @@ public abstract class BallClickListener {
 
 	public static float getPowerX()
 	{
-		float powerX = (x1 - x2) * BallPreferences.ballPowerMultipler;
-		if (powerX < BallPreferences.ballPowerMaximum) 
+		float powerX = (x1 - x2) * BallProperties.BALL_POWER_MULTIPLIER;
+		if (powerX < BallProperties.BALL_POWER_MAXIMUM) 
 			return powerX;
-		return BallPreferences.ballPowerMaximum;
+		return BallProperties.BALL_POWER_MAXIMUM;
 	}
 
 	
 	public static float getPowerY()
 	{
-		float powerY = (y1 - y2) * BallPreferences.ballPowerMultipler; 
-		if (powerY < BallPreferences.ballPowerMaximum) 
+		float powerY = (y1 - y2) * BallProperties.BALL_POWER_MULTIPLIER; 
+		if (powerY < BallProperties.BALL_POWER_MAXIMUM) 
 			return powerY;
-		return BallPreferences.ballPowerMaximum;
+		return BallProperties.BALL_POWER_MAXIMUM;
 	}
 }

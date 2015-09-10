@@ -10,11 +10,10 @@ public class CameraController : MonoBehaviour {
 	public GameObject textScore;
 	public GameObject textBalls;
 
+	public LevelService levelService = Singleton<LevelService>.getInstance();
+
 	private GameObject pressedBall = null;
 	private bool isBallPressed = false;
-
-	//private Ray ray;
-	//private RaycastHit2D hit;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +23,7 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 				
-		if ((Utils.ballCount > 0) || (isBallPressed)) 
+		if ((levelService.BallCount > 0) || (isBallPressed)) 
 		{
 			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
@@ -68,8 +67,8 @@ public class CameraController : MonoBehaviour {
 
 		pressedBall.GetComponent<Collider2D>().enabled = false;		
 		pressedBall.GetComponent<Rigidbody2D>().isKinematic = true;
-		
-		Utils.ballCount--;
+
+		levelService.BallCount--;
 		
 		isBallPressed = true;
 	}
@@ -85,7 +84,6 @@ public class CameraController : MonoBehaviour {
 	{
 		pressedBall.GetComponent<Collider2D>().enabled = true;
 		pressedBall.GetComponent<Rigidbody2D>().isKinematic = false;
-		//pressedBall.transform.Rotate (0, 0, BallClickListener.getAngle ());
 		pressedBall.GetComponent<Rigidbody2D>().AddForce (new Vector3 (BallClickListener.getPowerX (), BallClickListener.getPowerY (), 0));
 		
 		isBallPressed = false;

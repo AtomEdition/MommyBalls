@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Mommy : MonoBehaviour {
+public class Spikes : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,14 +13,12 @@ public class Mommy : MonoBehaviour {
 	
 	}
 	
-	IEnumerator OnCollisionEnter2D(Collision2D collision){
-
+	void OnCollisionEnter2D(Collision2D collision){
+		
 		if (collision.gameObject.tag == "Ball") {
 
-			yield return new WaitForSeconds(0.05F);
 			Destroy (collision.gameObject);
-
-			Utils.score++;			
+					
 		}
 	}
 }

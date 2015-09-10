@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Rotate : MonoBehaviour {
 
-	private static float rotation = 0F;
+	private float rotation = 0F;
 	private const float rotatePower = 0.8F;
 
 	// Use this for initialization

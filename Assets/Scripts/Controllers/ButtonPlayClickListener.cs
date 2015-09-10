@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ButtonPlay : MonoBehaviour {
+public class ButtonPlayClickListener : MonoBehaviour {
 
 	private const string buttonPlayPrefix = "buttonPlay-";
 	private const string loadLevelPrefix = "Level-";

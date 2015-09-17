@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class LevelService : MonoBehaviour{
+public class LevelService {
 
 	private int ballCount;
 	private int scoreStars3;

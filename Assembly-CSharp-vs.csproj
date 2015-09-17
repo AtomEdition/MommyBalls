@@ -50,12 +50,13 @@
      <Compile Include="Assets\Scripts\Controllers\BasketClickListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\BasketController.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\DestroyBallBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Controllers\Behaviours\JumperBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\RotateBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\ButtonPlayClickListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\JumperController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MommyController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StarCreateListener.cs" />
+     <Compile Include="Assets\Scripts\Controllers\SwitcherController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TextBallsUpdateListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\TextScoreUpdateListener.cs" />
      <Compile Include="Assets\Scripts\Properties\BallProperties.cs" />

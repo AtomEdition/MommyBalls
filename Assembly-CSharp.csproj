@@ -48,11 +48,14 @@
      <Compile Include="Assets\Scripts\Controllers\BallController.cs" />
      <Compile Include="Assets\Scripts\Controllers\BasketClickListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\BasketController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Behaviours\AttachSimpleBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\DestroyBallBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\RotateBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\SwitcherSpriteChanger.cs" />
+     <Compile Include="Assets\Scripts\Controllers\BlowerController.cs" />
      <Compile Include="Assets\Scripts\Controllers\ButtonPlayClickListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\DelayActivatorController.cs" />
      <Compile Include="Assets\Scripts\Controllers\JumperController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MommyController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StarCreateListener.cs" />

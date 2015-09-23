@@ -4,7 +4,7 @@ using System.Collections;
 public class TextScoreUpdateListener : MonoBehaviour {
 		
 	private const string TEXT_SCORE = "Score : ";	
-	private ScoreService scoreService = Singleton<ScoreService>.getInstance();
+	private ScoreService scoreService = Singleton<ScoreService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

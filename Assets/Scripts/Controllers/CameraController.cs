@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour {
 
 	public int[] levelData = new int[4];
 
-	private LevelService levelService = Singleton<LevelService>.getInstance();
+	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	private GameObject pressedBall = null;
 	private bool isBallPressed = false;

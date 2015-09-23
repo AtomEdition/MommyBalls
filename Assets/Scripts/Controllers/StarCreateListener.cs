@@ -6,8 +6,8 @@ public class StarCreateListener : MonoBehaviour {
 	private const string PREFIX_STAR = "star-";
 	private const string PATH_SPRITE_STAR_FULL = "Sprites/Ui/Score/StarFull";
 
-	private ScoreService scoreService = Singleton<ScoreService>.getInstance();
-	private LevelService levelService = Singleton<LevelService>.getInstance();
+	private ScoreService scoreService = Singleton<ScoreService>.GetInstance();
+	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

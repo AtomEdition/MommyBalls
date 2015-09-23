@@ -4,7 +4,7 @@ using System.Collections;
 public class TextBallsUpdateListener : MonoBehaviour {
 	
 	private const string TEXT_BALLS_COUNT = "Balls : ";
-	private LevelService levelService = Singleton<LevelService>.getInstance();
+	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

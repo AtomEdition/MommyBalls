@@ -61,7 +61,7 @@ public class CameraController : MonoBehaviour {
 			}
 		}
 
-		else if (pressedBall.ToString ().Equals("null"))
+		else if (GameObject.FindGameObjectsWithTag("Ball").Length == 0)
 			Application.LoadLevel (ScoreProperties.SCREEN_NAME_LEVEL_COMPLETE);
 
 	}

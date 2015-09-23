@@ -3,32 +3,20 @@ using System.Collections;
 
 public class JumperController : MonoBehaviour {
 
-	public int jumperPowerMode = 0;
+	private const int JUMPER_POWER = 300;
+
+	public int jumperPowerMultiplier = 0;
 	private int chosenJumperPower;
 
 	// Use this for initialization
 	void Start () {
 
-		chosenJumperPower = choseJumperPowerByMode (jumperPowerMode);
+		chosenJumperPower = JUMPER_POWER * jumperPowerMultiplier;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
-	}
-
-	private int choseJumperPowerByMode(int powerMode) {
-
-		switch (powerMode) {
-		case 1:
-			return JumperProperties.JUMPER_POWER_LOW;
-		case 2:
-			return JumperProperties.JUMPER_POWER_MEDIUM;
-		case 3:
-			return JumperProperties.JUMPER_POWER_HIGH;
-		}
-
-		return 0;
 	}
 	
 	void OnCollisionEnter2D(Collision2D collision){
@@ -37,23 +25,18 @@ public class JumperController : MonoBehaviour {
 			
 			float jumperAngle = this.gameObject.transform.eulerAngles.z;
 
-			float powerX = getPowerMultiplierX(jumperAngle) * chosenJumperPower;
-			float powerY = getPowerMultiplierY(jumperAngle) * chosenJumperPower;
-
 			collision.gameObject.GetComponent<Rigidbody2D>()
-				.AddForce (new Vector3 (powerX , powerY));
+				.AddForce (getForceVector(jumperAngle, chosenJumperPower));
 		}
 	}
 
-	float getPowerMultiplierX(float angle) {
-
-		float angleInRad = Mathf.Deg2Rad * angle;
-		return Mathf.Cos (angleInRad);
-	}
-	
-	float getPowerMultiplierY(float angle) {
+	private Vector2 getForceVector(float jumperAngle, float jumperPower) {
 		
-		float angleInRad = Mathf.Deg2Rad * angle;
-		return Mathf.Sin (angleInRad);
+		float angleInRad = Mathf.Deg2Rad * jumperAngle;
+
+		float powerX = Mathf.Cos (angleInRad) * jumperPower;
+		float powerY = Mathf.Sin (angleInRad) * jumperPower;
+
+		return new Vector2 (powerX, powerY);
 	}
 }

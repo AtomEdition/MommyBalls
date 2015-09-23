@@ -1,15 +1,23 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\DelayActivatorController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\TextBallsUpdateListener.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controllers\SwitcherController.cs" Line="50" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\MommyController.cs" Line="20" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\DelayActivatorController.cs" Line="44" Column="5" />
+      <File FileName="Assets\Scripts\Controllers\Behaviours\RotateBehaviour.cs" Line="20" Column="40" />
+      <File FileName="Assets\Scripts\Controllers\JumperController.cs" Line="43" Column="1" />
+      <File FileName="Assets\Scripts\Properties\BallProperties.cs" Line="4" Column="43" />
+      <File FileName="Assets\Scripts\Controllers\BasketClickListener.cs" Line="41" Column="45" />
+      <File FileName="Assets\Scripts\Services\LevelService.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Services\ScoreService.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Properties\ScoreProperties.cs" Line="3" Column="31" />
+      <File FileName="Assets\Scripts\Controllers\CameraController.cs" Line="65" Column="43" />
+      <File FileName="Assets\Scripts\Controllers\TextBallsUpdateListener.cs" Line="20" Column="14" />
+      <File FileName="Assets\Scripts\Controllers\TextScoreUpdateListener.cs" Line="16" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="D:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\Behaviours\SwitcherDelayerBehaviour.cs" line="29" />
+      <Breakpoint file="D:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\DelayActivatorController.cs" line="21" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

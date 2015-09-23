@@ -2,8 +2,10 @@
 using System.Collections;
 
 public class TextBallsUpdateListener : MonoBehaviour {
+	
+	private const string TEXT_BALLS_COUNT = "Balls : ";
+	private LevelService levelService = Singleton<LevelService>.getInstance();
 
-	private InterfaceService interfaceService = Singleton<InterfaceService>.getInstance();
 	// Use this for initialization
 	void Start () {
 	
@@ -12,6 +14,12 @@ public class TextBallsUpdateListener : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		this.GetComponent<GUIText>().text = interfaceService.getTextBallCount ();
+		setTextBallCount ();
+	}
+	
+	private void setTextBallCount() {
+
+		string text = TEXT_BALLS_COUNT + levelService.BallCount;		
+		this.GetComponent<GUIText> ().text = text;
 	}
 }

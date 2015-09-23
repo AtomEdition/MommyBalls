@@ -12,8 +12,8 @@ public class SwitcherSpriteChanger : MonoBehaviour {
 	void Start () {
 	
 		swCtrl = gameObject.GetComponent<SwitcherController> ();
-		attachMethodsToEvent ();
-		changeSprite ();
+		AttachMethodsToEvent ();
+		ChangeSprite ();
 	}
 	
 	// Update is called once per frame
@@ -21,17 +21,17 @@ public class SwitcherSpriteChanger : MonoBehaviour {
 	
 	}
 
-	private void attachMethodsToEvent() {
+	private void AttachMethodsToEvent() {
 
-		swCtrl.onSwitchEvent += this.changeSprite;
+		swCtrl.onSwitchEvent += this.ChangeSprite;
 	}
 		
-	private void changeSprite() {
+	private void ChangeSprite() {
 
-		changeSprite (swCtrl.TurnedOn);
+		ChangeSprite (swCtrl.TurnedOn);
 	}
 
-	private void changeSprite(bool isTurnedOn) {		
+	private void ChangeSprite(bool isTurnedOn) {		
 		
 		Sprite switcherSprite;
 		if (isTurnedOn) {

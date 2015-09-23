@@ -5,7 +5,7 @@ public class Singleton<T> where T : new() {
 	private Singleton(){
 	}
 
-	public static T getInstance(){
+	public static T GetInstance(){
 		if (instance == null) {
 			instance = new T();
 		}

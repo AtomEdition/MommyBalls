@@ -14,10 +14,10 @@ public class TextBallsUpdateListener : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		setTextBallCount ();
+		SetTextBallCount ();
 	}
 	
-	private void setTextBallCount() {
+	private void SetTextBallCount() {
 
 		string text = TEXT_BALLS_COUNT + levelService.BallCount;		
 		this.GetComponent<GUIText> ().text = text;

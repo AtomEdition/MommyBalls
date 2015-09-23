@@ -11,7 +11,8 @@ public class StarCreateListener : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		checkStarsCondition ();
+
+		CheckStarsCondition ();
 	}
 	
 	// Update is called once per frame
@@ -19,21 +20,23 @@ public class StarCreateListener : MonoBehaviour {
 	
 	}
 
-	private void checkStarsCondition(){
+	private void CheckStarsCondition(){
 
 		GameObject star;
 
-		if (getStarCount () > 0)
-			for (int i = 0; i < getStarCount (); i++) 
-			{				
-				Sprite starFullSprite = Resources.Load<Sprite>(PATH_SPRITE_STAR_FULL);
+		if (GetStarCount () > 0) {
+
+			for (int i = 0; i < GetStarCount (); i++) {				
+		
+				Sprite starFullSprite = Resources.Load<Sprite> (PATH_SPRITE_STAR_FULL);
 
 				star = GameObject.Find (PREFIX_STAR + i);
-				star.GetComponent<SpriteRenderer>().sprite = starFullSprite;
+				star.GetComponent<SpriteRenderer> ().sprite = starFullSprite;
 			}
+		}
 	}
 
-	private int getStarCount(){
+	private int GetStarCount(){
 
 		return (scoreService.Score < levelService.ScoreStars3)
 				? (scoreService.Score < levelService.ScoreStars2)

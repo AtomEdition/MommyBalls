@@ -13,7 +13,7 @@ public class BasketController : MonoBehaviour {
 	
 	}
 
-	public static bool checkCollisionBasket()
+	public static bool CheckCollisionBasket()
 	{
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 		

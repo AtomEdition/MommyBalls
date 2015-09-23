@@ -11,10 +11,10 @@ public class BallController : MonoBehaviour {
 	// Update is called once per frame
 	private void Update () {
 
-		checkDestroyCondition ();
+		CheckDestroyCondition ();
 	}
 
-	private void checkDestroyCondition(){	
+	private void CheckDestroyCondition(){	
 
 		if (this.transform.position.y < (-8F))
 			Destroy (gameObject);

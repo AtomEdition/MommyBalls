@@ -8,7 +8,7 @@ public abstract class BasketClickListener {
 	private static float opposingCathetus;
 	private static float hypotenuse;
 
-	public static void setNewPoints(float x, float y)
+	public static void SetNewPoints(float x, float y)
 	{
 		x2 = x1;
 		y2 = y1;
@@ -16,16 +16,16 @@ public abstract class BasketClickListener {
 		y1 = y;
 	}
 
-	private static void makeTriangle()
+	private static void MakeTriangle()
 	{
 		adjacentCathetus = Mathf.Abs (x2 - x1);
 		opposingCathetus = Mathf.Abs (y2 - y1);
 		hypotenuse = Mathf.Sqrt (adjacentCathetus * adjacentCathetus + opposingCathetus * opposingCathetus);
 	}
 
-	public static float getAngle()
+	public static float GetAngle()
 	{
-		makeTriangle ();
+		MakeTriangle ();
 		float angle = Mathf.Atan (opposingCathetus / adjacentCathetus);
 		if ((x2 < x1) && (y2 > y1))
 			return 180 - Mathf.Rad2Deg * angle;
@@ -36,7 +36,7 @@ public abstract class BasketClickListener {
 		return angle;
 	}
 
-	public static float getPowerX()
+	public static float GetPowerX()
 	{
 		float powerX = (x1 - x2) * BallProperties.BALL_POWER_MULTIPLIER;
 		if (powerX < BallProperties.BALL_POWER_MAXIMUM) 
@@ -45,7 +45,7 @@ public abstract class BasketClickListener {
 	}
 
 	
-	public static float getPowerY()
+	public static float GetPowerY()
 	{
 		float powerY = (y1 - y2) * BallProperties.BALL_POWER_MULTIPLIER; 
 		if (powerY < BallProperties.BALL_POWER_MAXIMUM) 

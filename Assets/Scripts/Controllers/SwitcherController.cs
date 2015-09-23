@@ -19,7 +19,7 @@ public class SwitcherController : MonoBehaviour {
 	void Start () {
 
 		TurnedOn = turnedOnFromScene;
-		attachMethodsToEvent ();
+		AttachMethodsToEvent ();
 	}
 	
 	// Update is called once per frame
@@ -36,19 +36,19 @@ public class SwitcherController : MonoBehaviour {
 		}
 	}
 
-	private void attachMethodsToEvent(){
+	private void AttachMethodsToEvent(){
 
-		this.onSwitchEvent += this.changeFlags;
-		this.onSwitchEvent += this.switchElements;
-		this.onSwitchEvent += this.switchSwitchers;
+		this.onSwitchEvent += this.ChangeFlags;
+		this.onSwitchEvent += this.SwitchElements;
+		this.onSwitchEvent += this.SwitchSwitchers;
 	}
 
-	private void changeFlags(){
+	private void ChangeFlags(){
 
 		TurnedOn = !TurnedOn;
 	}
 		
-	private void switchElements () {
+	private void SwitchElements () {
 
 		foreach (GameObject obj in switchingElements) {
 
@@ -67,7 +67,7 @@ public class SwitcherController : MonoBehaviour {
 		}
 	}
 
-	private void switchSwitchers() {
+	private void SwitchSwitchers() {
 		
 		foreach (GameObject obj in switchingSwitchers) {
 

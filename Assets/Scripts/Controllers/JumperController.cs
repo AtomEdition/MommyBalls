@@ -26,11 +26,11 @@ public class JumperController : MonoBehaviour {
 			float jumperAngle = this.gameObject.transform.eulerAngles.z;
 
 			collision.gameObject.GetComponent<Rigidbody2D>()
-				.AddForce (getForceVector(jumperAngle, chosenJumperPower));
+				.AddForce (GetForceVector(jumperAngle, chosenJumperPower));
 		}
 	}
 
-	private Vector2 getForceVector(float jumperAngle, float jumperPower) {
+	private Vector2 GetForceVector(float jumperAngle, float jumperPower) {
 		
 		float angleInRad = Mathf.Deg2Rad * jumperAngle;
 

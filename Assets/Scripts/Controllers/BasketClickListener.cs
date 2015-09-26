@@ -23,19 +23,6 @@ public abstract class BasketClickListener {
 		hypotenuse = Mathf.Sqrt (adjacentCathetus * adjacentCathetus + opposingCathetus * opposingCathetus);
 	}
 
-	public static float GetAngle()
-	{
-		MakeTriangle ();
-		float angle = Mathf.Atan (opposingCathetus / adjacentCathetus);
-		if ((x2 < x1) && (y2 > y1))
-			return 180 - Mathf.Rad2Deg * angle;
-		else if ((x2 < x1) && (y2 < y1))
-			return 180 + Mathf.Rad2Deg * angle;
-		else if ((x2 > x1) && (y2 < y1))
-			return 360 - Mathf.Rad2Deg * angle;
-		return angle;
-	}
-
 	public static float GetPowerX()
 	{
 		float powerX = (x1 - x2) * BallProperties.BALL_POWER_MULTIPLIER;

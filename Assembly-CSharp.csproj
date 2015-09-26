@@ -54,13 +54,14 @@
      <Compile Include="Assets\Scripts\Controllers\Behaviours\SwitcherSpriteChanger.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\TransferFromLeftToRightBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\BlowerController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\ButtonPlayClickListener.cs" />
+     <Compile Include="Assets\Scripts\Controllers\ButtonPlayController.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\DelayActivatorController.cs" />
      <Compile Include="Assets\Scripts\Controllers\JumperController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MommyController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PortalController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StarCreateListener.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StickyPlatformController.cs" />
      <Compile Include="Assets\Scripts\Controllers\SwitcherController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TextBallsUpdateListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\TextScoreUpdateListener.cs" />

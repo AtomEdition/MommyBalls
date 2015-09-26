@@ -1,16 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\TextScoreUpdateListener.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\BallController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controllers\SwitcherController.cs" Line="5" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\MommyController.cs" Line="6" Column="63" />
-      <File FileName="Assets\Scripts\Controllers\DelayActivatorController.cs" Line="23" Column="19" />
-      <File FileName="Assets\Scripts\Controllers\PortalController.cs" Line="3" Column="1" />
-      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\CameraController.cs" Line="15" Column="63" />
-      <File FileName="Assets\Scripts\Services\Singleton.cs" Line="12" Column="19" />
-      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\StarCreateListener.cs" Line="10" Column="62" />
-      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\TextBallsUpdateListener.cs" Line="7" Column="63" />
-      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\TextScoreUpdateListener.cs" Line="7" Column="63" />
+      <File FileName="Assets\Scripts\Controllers\StickyPlatformController.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\BasketClickListener.cs" Line="49" Column="3" />
+      <File FileName="Assets\Scripts\Controllers\BallController.cs" Line="50" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\BasketController.cs" Line="49" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

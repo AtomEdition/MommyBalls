@@ -7,7 +7,7 @@ public class DestroyBallBehaviour : MonoBehaviour {
 		
 		if (collision.gameObject.tag == "Ball") {
 
-			Destroy (collision.gameObject);
+			collision.gameObject.GetComponent<BallController>().DestroyBall();
 					
 		}
 	}

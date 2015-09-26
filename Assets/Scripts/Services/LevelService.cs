@@ -23,6 +23,15 @@ public class LevelService {
 		this.ScoreStars1 = scoreStars1;
 	}
 	
+	public void CheckForLevelEnded() {		
+		
+		if (BallCount <= 0 
+		    && GameObject.FindGameObjectsWithTag("Ball").Length == 0) {
+			
+			Application.LoadLevel (ScoreProperties.SCREEN_NAME_LEVEL_COMPLETE);
+		}
+	}
+	
 	public int BallCount {
 		get {
 			return this.ballCount;

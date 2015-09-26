@@ -3,6 +3,8 @@ using System.Collections;
 
 public class BasketController : MonoBehaviour {
 
+	public GameObject ball;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -11,18 +13,50 @@ public class BasketController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		if (IsBasketClicked()) {
+
+			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+
+			GameObject newBall = Instantiate (ball, new Vector2 (vec.x, vec.y), Quaternion.identity) as GameObject;
+			newBall.gameObject.GetComponent<BallController>().SetBallBehaviourOnContinuousClick();
+			BasketClickListener.SetNewPoints(vec.x, vec.y);
+		}
 	}
 
-	public static bool CheckCollisionBasket()
-	{
+	public bool IsBasketClicked(){
+
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-		
-		if(hit.collider != null)
 			
-			if (hit.collider.gameObject.tag == "Basket")
-				
-				return true;
+		return (Input.GetMouseButtonDown(0) 
+		        && hit.collider != null
+		        && hit.collider.gameObject.tag == "Basket");
+	}
+
+	void OnTriggerExit2D(Collider2D trigger){
 		
-		return false;
+		if (trigger.gameObject.tag == "Ball") {
+
+			trigger.gameObject.GetComponent<BallController>().ReleaseBall();
+		}
+	}
+
+	void OnTriggerStay2D(Collider2D trigger){
+		
+		if (trigger.gameObject.tag == "Ball") {
+			
+			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
+
+			BasketClickListener.SetNewPoints(vec.x, vec.y);
+
+			if (Input.GetMouseButtonUp(0)) {
+
+				trigger.gameObject.GetComponent<BallController>().ReleaseBall();
+
+			} else {
+
+				trigger.gameObject.GetComponent<BallController>().MoveBallToPressedPosition(vec);
+			}
+						
+		}
 	}
 }

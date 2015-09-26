@@ -20,7 +20,7 @@ public class MommyController : MonoBehaviour {
 
 			collision.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 			yield return new WaitForSeconds(0.05F);
-			Destroy (collision.gameObject);
+			collision.gameObject.GetComponent<BallController>().DestroyBall();
 
 			scoreService.Score++;			
 		}

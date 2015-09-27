@@ -1,9 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class BasketController : MonoBehaviour {
 
 	public GameObject ball;
+	private InputService inputService = Singleton<InputService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -27,14 +28,14 @@ public class BasketController : MonoBehaviour {
 
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			
-		return (Input.GetMouseButtonDown(0) 
+		return (inputService.IsInputDown() 
 		        && hit.collider != null
-		        && hit.collider.gameObject.tag == "Basket");
+		        && hit.collider.gameObject.tag == Tags.BASKET);
 	}
 
 	void OnTriggerExit2D(Collider2D trigger){
 		
-		if (trigger.gameObject.tag == "Ball") {
+		if (trigger.gameObject.tag == Tags.BALL) {
 
 			trigger.gameObject.GetComponent<BallController>().ReleaseBall();
 		}
@@ -42,13 +43,13 @@ public class BasketController : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D trigger){
 		
-		if (trigger.gameObject.tag == "Ball") {
+		if (trigger.gameObject.tag == Tags.BALL) {
 			
 			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
 			BasketClickListener.SetNewPoints(vec.x, vec.y);
 
-			if (Input.GetMouseButtonUp(0)) {
+			if (inputService.IsInputUp()) {
 
 				trigger.gameObject.GetComponent<BallController>().ReleaseBall();
 

@@ -5,7 +5,7 @@ public class JumperController : MonoBehaviour {
 
 	private const int JUMPER_POWER = 300;
 
-	public int jumperPowerMultiplier = 0;
+	public int jumperPowerMultiplier = 1;
 	private int chosenJumperPower;
 
 	// Use this for initialization
@@ -21,7 +21,7 @@ public class JumperController : MonoBehaviour {
 	
 	void OnCollisionEnter2D(Collision2D collision){
 		
-		if (collision.gameObject.tag == "Ball") {
+		if (collision.gameObject.tag == Tags.BALL) {
 			
 			float jumperAngle = this.gameObject.transform.eulerAngles.z;
 

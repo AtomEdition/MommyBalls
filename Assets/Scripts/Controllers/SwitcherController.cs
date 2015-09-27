@@ -29,7 +29,7 @@ public class SwitcherController : MonoBehaviour {
 	
 	void OnCollisionEnter2D(Collision2D collision){
 		
-		if (collision.gameObject.tag == "Ball") {
+		if (collision.gameObject.tag == Tags.BALL) {
 
 			isTriggered = true;
 			onSwitchEvent ();

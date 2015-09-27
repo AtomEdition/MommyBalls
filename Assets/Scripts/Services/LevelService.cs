@@ -26,7 +26,7 @@ public class LevelService {
 	public void CheckForLevelEnded() {		
 		
 		if (BallCount <= 0 
-		    && GameObject.FindGameObjectsWithTag("Ball").Length == 0) {
+		    && GameObject.FindGameObjectsWithTag(Tags.BALL).Length == 0) {
 			
 			Application.LoadLevel (ScoreProperties.SCREEN_NAME_LEVEL_COMPLETE);
 		}

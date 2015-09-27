@@ -178,6 +178,10 @@ Prefab:
       propertyPath: jumperPowerMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: jumperPowerMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
   m_IsPrefabParent: 0
@@ -554,6 +558,10 @@ Prefab:
       propertyPath: jumperPowerMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: jumperPowerMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
   m_IsPrefabParent: 0
@@ -606,6 +614,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: jumperPowerMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: jumperPowerMultiplier
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

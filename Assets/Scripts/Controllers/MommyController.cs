@@ -16,11 +16,11 @@ public class MommyController : MonoBehaviour {
 	
 	IEnumerator OnCollisionEnter2D(Collision2D collision){
 
-		if (collision.gameObject.tag == "Ball") {
+		if (collision.gameObject.tag == Tags.BALL) {
 
 			collision.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 			yield return new WaitForSeconds(0.05F);
-			collision.gameObject.GetComponent<BallController>().DestroyBall();
+			Destroy (collision.gameObject);
 
 			scoreService.Score++;			
 		}

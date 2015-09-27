@@ -27,14 +27,13 @@ public class BallController : MonoBehaviour {
 
 		if (this.transform.position.y < OUT_OF_LEVEL_RANGE) {
 
-			DestroyBall();
+			Destroy (this.gameObject);
 		}
 	}	
 
-	public void DestroyBall() {
+	public void OnDestroy() {
 
-		OnBallDestroy ();
-		Destroy (gameObject);
+		OnBallDestroy ();	
 	}
 	
 	public void SetBallBehaviourOnContinuousClick() {

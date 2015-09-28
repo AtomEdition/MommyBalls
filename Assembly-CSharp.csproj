@@ -48,11 +48,12 @@
      <Compile Include="Assets\Scripts\Controllers\BallController.cs" />
      <Compile Include="Assets\Scripts\Controllers\BasketClickListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\BasketController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Behaviours\AppearWhenNoBallsBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\AttachSimpleBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\DestroyBallBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\RotateBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\Behaviours\SwitcherSpriteChanger.cs" />
-     <Compile Include="Assets\Scripts\Controllers\Behaviours\TransferFromLeftToRightBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Behaviours\TransferBehaviour.cs" />
      <Compile Include="Assets\Scripts\Controllers\BlowerController.cs" />
      <Compile Include="Assets\Scripts\Controllers\ButtonPlayController.cs" />
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
@@ -72,17 +73,11 @@
      <Compile Include="Assets\Scripts\Services\LevelService.cs" />
      <Compile Include="Assets\Scripts\Services\ScoreService.cs" />
      <Compile Include="Assets\Scripts\Services\Singleton.cs" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>D:/Programs/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -5,6 +5,7 @@ public class BasketController : MonoBehaviour {
 
 	public GameObject ball;
 	private InputService inputService = Singleton<InputService>.GetInstance();
+	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -30,7 +31,8 @@ public class BasketController : MonoBehaviour {
 			
 		return (inputService.IsInputDown() 
 		        && hit.collider != null
-		        && hit.collider.gameObject.tag == Tags.BASKET);
+		        && hit.collider.gameObject.tag == Tags.BASKET
+		        && levelService.BallCount > 0);
 	}
 
 	void OnTriggerExit2D(Collider2D trigger){

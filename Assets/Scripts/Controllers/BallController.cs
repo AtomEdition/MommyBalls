@@ -42,6 +42,7 @@ public class BallController : MonoBehaviour {
 		this.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 		
 		levelService.BallCount--;
+		levelService.CreateEventForBallCreated ();
 	}
 	
 	public void ReleaseBall() {

@@ -14,7 +14,7 @@ public class MommyController : MonoBehaviour {
 	
 	}
 	
-	IEnumerator OnCollisionEnter2D(Collision2D collision){
+	IEnumerator OnTriggerEnter2D(Collider2D collision){
 
 		if (collision.gameObject.tag == Tags.BALL) {
 

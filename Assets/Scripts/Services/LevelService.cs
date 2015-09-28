@@ -8,6 +8,9 @@ public class LevelService {
 	private int scoreStars2;
 	private int scoreStars1;
 
+	public delegate void MethodContainer();
+	public event MethodContainer OnBallCreate;
+
 	public LevelService (){
 		this.BallCount = 5;
 		this.ScoreStars3 = 5;
@@ -22,7 +25,12 @@ public class LevelService {
 		this.ScoreStars2 = scoreStars2;
 		this.ScoreStars1 = scoreStars1;
 	}
-	
+
+	public void CreateEventForBallCreated() {
+
+		OnBallCreate ();
+	}
+
 	public void CheckForLevelEnded() {		
 		
 		if (BallCount <= 0 

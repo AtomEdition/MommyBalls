@@ -4,7 +4,7 @@ using System.Collections;
 public class StarCreateListener : MonoBehaviour {
 
 	private const string PREFIX_STAR = "star-";
-	private const string PATH_SPRITE_STAR_FULL = "Sprites/Ui/Score/StarFull";
+	private const string PATH_SPRITE_STAR_FULL = "Sprites/Menu/Score/StarFull";
 
 	private ScoreService scoreService = Singleton<ScoreService>.GetInstance();
 	private LevelService levelService = Singleton<LevelService>.GetInstance();

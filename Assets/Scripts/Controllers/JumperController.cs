@@ -5,8 +5,8 @@ public class JumperController : MonoBehaviour {
 
 	private const int JUMPER_POWER = 300;
 
-	public int jumperPowerMultiplier = 1;
-	private int chosenJumperPower;
+	public float jumperPowerMultiplier = 1;
+	private float chosenJumperPower;
 
 	// Use this for initialization
 	void Start () {

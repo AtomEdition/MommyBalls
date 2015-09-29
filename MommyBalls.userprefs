@@ -1,20 +1,17 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\MommyController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\StickyPlatformController.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controllers\StickyPlatformController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\BasketClickListener.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\Behaviours\AppearWhenNoBallsBehaviour.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\BallController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\MommyController.cs" Line="11" Column="2" />
-      <File FileName="Assets\Scripts\Services\LevelService.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\JumperController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Controllers\Behaviours\TransferBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\StickyPlatformController.cs" Line="71" Column="4" />
+      <File FileName="Assets\Scripts\Controllers\Behaviours\AttachSimpleBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\BallController.cs" Line="69" Column="9" />
+      <File FileName="Assets\Scripts\Controllers\Behaviours\DestroyBallBehaviour.cs" Line="9" Column="11" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>this.leftCollisionObject</Value>
+          <Value>hit.collider</Value>
+          <Value>attachedObject.transform.eulerAngles.z</Value>
         </State>
       </Pad>
     </Pads>

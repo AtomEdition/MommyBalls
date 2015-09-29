@@ -26,6 +26,11 @@ public class InputService {
 		
 		return false;
 	}
+	
+	public bool IsInputHold() {
+		
+		return Input.GetMouseButton (0);
+	}
 
 	public float GetTimeOfClick() {
 

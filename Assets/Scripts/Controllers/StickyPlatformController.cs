@@ -33,6 +33,9 @@ public class StickyPlatformController : MonoBehaviour {
 
 			Rigidbody2D rBody = collision.gameObject.GetComponent<Rigidbody2D>();
 			rBody.constraints = RigidbodyConstraints2D.FreezeAll;
+			collision.gameObject.transform.parent = this.gameObject.transform;
+
+			collision.gameObject.GetComponent<BallController>().IsSafeColliding = true;
 		}
 	}
 
@@ -52,18 +55,21 @@ public class StickyPlatformController : MonoBehaviour {
 
 		} else if (inputService.IsInputUp()
 		           && (hit.collider != null
-		           && hit.collider.gameObject.tag == Tags.STICKY_PLATFORM
+		           && hit.collider.gameObject == this.gameObject
 		           || isCharging)) {
 			
 			platformPowerCurrent *= inputService.GetTimeOfClick() > delaySecondsMaximum 
 				? delaySecondsMaximum : inputService.GetTimeOfClick();
-			
+
+			collision.gameObject.transform.parent = null;
 			Rigidbody2D rBody = collision.gameObject.GetComponent<Rigidbody2D>();
 			rBody.constraints = RigidbodyConstraints2D.None;
 			rBody.AddForce(GetForceVector(this.gameObject.transform.eulerAngles.z, platformPowerCurrent));
 
 			platformPowerCurrent = PLATFORM_POWER_BASE * platformPowerMultiplier;
 			isCharging = false;
+
+			collision.gameObject.GetComponent<BallController>().IsSafeColliding = false;
 		}
 
 	}

@@ -10,6 +10,7 @@ public class TransferBehaviour : MonoBehaviour {
 
 	private int direction;
 	private float speed;
+	private bool isTriggered = false;
 
 	// Use this for initialization
 	void Start () {
@@ -26,11 +27,18 @@ public class TransferBehaviour : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D trigger){
 
-		if (!Tags.BALL.Equals(trigger.gameObject.tag)) {
+		if (!Tags.BALL.Equals(trigger.gameObject.tag)
+		    && !isTriggered) {
 
 			Speed *= -1;
+			isTriggered = true;
 
 		} 
+	}
+
+	void OnTriggerExit2D(Collider2D trigger){
+
+		isTriggered = false;
 	}
 
 	private float Speed {

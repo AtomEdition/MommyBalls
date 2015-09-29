@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Controllers\JumperController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MommyController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PortalController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\RotateButtonController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StarCreateListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\StickyPlatformController.cs" />
      <Compile Include="Assets\Scripts\Controllers\SwitcherController.cs" />

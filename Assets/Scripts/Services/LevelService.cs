@@ -27,8 +27,10 @@ public class LevelService {
 	}
 
 	public void CreateEventForBallCreated() {
+		if (OnBallCreate != null) {
 
-		OnBallCreate ();
+			OnBallCreate ();
+		}
 	}
 
 	public void CheckForLevelEnded() {		

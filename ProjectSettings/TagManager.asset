@@ -8,6 +8,7 @@ TagManager:
   - Basket
   - Ball
   - StickyPlatform
+  - RotateButton
   layers:
   - Default
   - TransparentFX

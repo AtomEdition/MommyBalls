@@ -3,21 +3,21 @@ using System.Collections;
 
 public class RotateBehaviour : MonoBehaviour {
 
-	private float currentRotation = 0F;
-	private const float BASE_ROTATE_POWER = 0.8F;
-	private float currentRotatePower;
-	public float rotatePowerMultiplier = 1;
+	private const float BASE_ROTATION_POWER = 0.8F;
+	public float rotationPowerMultiplier = 1;
+	private float currentRotationPower;
 
 	// Use this for initialization
 	void Start () {
 
-		currentRotatePower = BASE_ROTATE_POWER * rotatePowerMultiplier;
+		currentRotationPower = BASE_ROTATION_POWER * rotationPowerMultiplier;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		currentRotation += currentRotatePower;
-		this.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
+		float currentRotation = this.gameObject.transform.eulerAngles.z;
+		currentRotation += currentRotationPower;
+		this.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
 	}
 }

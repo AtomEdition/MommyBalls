@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63da69ddbb866d74893421abb503c4e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatePowerMultiplier: 3
+  rotationPowerMultiplier: 2
 --- !u!1001 &1373434631
 Prefab:
   m_ObjectHideFlags: 0

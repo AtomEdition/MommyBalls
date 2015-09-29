@@ -10,6 +10,7 @@ public class BallController : MonoBehaviour {
 	public event MethodContainer OnBallDestroy;
 
 	private bool isMovingByMouse = true;
+	private bool isSafeColliding = false;
 
 	// Use this for initialization
 	private void Start () {
@@ -65,4 +66,12 @@ public class BallController : MonoBehaviour {
 		}
 	}
 
+	public bool IsSafeColliding {
+		get {
+			return this.isSafeColliding;
+		}
+		set {
+			isSafeColliding = value;
+		}
+	}
 }

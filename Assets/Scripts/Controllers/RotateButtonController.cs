@@ -5,6 +5,8 @@ public class RotateButtonController : MonoBehaviour {
 
 	public GameObject attachedObject;
 
+	public float rotationAngleTo = 0;
+
 	public float rotationMultiplier = 1;
 	private const float BASE_ROTATION_POWER = 0.8F;
 	private float currentRotationPower;
@@ -30,15 +32,16 @@ public class RotateButtonController : MonoBehaviour {
 			
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
+			float currentRotation = attachedObject.transform.eulerAngles.z;
+
 			if (hit.collider != null
-			    && hit.collider.gameObject == this.gameObject) {
-				
-				float currentRotation = attachedObject.transform.eulerAngles.z;
+			    && hit.collider.gameObject == this.gameObject)
+			    if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
+				   || (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
+
 				currentRotation += currentRotationPower;
 				attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
 			}
 		}
 	}
-
-
 }

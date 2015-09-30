@@ -67,6 +67,7 @@ public class BallController : MonoBehaviour {
 	}
 
 	public bool IsSafeColliding {
+
 		get {
 			return this.isSafeColliding;
 		}

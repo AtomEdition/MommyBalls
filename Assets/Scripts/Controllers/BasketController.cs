@@ -31,7 +31,7 @@ public class BasketController : MonoBehaviour {
 			
 		return (inputService.IsInputDown() 
 		        && hit.collider != null
-		        && hit.collider.gameObject.tag == Tags.BASKET
+		        && hit.collider.gameObject == this.gameObject
 		        && levelService.BallCount > 0);
 	}
 

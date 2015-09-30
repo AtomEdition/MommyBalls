@@ -14,13 +14,13 @@ public class MommyController : MonoBehaviour {
 	
 	}
 	
-	IEnumerator OnTriggerEnter2D(Collider2D collision){
+	IEnumerator OnTriggerEnter2D(Collider2D trigger){
 
-		if (collision.gameObject.tag == Tags.BALL) {
+		if (trigger.gameObject.tag == Tags.BALL) {
 
-			collision.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+			trigger.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 			yield return new WaitForSeconds(0.05F);
-			Destroy (collision.gameObject);
+			Destroy (trigger.gameObject);
 
 			scoreService.Score++;			
 		}

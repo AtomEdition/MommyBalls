@@ -33,9 +33,9 @@ public class StickyPlatformController : MonoBehaviour {
 
 			Rigidbody2D rBody = collision.gameObject.GetComponent<Rigidbody2D>();
 			rBody.constraints = RigidbodyConstraints2D.FreezeAll;
-			collision.gameObject.transform.parent = this.gameObject.transform;
 
 			collision.gameObject.GetComponent<BallController>().IsSafeColliding = true;
+			collision.gameObject.transform.parent = this.gameObject.transform;
 		}
 	}
 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RotateButtonController : MonoBehaviour {
 
-	public GameObject attachedObject;
+	public GameObject[] attachedObjects = {};
 
 	public float rotationAngleTo = 0;
 
@@ -32,15 +32,18 @@ public class RotateButtonController : MonoBehaviour {
 			
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
-			float currentRotation = attachedObject.transform.eulerAngles.z;
+			foreach (GameObject attachedObject in attachedObjects) {
 
-			if (hit.collider != null
-			    && hit.collider.gameObject == this.gameObject)
-			    if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
-				   || (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
+				float currentRotation = attachedObject.transform.eulerAngles.z;
 
-				currentRotation += currentRotationPower;
-				attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
+				if (hit.collider != null
+				    && hit.collider.gameObject == this.gameObject)
+				    if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
+					   || (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
+
+					currentRotation += currentRotationPower;
+					attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
+				}
 			}
 		}
 	}

@@ -6,8 +6,6 @@ public class SwitcherController : MonoBehaviour {
 	public bool turnedOnFromScene = false;
 	private bool turnedOn;
 	private bool isTriggered = false;
-	private const string PATH_SPRITE_SWITCH_ENABLED = "Sprites/Game/Additional/SwitcherOn";
-	private const string PATH_SPRITE_SWITCH_DISABLED = "Sprites/Game/Additional/SwitcherOff";
 
 	public GameObject[] switchingElements = {};
 	public GameObject[] switchingSwitchers = {};
@@ -31,6 +29,15 @@ public class SwitcherController : MonoBehaviour {
 		
 		if (collision.gameObject.tag == Tags.BALL) {
 
+			isTriggered = true;
+			onSwitchEvent ();
+		}
+	}
+		
+	void OnTriggerEnter2D(Collider2D trigger){
+		
+		if (trigger.gameObject.tag == Tags.BALL) {
+			
 			isTriggered = true;
 			onSwitchEvent ();
 		}

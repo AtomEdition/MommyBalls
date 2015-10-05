@@ -59,7 +59,10 @@
      <Compile Include="Assets\Scripts\Controllers\CameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\DelayActivatorController.cs" />
      <Compile Include="Assets\Scripts\Controllers\JumperController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Menu\LevelChooseCameraController.cs" />
      <Compile Include="Assets\Scripts\Controllers\MommyController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\NavigationButtonController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\NavigationLevelButtonController.cs" />
      <Compile Include="Assets\Scripts\Controllers\PortalController.cs" />
      <Compile Include="Assets\Scripts\Controllers\RotateButtonController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StarCreateListener.cs" />
@@ -68,11 +71,10 @@
      <Compile Include="Assets\Scripts\Controllers\TextBallsUpdateListener.cs" />
      <Compile Include="Assets\Scripts\Controllers\TextScoreUpdateListener.cs" />
      <Compile Include="Assets\Scripts\Properties\BallProperties.cs" />
-     <Compile Include="Assets\Scripts\Properties\ScoreProperties.cs" />
+     <Compile Include="Assets\Scripts\Properties\Scenes.cs" />
      <Compile Include="Assets\Scripts\Properties\Tags.cs" />
      <Compile Include="Assets\Scripts\Services\InputService.cs" />
      <Compile Include="Assets\Scripts\Services\LevelService.cs" />
-     <Compile Include="Assets\Scripts\Services\ScoreService.cs" />
      <Compile Include="Assets\Scripts\Services\Singleton.cs" />
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>D:/Programs/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>

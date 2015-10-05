@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MommyController : MonoBehaviour {
 
-	private ScoreService scoreService = Singleton<ScoreService>.GetInstance();
+	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +22,7 @@ public class MommyController : MonoBehaviour {
 			yield return new WaitForSeconds(0.05F);
 			Destroy (trigger.gameObject);
 
-			scoreService.Score++;			
+			levelService.ScoreCurrent++;			
 		}
 	}
 }

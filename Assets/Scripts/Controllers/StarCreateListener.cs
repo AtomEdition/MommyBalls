@@ -6,13 +6,13 @@ public class StarCreateListener : MonoBehaviour {
 	private const string PREFIX_STAR = "star-";
 	private const string PATH_SPRITE_STAR_FULL = "Sprites/Menu/Score/StarFull";
 
-	private ScoreService scoreService = Singleton<ScoreService>.GetInstance();
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 
 		CheckStarsCondition ();
+		levelService.ScoreCurrent = 0;
 	}
 	
 	// Update is called once per frame
@@ -38,9 +38,9 @@ public class StarCreateListener : MonoBehaviour {
 
 	private int GetStarCount(){
 
-		return (scoreService.Score < levelService.ScoreStars3)
-				? (scoreService.Score < levelService.ScoreStars2)
-				? (scoreService.Score < levelService.ScoreStars1)
+		return (levelService.ScoreCurrent < levelService.ScoreStars3)
+				? (levelService.ScoreCurrent < levelService.ScoreStars2)
+				? (levelService.ScoreCurrent < levelService.ScoreStars1)
 				? 0
 				: 1
 				: 2

@@ -7,7 +7,9 @@ public class InputService {
 
 	public bool IsInputDown() {
 
-		if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButtonDown (0)
+		    || (Input.touchCount > 0 
+		    && Input.GetTouch(0).phase == TouchPhase.Began)) {
 
 			timeInputDown = Time.fixedTime;
 			return true;
@@ -18,7 +20,10 @@ public class InputService {
 
 	public bool IsInputUp() {
 		
-		if (Input.GetMouseButtonUp (0)) {
+		if (Input.GetMouseButtonUp (0)
+		    || (Input.touchCount > 0 
+		    && (Input.GetTouch(0).phase == TouchPhase.Canceled
+		    || Input.GetTouch(0).phase == TouchPhase.Ended))) {
 
 			timeInputUp = Time.fixedTime;
 			return true;
@@ -29,7 +34,9 @@ public class InputService {
 	
 	public bool IsInputHold() {
 		
-		return Input.GetMouseButton (0);
+		return Input.GetMouseButton (0)
+				|| (Input.touchCount > 0 
+				&& Input.GetTouch(0).phase == TouchPhase.Stationary);
 	}
 
 	public float GetTimeOfClick() {

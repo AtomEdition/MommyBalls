@@ -45,31 +45,33 @@ public class StickyPlatformController : MonoBehaviour {
 	/// <param name="collision">Collision.</param>
 	void OnTriggerStay2D (Collider2D collision) {
 
-		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-		
-		if (inputService.IsInputDown()
-		    && hit.collider != null
-		    && hit.collider.gameObject.tag == Tags.STICKY_PLATFORM) {
-		
-			isCharging = true;
-
-		} else if (inputService.IsInputUp()
-		           && (hit.collider != null
-		           && hit.collider.gameObject == this.gameObject
-		           || isCharging)) {
+		if (inputService.IsInputDown ()) {
 			
-			platformPowerCurrent *= inputService.GetTimeOfClick() > delaySecondsMaximum 
-				? delaySecondsMaximum : inputService.GetTimeOfClick();
-
-			collision.gameObject.transform.parent = null;
-			Rigidbody2D rBody = collision.gameObject.GetComponent<Rigidbody2D>();
-			rBody.constraints = RigidbodyConstraints2D.None;
-			rBody.AddForce(GetForceVector(this.gameObject.transform.eulerAngles.z, platformPowerCurrent));
-
-			platformPowerCurrent = PLATFORM_POWER_BASE * platformPowerMultiplier;
-			isCharging = false;
-
-			collision.gameObject.GetComponent<BallController>().IsSafeColliding = false;
+			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);			
+			
+			if (hit.collider != null
+			    && hit.collider.gameObject.tag == Tags.STICKY_PLATFORM) {
+				
+				isCharging = true;
+				
+			} else if (inputService.IsInputUp()
+			           && (hit.collider != null
+			    && hit.collider.gameObject == this.gameObject
+			    || isCharging)) {
+				
+				platformPowerCurrent *= inputService.GetTimeOfClick() > delaySecondsMaximum 
+					? delaySecondsMaximum : inputService.GetTimeOfClick();
+				
+				collision.gameObject.transform.parent = null;
+				Rigidbody2D rBody = collision.gameObject.GetComponent<Rigidbody2D>();
+				rBody.constraints = RigidbodyConstraints2D.None;
+				rBody.AddForce(GetForceVector(this.gameObject.transform.eulerAngles.z, platformPowerCurrent));
+				
+				platformPowerCurrent = PLATFORM_POWER_BASE * platformPowerMultiplier;
+				isCharging = false;
+				
+				collision.gameObject.GetComponent<BallController>().IsSafeColliding = false;
+			}
 		}
 
 	}

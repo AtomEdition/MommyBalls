@@ -4,7 +4,7 @@ using System.Collections;
 public class TextScoreUpdateListener : MonoBehaviour {
 		
 	private const string TEXT_SCORE = "Score : ";	
-	private ScoreService scoreService = Singleton<ScoreService>.GetInstance();
+	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -13,13 +13,14 @@ public class TextScoreUpdateListener : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		setTextScore ();
 	}
 
 	
-	public void setTextScore()
-	{
-		string text = TEXT_SCORE + scoreService.Score;
+	public void setTextScore() {
+
+		string text = TEXT_SCORE + levelService.ScoreCurrent;
 		this.GetComponent<GUIText>().text = text;
 	}
 }

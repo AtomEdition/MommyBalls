@@ -4,6 +4,7 @@ using System.Collections;
 public class LevelService {
 
 	private int ballCount;
+	private int scoreCurrent;
 	private int scoreStars3;
 	private int scoreStars2;
 	private int scoreStars1;
@@ -13,14 +14,16 @@ public class LevelService {
 
 	public LevelService (){
 		this.BallCount = 5;
+		this.ScoreCurrent = 0;
 		this.ScoreStars3 = 5;
 		this.ScoreStars2 = 3;
 		this.ScoreStars1 = 1;
 	}
 
-	public LevelService (int ballCount, int scoreStars3, int scoreStars2, int scoreStars1)
-	{
+	public LevelService (int ballCount, int scoreStars3, int scoreStars2, int scoreStars1) {
+
 		this.BallCount = ballCount;
+		this.ScoreCurrent = 0;
 		this.ScoreStars3 = scoreStars3;
 		this.ScoreStars2 = scoreStars2;
 		this.ScoreStars1 = scoreStars1;
@@ -38,7 +41,7 @@ public class LevelService {
 		if (BallCount <= 0 
 		    && GameObject.FindGameObjectsWithTag(Tags.BALL).Length == 0) {
 			
-			Application.LoadLevel (ScoreProperties.SCREEN_NAME_LEVEL_COMPLETE);
+			Application.LoadLevel (Scenes.LEVEL_COMPLETE);
 		}
 	}
 	
@@ -50,7 +53,16 @@ public class LevelService {
 			ballCount = value;
 		}
 	}
-	
+
+	public int ScoreCurrent {
+		get {
+			return this.scoreCurrent;
+		}
+		set {
+			scoreCurrent = value;
+		}
+	}
+
 	public int ScoreStars3 {
 		get {
 			return this.scoreStars3;

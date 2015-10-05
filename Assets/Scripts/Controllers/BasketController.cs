@@ -27,10 +27,14 @@ public class BasketController : MonoBehaviour {
 
 	public bool IsBasketClicked(){
 
+		if (!inputService.IsInputDown ()) {
+
+			return false;
+		}
+
 		RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			
-		return (inputService.IsInputDown() 
-		        && hit.collider != null
+		return (hit.collider != null
 		        && hit.collider.gameObject == this.gameObject
 		        && levelService.BallCount > 0);
 	}

@@ -6,16 +6,12 @@ public class BallController : MonoBehaviour {
 	private const float OUT_OF_LEVEL_RANGE = -8F;
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
-	public delegate void MethodContainer ();
-	public event MethodContainer OnBallDestroy;
-
 	private bool isMovingByMouse = true;
 	private bool isSafeColliding = false;
 
 	// Use this for initialization
 	private void Start () {
 
-		OnBallDestroy += levelService.CheckForLevelEnded;
 	}
 
 	// Update is called once per frame
@@ -34,7 +30,7 @@ public class BallController : MonoBehaviour {
 
 	public void OnDestroy() {
 
-		OnBallDestroy ();	
+		levelService.CreateEventForBallDestroyed ();	
 	}
 	
 	public void SetBallBehaviourOnContinuousClick() {
@@ -53,6 +49,7 @@ public class BallController : MonoBehaviour {
 			isMovingByMouse = false;
 			gameObject.GetComponent<Rigidbody2D> ().isKinematic = false;
 			gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (BasketClickListener.GetPowerX (), BasketClickListener.GetPowerY ()));
+			levelService.CreateEventForBallReleased();
 		}
 	}
 	

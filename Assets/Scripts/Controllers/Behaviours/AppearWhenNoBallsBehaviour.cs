@@ -8,7 +8,7 @@ public class AppearWhenNoBallsBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		levelService.OnBallCreate += this.OnBallsOut;
+		levelService.OnBallCreate.eventAttachTo += this.OnBallsOut;
 	}
 	
 	// Update is called once per frame

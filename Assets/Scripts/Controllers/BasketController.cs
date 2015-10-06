@@ -25,6 +25,7 @@ public class BasketController : MonoBehaviour {
 		}
 	}
 
+
 	public bool IsBasketClicked(){
 
 		if (!inputService.IsInputDown ()) {
@@ -39,6 +40,7 @@ public class BasketController : MonoBehaviour {
 		        && levelService.BallCount > 0);
 	}
 
+
 	void OnTriggerExit2D(Collider2D trigger){
 		
 		if (trigger.gameObject.tag == Tags.BALL) {
@@ -46,6 +48,7 @@ public class BasketController : MonoBehaviour {
 			trigger.gameObject.GetComponent<BallController>().ReleaseBall();
 		}
 	}
+
 
 	void OnTriggerStay2D(Collider2D trigger){
 		

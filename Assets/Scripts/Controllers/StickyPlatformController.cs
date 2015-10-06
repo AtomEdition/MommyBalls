@@ -54,10 +54,17 @@ public class StickyPlatformController : MonoBehaviour {
 				
 				isCharging = true;
 				
-			} else if (inputService.IsInputUp()
-			           && (hit.collider != null
+			}
+		}
+		
+		
+		if (inputService.IsInputUp()) {
+
+			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+		    
+			if (hit.collider != null
 			    && hit.collider.gameObject == this.gameObject
-			    || isCharging)) {
+			    || isCharging) {
 				
 				platformPowerCurrent *= inputService.GetTimeOfClick() > delaySecondsMaximum 
 					? delaySecondsMaximum : inputService.GetTimeOfClick();
@@ -73,7 +80,6 @@ public class StickyPlatformController : MonoBehaviour {
 				collision.gameObject.GetComponent<BallController>().IsSafeColliding = false;
 			}
 		}
-
 	}
 
 	/// <summary>

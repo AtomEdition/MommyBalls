@@ -9,8 +9,9 @@ public class LevelService {
 	private int scoreStars2;
 	private int scoreStars1;
 
-	public delegate void MethodContainer();
-	public event MethodContainer OnBallCreate;
+	public CustomEvent OnBallCreate = new CustomEvent();
+	public CustomEvent OnBallRelease = new CustomEvent();
+	public CustomEvent OnBallDestroy = new CustomEvent();
 
 	public LevelService (){
 		this.BallCount = 5;
@@ -18,21 +19,28 @@ public class LevelService {
 		this.ScoreStars3 = 5;
 		this.ScoreStars2 = 3;
 		this.ScoreStars1 = 1;
-	}
 
-	public LevelService (int ballCount, int scoreStars3, int scoreStars2, int scoreStars1) {
-
-		this.BallCount = ballCount;
-		this.ScoreCurrent = 0;
-		this.ScoreStars3 = scoreStars3;
-		this.ScoreStars2 = scoreStars2;
-		this.ScoreStars1 = scoreStars1;
+		this.OnBallDestroy.eventAttachTo += this.CheckForLevelEnded;
 	}
 
 	public void CreateEventForBallCreated() {
 		if (OnBallCreate != null) {
 
-			OnBallCreate ();
+			OnBallCreate.Call ();
+		}
+	}
+	
+	public void CreateEventForBallReleased() {
+		if (OnBallRelease != null) {
+			
+			OnBallRelease.Call ();
+		}
+	}
+	
+	public void CreateEventForBallDestroyed() {
+		if (OnBallDestroy != null) {
+			
+			OnBallDestroy.Call ();
 		}
 	}
 

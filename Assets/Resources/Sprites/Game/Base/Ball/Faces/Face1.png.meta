@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: f4b564e97168e5a4a888d0e02a86a65a
+timeCreated: 1444036417
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: m1_left
+    21300002: m2_left
+    21300004: m2_right
+    21300006: mouth1
+    21300008: mouth3
+    21300010: mouth4
+    21300012: mouth5
+    21300014: mouth6
+    21300016: mouth2
+    21300018: eye2_left
+    21300020: eye2_right
+    21300022: eye1_left
+    21300024: eye1_right
+    21300026: eye4_left
+    21300028: eye4_right
+    21300030: eye3_left
+    21300032: eye3_right
+    21300034: pupil_left
+    21300036: pupil_right
+    21300038: m1_right
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: m1_left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 48
+        height: 24
+      alignment: 9
+      pivot: {x: .915932715, y: .688347518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: m2_left
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 103
+        width: 35
+        height: 36
+      alignment: 9
+      pivot: {x: .844405711, y: .751129568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: m2_right
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 104
+        width: 36
+        height: 35
+      alignment: 9
+      pivot: {x: .159929484, y: .731398225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 65
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 80
+        width: 65
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 78
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 60
+        width: 60
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth6
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 49
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 54
+        width: 58
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye2_left
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 25
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye2_right
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 25
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye1_left
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 28
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye1_right
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 28
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye4_left
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye4_right
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 0
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye3_left
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eye3_right
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pupil_left
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 10
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pupil_right
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 10
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: m1_right
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 113
+        width: 49
+        height: 24
+      alignment: 9
+      pivot: {x: .096399501, y: .656956375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

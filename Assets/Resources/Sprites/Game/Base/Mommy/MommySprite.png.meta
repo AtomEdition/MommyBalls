@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: b819131c186e0d344b5735040f21a0aa
+timeCreated: 1444323141
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Earleft1
+    21300002: Earlright1
+    21300004: Earleft2
+    21300006: Earright2
+    21300008: Body
+    21300010: mouth1
+    21300012: mouth3
+    21300014: mouth2
+    21300016: EyeLeft1
+    21300018: EyeRight1
+    21300020: EyeLeft2
+    21300022: EyeRight2
+    21300024: Hand
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Earleft1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 634
+        width: 220
+        height: 191
+      alignment: 9
+      pivot: {x: .613821208, y: .160324663}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Earlright1
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 633
+        width: 231
+        height: 191
+      alignment: 9
+      pivot: {x: .406380802, y: .178202212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Earleft2
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 632
+        width: 230
+        height: 201
+      alignment: 9
+      pivot: {x: .582902968, y: .187935755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Earright2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 632
+        width: 210
+        height: 201
+      alignment: 9
+      pivot: {x: .378644973, y: .169141784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Body
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 21
+        width: 565
+        height: 575
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth1
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 542
+        width: 198
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth3
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 490
+        width: 199
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouth2
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 457
+        width: 199
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EyeLeft1
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 311
+        width: 176
+        height: 103
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EyeRight1
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 310
+        width: 182
+        height: 105
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EyeLeft2
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 186
+        width: 175
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EyeRight2
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 186
+        width: 188
+        height: 108
+      alignment: 9
+      pivot: {x: .427057803, y: .481861115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hand
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 10
+        width: 135
+        height: 164
+      alignment: 9
+      pivot: {x: .137942165, y: .592249036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21229442}
   - 114: {fileID: 11471772}
   - 58: {fileID: 5878428}
+  - 114: {fileID: 11459662}
   m_Layer: 0
   m_Name: MommyBad
   m_TagString: Untagged
@@ -43,6 +44,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .899999976
+--- !u!114 &11459662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c034c31783f0a9429ecfa8c79644b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11471772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,7 +63,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 127294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f711fd87cf1e483479432d2a2343e575, type: 3}
+  m_Script: {fileID: 11500000, guid: 981030b006cc5934797ea7f3d03252e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21229442

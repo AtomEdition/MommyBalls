@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 451600}
   - 212: {fileID: 21252570}
   - 58: {fileID: 5811468}
-  - 114: {fileID: 11462464}
+  - 114: {fileID: 11434468}
   m_Layer: 0
   m_Name: ControlButton
   m_TagString: Untagged
@@ -43,7 +43,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: .75
---- !u!114 &11462464
+--- !u!114 &11434468
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -51,10 +51,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 139546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d85f07cc41891f4fb0d09a8a16ba7b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 45cabed56a316ed439d097f0d768ddc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 0}
+  parent: {fileID: 179126, guid: 22432ef7bc43a274e8daf9a487ff2133, type: 2}
 --- !u!212 &21252570
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -92,6 +92,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 179126, guid: 22432ef7bc43a274e8daf9a487ff2133, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139546}

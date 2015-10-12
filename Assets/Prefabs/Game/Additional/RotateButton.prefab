@@ -51,10 +51,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 142528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 765e99a7fcf5d9d44a8500728202dbe6, type: 3}
+  m_Script: {fileID: 11500000, guid: 930c34ec39dbe6244a49fdf97d1521b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachedObject: {fileID: 0}
+  attachedObjects: []
+  rotationAngleTo: 0
   rotationMultiplier: 1
 --- !u!212 &21263560
 SpriteRenderer:

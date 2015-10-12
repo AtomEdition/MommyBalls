@@ -51,11 +51,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 106232}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2584fc472a9fe645b94664f8af5ccf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 035801b517310f545b964976107f3353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bindedPortals: []
-  ball: {fileID: 100000, guid: 6c40abf28a6862e46841a9088f957964, type: 2}
+  ball: {fileID: 0}
 --- !u!212 &21229098
 SpriteRenderer:
   m_ObjectHideFlags: 1

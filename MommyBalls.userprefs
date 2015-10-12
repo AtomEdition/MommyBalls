@@ -1,8 +1,15 @@
 ﻿<Properties GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Controllers\BallController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Behaviours\AttachSimpleBehaviour.cs">
     <Files>
-      <File FileName="Assets\Scripts\Controllers\BallController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controllers\Game\BasketController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Sounds\BallDestroyingSounds.cs" Line="17" Column="3" />
+      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\Game\BallController.cs" Line="1" Column="1" />
+      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\Game\BasketClickListener.cs" Line="1" Column="1" />
+      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\Game\BasketController.cs" Line="1" Column="1" />
+      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Controllers\Game\BlowerController.cs" Line="1" Column="1" />
+      <File FileName="d:\Work\Projects\MommyBalls\Assets\Scripts\Sounds\SwitcherSounds.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Behaviours\AttachSimpleBehaviour.cs" Line="11" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/Controllers/Sounds/JumperSounds.cs.meta
+guid: 9174ffcaf021e0446ab7d9b0fb809e58
+timeCreated: 1444308980
+=======
+guid: 492ddcacad4fe424e8b7c711701850bb
+timeCreated: 1443773738
+>>>>>>> 1b2ce7413b4ff122964b7ef900b7cb99cb019f85:Assets/Scripts/Controllers/NavigationLevelButtonController.cs.meta
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

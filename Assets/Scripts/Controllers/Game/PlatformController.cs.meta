@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/Controllers/PlatformController.cs.meta
+guid: 3d4006d60757f7d4f8cbc620be14fa4b
+timeCreated: 1444205533
+=======
+guid: 4aff6ef836cf16e4495f22945c80aa2e
+timeCreated: 1443781320
+>>>>>>> 1b2ce7413b4ff122964b7ef900b7cb99cb019f85:Assets/Scripts/Controllers/Menu/LevelChooseCameraController.cs.meta
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

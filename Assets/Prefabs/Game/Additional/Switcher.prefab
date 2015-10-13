@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6119538}
   - 114: {fileID: 11484232}
   - 114: {fileID: 11458832}
+  - 114: {fileID: 11464418}
   m_Layer: 0
   m_Name: Switcher
   m_TagString: Untagged
@@ -52,7 +53,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 121450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d00cfdc21408ac2409c41fc68080f404, type: 3}
+  m_Script: {fileID: 11500000, guid: a3fd130b2c9e44740908cc2ba362845e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnedOnFromScene: 0
+  switchingElements: []
+  switchingSwitchers: []
+--- !u!114 &11464418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f107a28bf9ec34d91da9f6b81cd862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11484232

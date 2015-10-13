@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21288742}
   - 61: {fileID: 6195500}
   - 114: {fileID: 11447756}
+  - 114: {fileID: 11455560}
   m_Layer: 0
   m_Name: Jumper
   m_TagString: Untagged
@@ -51,10 +52,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 110352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b4307540fa82a4aa777e555a3fe10b, type: 3}
+  m_Script: {fileID: 11500000, guid: 998e7424c7a592445ae2a7ac5f963284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumperPowerMultiplier: 1
+--- !u!114 &11455560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9174ffcaf021e0446ab7d9b0fb809e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21288742
 SpriteRenderer:
   m_ObjectHideFlags: 1

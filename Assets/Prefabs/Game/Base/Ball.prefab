@@ -84,20 +84,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationPrefabs:
-  - {fileID: 123932, guid: afd546cb6ca4137488bf866de53ee714, type: 2}
-  - {fileID: 156450, guid: 7b372b7419be22247be13912dcd9f18f, type: 2}
-  - {fileID: 164760, guid: 796fd809c0d6d0340acd737e4cef1c74, type: 2}
-  - {fileID: 162126, guid: 9fcdf9bc2e3634b42920208742722582, type: 2}
+  - {fileID: 123932, guid: 26a275691ffe44044b9dd73cb71e07ec, type: 2}
+  - {fileID: 156450, guid: f90ab7f93a6342c4d906e77ea1c39079, type: 2}
+  - {fileID: 164760, guid: fbebd799362149a4fad338617d993c1e, type: 2}
+  - {fileID: 162126, guid: 1dea6f582f23d4f4281ee48d6df705f6, type: 2}
   materials:
-  - {fileID: 2100000, guid: fa64c2c46b2371a4cb9fbf2ddc87d01c, type: 2}
+  - {fileID: 2100000, guid: 74cc7f076c9ce2b499c3e534be9267fb, type: 2}
   - {fileID: 2100000, guid: 92d287b48a5416246a21f6cf9379ea44, type: 2}
-  - {fileID: 2100000, guid: 15c3dd600435542428895aba4546b721, type: 2}
-  - {fileID: 2100000, guid: 3cf6ddb00fe01fa46adb5966397421ec, type: 2}
+  - {fileID: 2100000, guid: 1a0ef653254367d41b6a46eb1b80d09d, type: 2}
+  - {fileID: 2100000, guid: 6aa0c37a124ce614ab074a836c8daa31, type: 2}
   - {fileID: 2100000, guid: bc8e73bb0ce35b44ba027d33e63c145d, type: 2}
-  - {fileID: 2100000, guid: ef6faaadeaa5e5c48a3d64de94fe04c4, type: 2}
-  - {fileID: 2100000, guid: 0435b69ad33c7a44282a9512eb4ad323, type: 2}
+  - {fileID: 2100000, guid: 9a159baf69f7b594ba6b4a7ecffeb0d7, type: 2}
+  - {fileID: 2100000, guid: ef03ff5eb7f5bd34a9cc65966fec905a, type: 2}
   - {fileID: 2100000, guid: 526e24313098209449d43967ccac3cf4, type: 2}
-  - {fileID: 2100000, guid: fc1d3fc5281dc2748be1f810cdea7939, type: 2}
+  - {fileID: 2100000, guid: 76d5fb22f32f1304281774fb70ef0ba8, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -146,23 +146,23 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 123932, guid: afd546cb6ca4137488bf866de53ee714, type: 2}
+      objectReference: {fileID: 123932, guid: 26a275691ffe44044b9dd73cb71e07ec, type: 2}
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 156450, guid: 7b372b7419be22247be13912dcd9f18f, type: 2}
+      objectReference: {fileID: 156450, guid: f90ab7f93a6342c4d906e77ea1c39079, type: 2}
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 164760, guid: 796fd809c0d6d0340acd737e4cef1c74, type: 2}
+      objectReference: {fileID: 164760, guid: fbebd799362149a4fad338617d993c1e, type: 2}
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 162126, guid: 9fcdf9bc2e3634b42920208742722582, type: 2}
+      objectReference: {fileID: 162126, guid: 1dea6f582f23d4f4281ee48d6df705f6, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fa64c2c46b2371a4cb9fbf2ddc87d01c, type: 2}
+      objectReference: {fileID: 2100000, guid: 74cc7f076c9ce2b499c3e534be9267fb, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[1]
       value: 
@@ -170,11 +170,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 15c3dd600435542428895aba4546b721, type: 2}
+      objectReference: {fileID: 2100000, guid: 1a0ef653254367d41b6a46eb1b80d09d, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[3]
       value: 
-      objectReference: {fileID: 2100000, guid: 3cf6ddb00fe01fa46adb5966397421ec, type: 2}
+      objectReference: {fileID: 2100000, guid: 6aa0c37a124ce614ab074a836c8daa31, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[4]
       value: 
@@ -182,11 +182,11 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: materials.Array.data[5]
       value: 
-      objectReference: {fileID: 2100000, guid: ef6faaadeaa5e5c48a3d64de94fe04c4, type: 2}
+      objectReference: {fileID: 2100000, guid: 9a159baf69f7b594ba6b4a7ecffeb0d7, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[6]
       value: 
-      objectReference: {fileID: 2100000, guid: 0435b69ad33c7a44282a9512eb4ad323, type: 2}
+      objectReference: {fileID: 2100000, guid: ef03ff5eb7f5bd34a9cc65966fec905a, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[7]
       value: 
@@ -194,7 +194,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: materials.Array.data[8]
       value: 
-      objectReference: {fileID: 2100000, guid: fc1d3fc5281dc2748be1f810cdea7939, type: 2}
+      objectReference: {fileID: 2100000, guid: 76d5fb22f32f1304281774fb70ef0ba8, type: 2}
     - target: {fileID: 0}
       propertyPath: m_Sprite
       value: 

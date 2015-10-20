@@ -4,6 +4,7 @@ using System.Collections;
 public class DestroyBallBehaviour : MonoBehaviour {
 
 	public CustomEvent onBallCollide = new CustomEvent();
+	public ParticleSystem particles = new ParticleSystem();
 
 	private void OnCollisionEnter2D(Collision2D collision){
 		
@@ -11,6 +12,9 @@ public class DestroyBallBehaviour : MonoBehaviour {
 		    && !collision.gameObject.GetComponent<BallController>().IsSafeColliding) {
 
 			Destroy (collision.gameObject);		
+			ParticleSystem newParticles = Instantiate (particles, collision.transform.position, Quaternion.identity) as ParticleSystem;
+			newParticles.GetComponent<Renderer> ().sortingLayerName = "Foreground";
+
 			onBallCollide.Call();
 		}
 	}

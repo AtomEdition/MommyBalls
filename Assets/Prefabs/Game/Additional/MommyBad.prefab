@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 981030b006cc5934797ea7f3d03252e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particles: {fileID: 0}
 --- !u!212 &21229442
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -120,6 +121,11 @@ Prefab:
       propertyPath: m_Color.b
       value: .00689649582
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: particleSystem
+      value: 
+      objectReference: {fileID: 19820880, guid: 2ca0802a5286e0041b934a1d2d7d2c3c,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127294}

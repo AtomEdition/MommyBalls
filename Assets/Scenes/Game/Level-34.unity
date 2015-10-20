@@ -89,6 +89,17 @@ NavMeshSettings:
 GameObject:
   m_PrefabParentObject: {fileID: 121450, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_PrefabInternal: {fileID: 259587181}
+--- !u!114 &110042711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110042709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35a434d1561775943964e1a2e346a7d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &183996333
 Prefab:
   m_ObjectHideFlags: 0
@@ -207,7 +218,8 @@ Prefab:
       propertyPath: switchingSwitchers.Array.data[0]
       value: 
       objectReference: {fileID: 1385181323}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &295152400

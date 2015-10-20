@@ -22,7 +22,10 @@ public class MommyController : MonoBehaviour {
 
 			trigger.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 			yield return new WaitForSeconds(BALL_DESTROY_DELAY);
-			Destroy (trigger.gameObject);
+
+			if (trigger.gameObject != null) {
+				Destroy (trigger.gameObject);
+			}
 
 			levelService.ScoreCurrent++;			
 		}

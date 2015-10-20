@@ -61,7 +61,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Text: Balls
+  m_Text: 'Balls : 0'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -95,7 +95,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_Text
-      value: Balls
+      value: 'Balls : 0'
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Color.rgba

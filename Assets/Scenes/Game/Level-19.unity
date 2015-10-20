@@ -151,7 +151,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 324133161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d85f07cc41891f4fb0d09a8a16ba7b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 45cabed56a316ed439d097f0d768ddc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1942905334}
@@ -164,11 +164,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .100000001
+      value: -2.8900001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .629999995
+      value: 3.25999999
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -192,7 +192,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 10234650, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
+      propertyPath: m_FontSize
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
@@ -413,7 +417,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 898278923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d85f07cc41891f4fb0d09a8a16ba7b8, type: 3}
+  m_Script: {fileID: 11500000, guid: 45cabed56a316ed439d097f0d768ddc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1942905334}
@@ -762,6 +766,22 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32e2d912d02fd9a49a1e2b52550632ba, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.75999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32e2d912d02fd9a49a1e2b52550632ba, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 10252576, guid: 32e2d912d02fd9a49a1e2b52550632ba, type: 2}
+      propertyPath: m_FontSize
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 32e2d912d02fd9a49a1e2b52550632ba, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.01999998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32e2d912d02fd9a49a1e2b52550632ba, type: 2}
   m_IsPrefabParent: 0
@@ -782,7 +802,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.67999983
+      value: 4.48999977
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_LocalPosition.z
@@ -806,7 +826,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11438442, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: bindedPortals.Array.data[0]
@@ -943,7 +963,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1942905334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63da69ddbb866d74893421abb503c4e3, type: 3}
+  m_Script: {fileID: 11500000, guid: d3f49a265dd5ce04e954cdd5a6c431d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatePowerMultiplier: 6
+  rotationPowerMultiplier: 5

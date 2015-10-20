@@ -84,10 +84,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animationPrefabs:
-  - {fileID: 123932, guid: afd546cb6ca4137488bf866de53ee714, type: 2}
-  - {fileID: 156450, guid: 7b372b7419be22247be13912dcd9f18f, type: 2}
-  - {fileID: 164760, guid: 796fd809c0d6d0340acd737e4cef1c74, type: 2}
-  - {fileID: 162126, guid: 9fcdf9bc2e3634b42920208742722582, type: 2}
+  - {fileID: 123932, guid: 26a275691ffe44044b9dd73cb71e07ec, type: 2}
+  - {fileID: 156450, guid: f90ab7f93a6342c4d906e77ea1c39079, type: 2}
+  - {fileID: 164760, guid: fbebd799362149a4fad338617d993c1e, type: 2}
+  - {fileID: 162126, guid: 1dea6f582f23d4f4281ee48d6df705f6, type: 2}
   materials:
   - {fileID: 2100000, guid: fa64c2c46b2371a4cb9fbf2ddc87d01c, type: 2}
   - {fileID: 2100000, guid: 92d287b48a5416246a21f6cf9379ea44, type: 2}
@@ -146,19 +146,19 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 123932, guid: afd546cb6ca4137488bf866de53ee714, type: 2}
+      objectReference: {fileID: 123932, guid: 26a275691ffe44044b9dd73cb71e07ec, type: 2}
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 156450, guid: 7b372b7419be22247be13912dcd9f18f, type: 2}
+      objectReference: {fileID: 156450, guid: f90ab7f93a6342c4d906e77ea1c39079, type: 2}
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 164760, guid: 796fd809c0d6d0340acd737e4cef1c74, type: 2}
+      objectReference: {fileID: 164760, guid: fbebd799362149a4fad338617d993c1e, type: 2}
     - target: {fileID: 0}
       propertyPath: animationPrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 162126, guid: 9fcdf9bc2e3634b42920208742722582, type: 2}
+      objectReference: {fileID: 162126, guid: 1dea6f582f23d4f4281ee48d6df705f6, type: 2}
     - target: {fileID: 0}
       propertyPath: materials.Array.data[0]
       value: 
@@ -198,6 +198,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

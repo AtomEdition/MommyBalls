@@ -61,7 +61,9 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Text: Score
+  m_Text: 'Score : 0
+
+'
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -95,7 +97,9 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_Text
-      value: Score
+      value: 'Score : 0
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_FontSize

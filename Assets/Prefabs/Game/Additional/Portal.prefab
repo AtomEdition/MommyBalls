@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bindedPortals: []
-  ball: {fileID: 0}
+  ball: {fileID: 100000, guid: 6c40abf28a6862e46841a9088f957964, type: 2}
 --- !u!212 &21229098
 SpriteRenderer:
   m_ObjectHideFlags: 1

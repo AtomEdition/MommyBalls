@@ -9,6 +9,7 @@ public class MommyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		
 	}
 	
 	// Update is called once per frame
@@ -20,14 +21,15 @@ public class MommyController : MonoBehaviour {
 
 		if (trigger.gameObject.tag == Tags.BALL) {
 
+			levelService.ScoreCurrent++;		
+			levelService.OnBallCatch.Call ();
+
 			trigger.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 			yield return new WaitForSeconds(BALL_DESTROY_DELAY);
 
 			if (trigger.gameObject != null) {
 				Destroy (trigger.gameObject);
 			}
-
-			levelService.ScoreCurrent++;			
 		}
 	}
 }

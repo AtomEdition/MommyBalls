@@ -23,7 +23,7 @@ public class AppearWhenNoBallsBehaviour : MonoBehaviour {
 			if (gameObject.GetComponent<Renderer>() != null) {
 				
 				gameObject.GetComponent<Renderer>().enabled = !gameObject.GetComponent<Renderer>().enabled;
-			}
+			}	
 			if (gameObject.GetComponent<BoxCollider2D>() != null) {
 				
 				gameObject.GetComponent<BoxCollider2D>().enabled = !gameObject.GetComponent<BoxCollider2D>().enabled;

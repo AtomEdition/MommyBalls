@@ -10,6 +10,7 @@ public class TextScoreController : MonoBehaviour {
 	void Start () {
 	
 		levelService.OnBallDestroy.eventAttachTo += this.SetText;
+		levelService.OnBallCatch.eventAttachTo += this.SetText;
 		SetText ();
 	}
 	

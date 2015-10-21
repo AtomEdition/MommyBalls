@@ -24,15 +24,20 @@ public class BallController : MonoBehaviour {
 
 	private void CheckDestroyCondition(){	
 
-		if (this.transform.position.y < OUT_OF_LEVEL_RANGE) {
+		if (transform.position.y < OUT_OF_LEVEL_RANGE) {
 
-			Destroy (this.gameObject);
+			gameObject.GetComponent<BallController>().DestroyBall();
 		}
 	}	
 
-	public void OnDestroy() {
+	public void DestroyBall() {
 		
 		levelService.OnBallDestroy.Call ();
+		Destroy (gameObject);
+	}
+
+	public void OnDestroy() {
+		levelService.CheckForLevelEnded ();
 	}
 
 	public void SetBallBehaviourOnContinuousClick() {

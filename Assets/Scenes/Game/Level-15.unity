@@ -205,15 +205,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 221325479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3fd130b2c9e44740908cc2ba362845e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e36698fd97d98546a38c6fc0224b8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnedOnFromScene: 1
+  turnedOnFromScene: 0
   switchingElements:
+  - {fileID: 1886653898}
+  - {fileID: 221325479}
   - {fileID: 1075260110}
-  - {fileID: 1886653898}
-  switchingSwitchers:
-  - {fileID: 1886653898}
+  - {fileID: 1696793440}
+  switchingSwitchers: []
 --- !u!1001 &242414627
 Prefab:
   m_ObjectHideFlags: 0
@@ -483,7 +484,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bf6ad9b8af413c45a56deab7498091a, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7bf6ad9b8af413c45a56deab7498091a, type: 2}
       propertyPath: m_LocalScale.x
@@ -864,12 +865,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1886653898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3fd130b2c9e44740908cc2ba362845e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e36698fd97d98546a38c6fc0224b8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   turnedOnFromScene: 0
   switchingElements:
+  - {fileID: 221325479}
+  - {fileID: 1886653898}
   - {fileID: 1696793440}
-  - {fileID: 221325479}
-  switchingSwitchers:
-  - {fileID: 221325479}
+  - {fileID: 1075260110}
+  switchingSwitchers: []

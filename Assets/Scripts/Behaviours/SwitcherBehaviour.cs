@@ -58,9 +58,9 @@ public class SwitcherBehaviour : MonoBehaviour {
 
 		foreach (GameObject obj in switchingElements) {
 
-			if (obj.GetComponent<Renderer>() != null) {
+			if (obj.GetComponent<SpriteRenderer>() != null) {
 
-				obj.GetComponent<Renderer>().enabled = !obj.GetComponent<Renderer>().enabled;
+				obj.GetComponent<SpriteRenderer>().enabled = !obj.GetComponent<SpriteRenderer>().enabled;
 			}
 			if (obj.GetComponent<BoxCollider2D>() != null) {
 

@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BallAppearance : MonoBehaviour {
+public class BallAppearance : Appearance {
 
 	private const string FLY_ANIMATION_TAG = "Fly";
 	private const string IDLE_ANIMATION_TAG = "Idle";
+	private const float APPEARANCE_SIZE_MULTIPLIER = 1.3F;
 
 	public GameObject[] animationPrefabs;
 	public Material[] materials;
@@ -26,8 +27,11 @@ public class BallAppearance : MonoBehaviour {
 		int index = Random.Range(0, animationPrefabs.Length);
 		GameObject newBallAppearance = Instantiate (animationPrefabs[index]) as GameObject;
 
-		newBallAppearance.transform.position = this.gameObject.transform.position;
-		newBallAppearance.transform.parent = this.gameObject.transform;
+		newBallAppearance.transform.position = gameObject.transform.position;
+		newBallAppearance.transform.parent = gameObject.transform;
+
+		Vector3 vec = gameObject.transform.localScale;
+		newBallAppearance.transform.localScale = new Vector3(vec.x, vec.y) * APPEARANCE_SIZE_MULTIPLIER;
 
 		AttachMaterial (newBallAppearance);
 	}

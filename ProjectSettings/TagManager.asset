@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - StickyPlatform
   - RotateButton
+  - BallBackground
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Enemies
   - Pickups
   - Ground
-  - Background Image
+  - Background
   - 
   - 
   - 

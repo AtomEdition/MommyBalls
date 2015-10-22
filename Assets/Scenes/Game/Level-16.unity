@@ -127,6 +127,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &698520428
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &723616389
 Prefab:
   m_ObjectHideFlags: 0
@@ -636,7 +678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 11438442, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: bindedPortal

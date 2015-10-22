@@ -711,6 +711,60 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 106232, guid: 63814743af2d9ee41b32723619333aff, type: 2}
   m_PrefabInternal: {fileID: 65399591}
+--- !u!1001 &1656209642
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.431490213
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.554526806
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 431144, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21276958, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_Color.r
+      value: .580882311
+      objectReference: {fileID: 0}
+    - target: {fileID: 21276958, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_Color.g
+      value: .580882311
+      objectReference: {fileID: 0}
+    - target: {fileID: 21276958, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+      propertyPath: m_Color.b
+      value: .580882311
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1ae076048bc73a64f953c796c2c793b8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1992354190
 Prefab:
   m_ObjectHideFlags: 0

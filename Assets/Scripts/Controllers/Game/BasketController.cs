@@ -16,7 +16,6 @@ public class BasketController : MonoBehaviour {
 
 			GameObject newBall = Instantiate (ball, new Vector2 (vec.x, vec.y), Quaternion.identity) as GameObject;
 			newBall.gameObject.GetComponent<BallCreateController>().SetBallBehaviourOnContinuousClick();
-		//	BasketClickListener.SetNewPoints(vec.x, vec.y);
 		}
 	}
 
@@ -49,8 +48,6 @@ public class BasketController : MonoBehaviour {
 		if (trigger.gameObject.tag == Tags.BALL) {
 			
 			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
-
-		//	BasketClickListener.SetNewPoints(vec.x, vec.y);
 
 			if (inputService.IsInputUp()) {
 

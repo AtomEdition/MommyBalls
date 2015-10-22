@@ -4,12 +4,12 @@ using System.Collections;
 public class BallCreateController : MonoBehaviour {
 	
 	public const float BALL_MOVE_SPEED = 20F;	
-	public const float BALL_POWER_MULTIPLIER = 80F;
-	public const float BALL_POWER_MAXIMUM = 600F;	
+	public const float BALL_POWER_MULTIPLIER = 280F;
+	public const float BALL_POWER_MAXIMUM = 1000F;	
 
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 	private InputService inputService = Singleton<InputService>.GetInstance();	
-	private bool isMovingByMouse = true;
+	private bool isMovingByMouse = false;
 
 	public void SetBallBehaviourOnContinuousClick() {
 		

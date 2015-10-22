@@ -6,6 +6,8 @@ public class TextScoreController : MonoBehaviour {
 	private const string TEXT_SCORE = "Score : ";	
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
+	public Color startColor = Color.black;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -33,7 +35,7 @@ public class TextScoreController : MonoBehaviour {
 		switch (starsCount) {
 
 		case 0:			
-			this.GetComponent<TextMesh>().color = Color.black;
+			this.GetComponent<TextMesh>().color = startColor;
 			break;
 
 		case 1:

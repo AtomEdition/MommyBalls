@@ -15,11 +15,10 @@ public class BasketController : MonoBehaviour {
 			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
 			GameObject newBall = Instantiate (ball, new Vector2 (vec.x, vec.y), Quaternion.identity) as GameObject;
-			newBall.gameObject.GetComponent<BallController>().SetBallBehaviourOnContinuousClick();
-			BasketClickListener.SetNewPoints(vec.x, vec.y);
+			newBall.gameObject.GetComponent<BallCreateController>().SetBallBehaviourOnContinuousClick();
+		//	BasketClickListener.SetNewPoints(vec.x, vec.y);
 		}
 	}
-
 
 	public bool IsBasketClicked(){
 
@@ -40,7 +39,7 @@ public class BasketController : MonoBehaviour {
 		
 		if (trigger.gameObject.tag == Tags.BALL) {
 
-			trigger.gameObject.GetComponent<BallController>().ReleaseBall();
+			trigger.gameObject.GetComponent<BallCreateController>().ReleaseBall();
 		}
 	}
 
@@ -51,15 +50,15 @@ public class BasketController : MonoBehaviour {
 			
 			Vector2 vec = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 
-			BasketClickListener.SetNewPoints(vec.x, vec.y);
+		//	BasketClickListener.SetNewPoints(vec.x, vec.y);
 
 			if (inputService.IsInputUp()) {
 
-				trigger.gameObject.GetComponent<BallController>().ReleaseBall();
+				trigger.gameObject.GetComponent<BallCreateController>().ReleaseBall();
 
 			} else {
 
-				trigger.gameObject.GetComponent<BallController>().MoveBallToPressedPosition(vec);
+				trigger.gameObject.GetComponent<BallCreateController>().MoveBallToPressedPosition(vec);
 			}
 						
 		}

@@ -14,16 +14,12 @@ public class StickyPlatformController : MonoBehaviour {
 
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 	public CustomEvent onBallCollide = new CustomEvent();
+	public CustomEvent onBallRelease = new CustomEvent();
 
 	// Use this for initialization
 	void Start () {
 	
 		platformPowerCurrent = PLATFORM_POWER_BASE * platformPowerMultiplier;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 
 	/// <summary>
@@ -84,6 +80,7 @@ public class StickyPlatformController : MonoBehaviour {
 				isCharging = false;
 				
 				collision.gameObject.GetComponent<BallController>().IsSafeColliding = false;
+				onBallRelease.Call ();
 				levelService.OnBallRelease.Call ();
 			}
 		}

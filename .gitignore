@@ -13,6 +13,7 @@ sysinfo.txt
 # ===================================== #
 [Ee]xported[Oo]bj/
 .vs/
+.sonar/
 /*.userprefs
 /*.csproj
 /*.pidb

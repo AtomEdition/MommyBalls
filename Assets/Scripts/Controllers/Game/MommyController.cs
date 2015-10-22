@@ -7,16 +7,6 @@ public class MommyController : MonoBehaviour {
 
 	private const float BALL_DESTROY_DELAY = 0.05F;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-	
 	IEnumerator OnTriggerEnter2D(Collider2D trigger){
 
 		if (trigger.gameObject.tag == Tags.BALL) {

@@ -3,10 +3,11 @@ using System.Collections;
 
 public class DestroyBallBehaviour : MonoBehaviour {
 
+	private const float PARTICLES_LIFE_TIME = 0.5F;
 	public CustomEvent onBallCollide = new CustomEvent();
 	public ParticleSystem particles = new ParticleSystem();
 
-	private void OnCollisionEnter2D(Collision2D collision){
+	private IEnumerator OnCollisionEnter2D(Collision2D collision){
 		
 		if (collision.gameObject.tag == Tags.BALL
 		    && !collision.gameObject.GetComponent<BallController>().IsSafeColliding) {
@@ -16,6 +17,9 @@ public class DestroyBallBehaviour : MonoBehaviour {
 			newParticles.GetComponent<Renderer> ().sortingLayerName = "Foreground";
 
 			onBallCollide.Call();
+
+			yield return new WaitForSeconds (PARTICLES_LIFE_TIME);
+			Destroy (newParticles);
 		}
 	}
 }

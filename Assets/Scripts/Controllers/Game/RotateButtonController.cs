@@ -12,10 +12,12 @@ public class RotateButtonController : MonoBehaviour {
 	private float currentRotationPower;
 
 	private InputService inputService = Singleton<InputService>.GetInstance();
+	private RotateButtonSpriteChanger spriteChanger;
 
 	// Use this for initialization
 	void Start () {
-	
+
+		this.spriteChanger = this.gameObject.GetComponent<RotateButtonSpriteChanger>();
 		this.currentRotationPower = BASE_ROTATION_POWER * rotationMultiplier;
 	}
 	
@@ -30,21 +32,26 @@ public class RotateButtonController : MonoBehaviour {
 		if (inputService.IsInputHold ()) {
 
 			
-			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
 
 			foreach (GameObject attachedObject in attachedObjects) {
 
 				float currentRotation = attachedObject.transform.eulerAngles.z;
 
 				if (hit.collider != null
-				    && hit.collider.gameObject == this.gameObject)
-				    if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
-					   || (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
+					&& hit.collider.gameObject == this.gameObject)
+				if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
+					|| (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
 
 					currentRotation += currentRotationPower;
 					attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
+					spriteChanger.SetCondition (true);
 				}
 			}
+
+		} else {
+
+			spriteChanger.SetCondition (false);
 		}
 	}
 }

@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: d66828e85acf940468d0ed18dc40bfb0
+timeCreated: 1446053753
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mechBackgoundDetails_0
+    21300002: mechBackgoundDetails_1
+    21300004: mechBackgoundDetails_2
+    21300006: mechBackgoundDetails_3
+    21300008: mechBackgoundDetails_4
+    21300010: mechBackgoundDetails_5
+    21300012: mechBackgoundDetails_6
+    21300014: mechBackgoundDetails_7
+    21300016: mechBackgoundDetails_8
+    21300018: mechBackgoundDetails_9
+    21300020: mechBackgoundDetails_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: mechBackgoundDetails_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1361
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1050
+        width: 228
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_2
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 1358
+        width: 266
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_3
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1038
+        width: 288
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 865
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_5
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 585
+        width: 343
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_6
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 584
+        width: 344
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_7
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 776
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 681
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_9
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 31
+        width: 632
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mechBackgoundDetails_10
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 86
+        width: 508
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

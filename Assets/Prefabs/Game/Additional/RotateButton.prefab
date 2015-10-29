@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21263560}
   - 114: {fileID: 11445986}
   - 58: {fileID: 5889336}
+  - 114: {fileID: 11454438}
   m_Layer: 0
   m_Name: RotateButton
   m_TagString: RotateButton
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 142528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.65999997, y: -1.45000005, z: 0}
-  m_LocalScale: {x: .5, y: .5, z: 1}
+  m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,6 +58,19 @@ MonoBehaviour:
   attachedObjects: []
   rotationAngleTo: 0
   rotationMultiplier: 1
+--- !u!114 &11454438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2c315ff58346e43a1eb8f192059782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: b0446161ca00ca24eb61feecab5683db, type: 3}
+  hold: {fileID: 21300002, guid: b0446161ca00ca24eb61feecab5683db, type: 3}
 --- !u!212 &21263560
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -81,7 +95,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: 931800da7361dbe4cbb44e01fb2c2872, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0446161ca00ca24eb61feecab5683db, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -102,6 +116,29 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0446161ca00ca24eb61feecab5683db,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: idle
+      value: 
+      objectReference: {fileID: 21300000, guid: b0446161ca00ca24eb61feecab5683db,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: hold
+      value: 
+      objectReference: {fileID: 21300002, guid: b0446161ca00ca24eb61feecab5683db,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142528}

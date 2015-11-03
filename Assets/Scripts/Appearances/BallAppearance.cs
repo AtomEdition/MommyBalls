@@ -10,30 +10,31 @@ public class BallAppearance : Appearance {
 	public GameObject[] animationPrefabs;
 	public Material[] materials;
 
+	private GameObject currentAppearance;
+
 	LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 			
-		AttachAnimation ();
-		levelService.OnBallCreate.eventAttachTo += this.SetIdleAnimation;
-		levelService.OnBallGrounded.eventAttachTo += this.SetIdleAnimation;
-		levelService.OnBallRelease.eventAttachTo += this.SetFlyingAnimation;
-		levelService.OnBallDestroy.eventAttachTo += this.UnattachMethods;
+		levelService.OnBallCreate.eventAttachTo += SetIdleAnimation;
+		levelService.OnBallGrounded.eventAttachTo += SetIdleAnimation;
+		levelService.OnBallRelease.eventAttachTo += SetFlyingAnimation;
+		levelService.OnAfterBallDestroy.eventAttachTo += UnattachMethods;
 	}
 
-	private void AttachAnimation() {
+	public void AttachAnimation() {
 
 		int index = Random.Range(0, animationPrefabs.Length);
-		GameObject newBallAppearance = Instantiate (animationPrefabs[index]) as GameObject;
-
-		newBallAppearance.transform.position = gameObject.transform.position;
-		newBallAppearance.transform.parent = gameObject.transform;
-
+		currentAppearance = Instantiate (animationPrefabs[index]) as GameObject;
+		
+		currentAppearance.transform.position = gameObject.transform.position;
+		currentAppearance.transform.parent = gameObject.transform;
+		
 		Vector3 vec = gameObject.transform.localScale;
-		newBallAppearance.transform.localScale = new Vector3(vec.x, vec.y) * APPEARANCE_SIZE_MULTIPLIER;
+		currentAppearance.transform.localScale = new Vector3(vec.x, vec.y) * APPEARANCE_SIZE_MULTIPLIER;
 
-		AttachMaterial (newBallAppearance);
+		AttachMaterial (currentAppearance);
 	}
 
 	private void AttachMaterial(GameObject ball) {
@@ -55,16 +56,25 @@ public class BallAppearance : Appearance {
 		this.GetComponentInChildren<Animator> ().SetTrigger (IDLE_ANIMATION_TAG);
 	}
 	
-	private void SetFlyingAnimation() {
+	public void SetFlyingAnimation() {
 
 		this.GetComponentInChildren<Animator> ().SetTrigger (FLY_ANIMATION_TAG);
 	}
 	
 	private void UnattachMethods() {
 		
-		levelService.OnBallCreate.eventAttachTo -= this.SetIdleAnimation;
-		levelService.OnBallGrounded.eventAttachTo -= this.SetIdleAnimation;
-		levelService.OnBallRelease.eventAttachTo -= this.SetFlyingAnimation;
-		levelService.OnBallDestroy.eventAttachTo += this.UnattachMethods;
+		levelService.OnBallCreate.eventAttachTo -= SetIdleAnimation;
+		levelService.OnBallGrounded.eventAttachTo -= SetIdleAnimation;
+		levelService.OnBallRelease.eventAttachTo -= SetFlyingAnimation;
+		levelService.OnAfterBallDestroy.eventAttachTo -= UnattachMethods;
+	}
+
+	public GameObject CurrentAppearance {
+		get {
+			return this.currentAppearance;
+		}
+		set {
+			this.currentAppearance = value;
+		}
 	}
 }

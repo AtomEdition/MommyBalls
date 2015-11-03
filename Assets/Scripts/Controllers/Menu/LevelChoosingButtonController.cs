@@ -8,7 +8,8 @@ public class LevelChoosingButtonController : MonoBehaviour {
 	InputService inputService = Singleton<InputService>.GetInstance();
 	
 	void Start() {
-		
+
+		SetButtonText ();
 	}
 	
 	void Update() {
@@ -28,6 +29,12 @@ public class LevelChoosingButtonController : MonoBehaviour {
 				Application.LoadLevel(Scenes.LEVEL_PREFIX + levelNumber);
 			}
 		}
+	}
+
+	private void SetButtonText() {
+
+		TextMesh text = GetComponentInChildren<TextMesh> ();
+		text.text = levelNumber.ToString();
 	}
 }
 

@@ -14,6 +14,7 @@ public class LevelService {
 	public CustomEvent OnBallCatch = new CustomEvent();
 	public CustomEvent OnBallGrounded = new CustomEvent();
 	public CustomEvent OnBallDestroy = new CustomEvent();
+	public CustomEvent OnAfterBallDestroy = new CustomEvent();
 
 	public LevelService (){
 		this.BallCount = 5;
@@ -32,6 +33,8 @@ public class LevelService {
 		OnBallCatch.RemoveAllEvents ();
 		OnBallGrounded.RemoveAllEvents ();
 		OnBallDestroy.RemoveAllEvents ();
+		OnAfterBallDestroy.RemoveAllEvents ();
+		OnAfterBallDestroy.eventAttachTo += CheckForLevelEnded;
 	}
 
 	public void CheckForLevelEnded() {		

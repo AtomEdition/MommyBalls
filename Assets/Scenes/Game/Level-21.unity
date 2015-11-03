@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 106232, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_Name
@@ -140,6 +140,10 @@ Prefab:
       propertyPath: bindedPortals.Array.data[0]
       value: 
       objectReference: {fileID: 154561626}
+    - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63814743af2d9ee41b32723619333aff, type: 2}
   m_IsPrefabParent: 0
@@ -252,6 +256,10 @@ Prefab:
       propertyPath: bindedPortals.Array.data[0]
       value: 
       objectReference: {fileID: 973895385}
+    - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63814743af2d9ee41b32723619333aff, type: 2}
   m_IsPrefabParent: 0
@@ -1077,6 +1085,10 @@ Prefab:
       propertyPath: bindedPortals.Array.data[0]
       value: 
       objectReference: {fileID: 1697010246}
+    - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63814743af2d9ee41b32723619333aff, type: 2}
   m_IsPrefabParent: 0
@@ -1125,7 +1137,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 106232, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_Name
@@ -1139,6 +1151,10 @@ Prefab:
       propertyPath: bindedPortals.Array.data[0]
       value: 
       objectReference: {fileID: 1944697596}
+    - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63814743af2d9ee41b32723619333aff, type: 2}
   m_IsPrefabParent: 0

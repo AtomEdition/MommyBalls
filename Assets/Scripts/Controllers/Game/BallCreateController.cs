@@ -18,6 +18,7 @@ public class BallCreateController : MonoBehaviour {
 		
 		levelService.BallCount--;
 		levelService.OnBallCreate.Call ();
+		GetComponent<BallAppearance> ().AttachAnimation ();
 	}
 	
 	public void ReleaseBall() {

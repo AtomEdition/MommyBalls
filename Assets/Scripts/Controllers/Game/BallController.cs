@@ -36,7 +36,8 @@ public class BallController : MonoBehaviour {
 	}
 
 	public void OnDestroy() {
-		levelService.CheckForLevelEnded ();
+
+		levelService.OnAfterBallDestroy.Call ();
 	}
 
 	public bool IsSafeColliding {

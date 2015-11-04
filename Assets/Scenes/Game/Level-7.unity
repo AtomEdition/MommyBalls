@@ -212,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: jumperPowerMode
@@ -221,6 +221,14 @@ Prefab:
     - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: jumperPowerMultiplier
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.20000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
@@ -413,7 +421,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 110352, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: m_Name
@@ -426,6 +434,14 @@ Prefab:
     - target: {fileID: 11447756, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
       propertyPath: jumperPowerMultiplier
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.20000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.20000005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d88902fe627d24047b326eb2251ce21d, type: 2}

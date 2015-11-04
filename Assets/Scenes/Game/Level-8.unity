@@ -197,6 +197,10 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c1e282c4c2c5e8f4bbfbbbe99d567f4c, type: 2}
   m_PrefabInternal: {fileID: 103117458}
+--- !u!1 &374884643 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: c1e282c4c2c5e8f4bbfbbbe99d567f4c, type: 2}
+  m_PrefabInternal: {fileID: 1803651068}
 --- !u!1001 &865573859
 Prefab:
   m_ObjectHideFlags: 0
@@ -519,6 +523,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fc923ebd19b3f344a4b09cae1815736, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1362189133 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: c1e282c4c2c5e8f4bbfbbbe99d567f4c, type: 2}
+  m_PrefabInternal: {fileID: 1456336289}
 --- !u!1001 &1362203940
 Prefab:
   m_ObjectHideFlags: 0
@@ -771,6 +779,8 @@ MonoBehaviour:
   turnedOnFromScene: 0
   switchingElements:
   - {fileID: 255263978}
+  - {fileID: 1362189133}
+  - {fileID: 374884643}
   switchingSwitchers: []
 --- !u!61 &1807101003
 BoxCollider2D:

@@ -13,8 +13,7 @@ public class DestroyBallBehaviour : MonoBehaviour {
 		    && !collision.gameObject.GetComponent<BallController>().IsSafeColliding) {
 
 			collision.gameObject.GetComponent<BallController>().DestroyBall();		
-			ParticleSystem newParticles = Instantiate (particles, collision.transform.position, Quaternion.identity) as ParticleSystem;
-			newParticles.GetComponent<Renderer> ().sortingLayerName = "Foreground";
+			GameObject newParticles = Instantiate (particles, collision.transform.position, Quaternion.identity) as GameObject;
 
 			onBallCollide.Call();
 

@@ -34,8 +34,7 @@ public class StickyPlatformController : MonoBehaviour {
 			rBody.constraints = RigidbodyConstraints2D.FreezeAll;
 
 			collision.gameObject.GetComponent<BallController>().IsSafeColliding = true;
-		//	collision.gameObject.transform.eulerAngles = this.gameObject.transform.eulerAngles;
-		//	collision.gameObject.transform.SetParent (this.gameObject.transform); 
+			collision.gameObject.transform.SetParent (this.gameObject.transform);
 
 			onBallCollide.Call ();
 			levelService.OnBallGrounded.Call ();

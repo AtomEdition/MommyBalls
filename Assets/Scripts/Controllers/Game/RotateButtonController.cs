@@ -39,13 +39,16 @@ public class RotateButtonController : MonoBehaviour {
 				float currentRotation = attachedObject.transform.eulerAngles.z;
 
 				if (hit.collider != null
-					&& hit.collider.gameObject == this.gameObject)
-				if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
-					|| (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
+					&& hit.collider.gameObject == this.gameObject){
+					if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
+						|| (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
 
-					currentRotation += currentRotationPower;
-					attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
-					spriteChanger.SetCondition (true);
+						currentRotation += currentRotationPower;
+						attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
+						spriteChanger.SetCondition (true);
+					}
+				} else {
+					spriteChanger.SetCondition(false);
 				}
 			}
 

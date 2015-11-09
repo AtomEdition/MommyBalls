@@ -166,13 +166,17 @@ Prefab:
       propertyPath: switchingSwitchers.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingSwitchers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.88
+      value: 1.87
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.35067701
+      value: -1.29999995
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -188,23 +192,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalRotation.z
-      value: .707106829
+      value: .70710659
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .707106709
+      value: -.707106948
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: .800000012
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: .800000012
       objectReference: {fileID: 0}
     - target: {fileID: 11484232, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingElements.Array.data[0]
@@ -234,6 +238,10 @@ Prefab:
       propertyPath: switchingElements.Array.data[5]
       value: 
       objectReference: {fileID: 1605994191}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingSwitchers.Array.data[0]
+      value: 
+      objectReference: {fileID: 151307693}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_IsPrefabParent: 0
@@ -832,7 +840,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.63999999
+      value: -1.78999996
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -856,7 +864,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
@@ -1230,7 +1238,15 @@ Prefab:
       propertyPath: switchingElements.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 11484232, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingSwitchers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingSwitchers.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1272,7 +1288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalScale.y
@@ -1302,6 +1318,34 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingSwitchers.Array.data[0]
+      value: 
+      objectReference: {fileID: 7953524}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[0]
+      value: 
+      objectReference: {fileID: 1568722491}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[1]
+      value: 
+      objectReference: {fileID: 424854414}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[2]
+      value: 
+      objectReference: {fileID: 1515157715}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[3]
+      value: 
+      objectReference: {fileID: 1917947517}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[4]
+      value: 
+      objectReference: {fileID: 7704430}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[5]
+      value: 
+      objectReference: {fileID: 1605994191}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_IsPrefabParent: 0

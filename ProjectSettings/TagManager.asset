@@ -10,6 +10,7 @@ TagManager:
   - StickyPlatform
   - RotateButton
   - BallBackground
+  - SwitcherLight
   layers:
   - Default
   - TransparentFX

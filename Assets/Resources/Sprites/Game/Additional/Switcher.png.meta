@@ -1,14 +1,12 @@
 fileFormatVersion: 2
-guid: 380840021977f2a4d90bc177eaf1d8d8
-timeCreated: 1447052861
+guid: d8c9b06b088533e4b916a8f7453f1b5f
+timeCreated: 1447053953
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: LevelButton_0
-    21300002: LevelButton_1
-    21300004: LevelButton_2
-    21300006: LevelButton_3
-    21300008: LevelButton_4
+    21300000: Switcher_0
+    21300002: Switcher_1
+    21300004: Switcher_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,7 +32,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -49,61 +47,41 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 180
+  spritePixelsToUnits: 300
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: LevelButton_0
+    - name: Switcher_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 710
-        width: 347
-        height: 347
+        y: 294
+        width: 751
+        height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_1
+    - name: Switcher_1
       rect:
         serializedVersion: 2
-        x: 352
-        y: 710
-        width: 348
-        height: 347
+        x: 26
+        y: 22
+        width: 584
+        height: 216
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_2
+    - name: Switcher_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 350
-        width: 348
-        height: 348
+        x: 38
+        y: 258
+        width: 453
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_3
-      rect:
-        serializedVersion: 2
-        x: 353
-        y: 353
-        width: 347
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_4
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 0
-        width: 347
-        height: 347
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

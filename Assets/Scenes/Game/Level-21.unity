@@ -488,7 +488,15 @@ Prefab:
       propertyPath: switchingElements.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 11484232, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingSwitchers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingSwitchers.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -522,15 +530,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 456124, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: m_LocalScale.y
-      value: .699999988
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11484232, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingElements.Array.data[0]
@@ -548,6 +556,22 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21262662, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21204136, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingElements.Array.data[0]
+      value: 
+      objectReference: {fileID: 1413161256}
+    - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: switchingSwitchers.Array.data[0]
+      value: 
+      objectReference: {fileID: 1413161256}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_IsPrefabParent: 0
@@ -1078,6 +1102,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1e282c4c2c5e8f4bbfbbbe99d567f4c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1167813501 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 157054, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+  m_PrefabInternal: {fileID: 489010691}
 --- !u!1001 &1183890987
 Prefab:
   m_ObjectHideFlags: 0
@@ -2199,7 +2227,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11440882, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: elementsToActivateDelay.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 409642, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2253,9 +2281,21 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11440882, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: elementsToActivateDelay.Array.data[1]
+      value: 
+      objectReference: {fileID: 1167813501}
+    - target: {fileID: 11440882, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: elementsToActivateDelay.Array.data[2]
+      value: 
+      objectReference: {fileID: 1863551927}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1863551927 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 105278, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+  m_PrefabInternal: {fileID: 489010691}
 --- !u!1 &1944697596 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 106232, guid: 63814743af2d9ee41b32723619333aff, type: 2}

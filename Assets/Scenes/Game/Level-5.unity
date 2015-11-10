@@ -178,6 +178,18 @@ Prefab:
       propertyPath: levelData.Array.data[2]
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 496258, guid: 9b25bc8f54b2d4747a62f8a5e068fcf0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.72000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 496258, guid: 9b25bc8f54b2d4747a62f8a5e068fcf0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 5.21999979
+      objectReference: {fileID: 0}
+    - target: {fileID: 22456988, guid: 9b25bc8f54b2d4747a62f8a5e068fcf0, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b25bc8f54b2d4747a62f8a5e068fcf0, type: 2}
   m_IsPrefabParent: 0

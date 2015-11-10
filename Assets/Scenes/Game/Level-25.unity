@@ -126,11 +126,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11438442, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: bindedPortals.Array.data[0]
@@ -138,7 +138,7 @@ Prefab:
       objectReference: {fileID: 1648506988}
     - target: {fileID: 428482, guid: 63814743af2d9ee41b32723619333aff, type: 2}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63814743af2d9ee41b32723619333aff, type: 2}

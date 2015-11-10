@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: b0446161ca00ca24eb61feecab5683db
-timeCreated: 1446056055
+guid: c078db5506bb9fe47bde7546c6a5cc3b
+timeCreated: 1447150622
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: RotateButton_0
-    21300002: RotateButton_1
+    21300000: razor_rust_0
+    21300002: razor_rust_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -31,7 +31,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -46,29 +46,29 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 180
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: RotateButton_0
+    - name: razor_rust_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 98
-        height: 97
+        y: 5
+        width: 91
+        height: 393
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RotateButton_1
+    - name: razor_rust_1
       rect:
         serializedVersion: 2
-        x: 103
+        x: 112
         y: 0
-        width: 99
-        height: 99
+        width: 84
+        height: 394
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

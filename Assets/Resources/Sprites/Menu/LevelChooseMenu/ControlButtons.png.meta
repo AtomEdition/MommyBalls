@@ -1,13 +1,11 @@
 fileFormatVersion: 2
-guid: d7d59e37edee4b9459af799a254f2c5e
-timeCreated: 1447260558
+guid: 816e0ab33c87bf9429a94dce6d6126c1
+timeCreated: 1447258716
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MenuButtons_0
-    21300002: MenuButtons_1
-    21300004: MenuButtons_2
-    21300006: MenuButtons_3
+    21300000: ControlButtons_0
+    21300002: ControlButtons_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -54,45 +52,25 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MenuButtons_0
+    - name: ControlButtons_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 524
-        width: 491
-        height: 508
+        y: 516
+        width: 492
+        height: 509
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_1
+    - name: ControlButtons_1
       rect:
         serializedVersion: 2
-        x: 491
-        y: 528
-        width: 497
-        height: 507
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_2
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 4
         y: 0
-        width: 493
-        height: 520
+        width: 492
+        height: 509
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_3
-      rect:
-        serializedVersion: 2
-        x: 494
-        y: 14
-        width: 497
-        height: 514
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -5,6 +5,7 @@ public class PauseButtonController : MonoBehaviour {
 	
 	public GameObject menuPrefab;
 	InputService inputService = Singleton<InputService>.GetInstance();
+	LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +31,7 @@ public class PauseButtonController : MonoBehaviour {
 				gameObject.GetComponent<SpriteRenderer>().enabled = false;				
 				gameObject.GetComponent<CircleCollider2D>().enabled = false;
 				menu.GetComponentInChildren<ResumeButtonController>().PauseButtonAppearTo = gameObject;
+				levelService.IsLevelPaused = true;
 			}
 			
 		}

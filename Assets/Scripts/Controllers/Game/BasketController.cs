@@ -30,6 +30,7 @@ public class BasketController : MonoBehaviour {
 			
 		return (hit.collider != null
 		        && hit.collider.gameObject == this.gameObject
+		        && !levelService.IsLevelPaused
 		        && levelService.BallCount > 0);
 	}
 

@@ -410,7 +410,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: ff796246753ebb843871bcd73065be2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
@@ -444,6 +444,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d52e22e918f550c419265cd52ca9ebd0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 129972}

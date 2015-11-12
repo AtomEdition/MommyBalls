@@ -8,6 +8,7 @@ public class LevelService {
 	private int scoreStars3;
 	private int scoreStars2;
 	private int scoreStars1;
+	private bool isLevelPaused;
 
 	public CustomEvent OnBallCreate = new CustomEvent();
 	public CustomEvent OnBallRelease = new CustomEvent();
@@ -27,7 +28,8 @@ public class LevelService {
 
 	public void PrepareForNewLevel() {
 
-		ScoreCurrent = 0;
+		scoreCurrent = 0;
+		isLevelPaused = false;
 		OnBallCreate.RemoveAllEvents ();
 		OnBallRelease.RemoveAllEvents ();
 		OnBallCatch.RemoveAllEvents ();
@@ -102,5 +104,13 @@ public class LevelService {
 			scoreStars1 = value;
 		}
 	}
-	
+
+	public bool IsLevelPaused {
+		get {
+			return this.isLevelPaused;
+		}
+		set {
+			isLevelPaused = value;
+		}
+	}
 }

@@ -4,6 +4,7 @@ using System.Collections;
 public class ResumeButtonController : MonoBehaviour {
 	
 	InputService inputService = Singleton<InputService>.GetInstance();
+	LevelService levelService = Singleton<LevelService>.GetInstance();
 	private GameObject pauseButtonAppearTo;
 	public GameObject menuToDestroy;
 
@@ -29,8 +30,8 @@ public class ResumeButtonController : MonoBehaviour {
 				pauseButtonAppearTo.GetComponent<SpriteRenderer>().enabled = true;				
 				pauseButtonAppearTo.GetComponent<CircleCollider2D>().enabled = true;
 				Destroy (menuToDestroy);
-			}
-			
+				levelService.IsLevelPaused = false;
+			}			
 		}
 	}
 

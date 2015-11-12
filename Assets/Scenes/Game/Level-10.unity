@@ -329,6 +329,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 461796, guid: d88902fe627d24047b326eb2251ce21d, type: 2}
   m_PrefabInternal: {fileID: 215561282}
+--- !u!1 &390993156 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 127294, guid: ea02fb132f04c304f94c5cb767b0e690, type: 2}
+  m_PrefabInternal: {fileID: 967828635}
 --- !u!1001 &426248630
 Prefab:
   m_ObjectHideFlags: 0
@@ -1315,7 +1319,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingElements.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingSwitchers.Array.size
@@ -1372,7 +1376,7 @@ Prefab:
     - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingElements.Array.data[1]
       value: 
-      objectReference: {fileID: 858721411}
+      objectReference: {fileID: 390993156}
     - target: {fileID: 11458832, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
       propertyPath: switchingElements.Array.data[2]
       value: 
@@ -1489,7 +1493,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 425628, guid: 69adaba375fbbd948a62ff0d872b0161, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69adaba375fbbd948a62ff0d872b0161, type: 2}

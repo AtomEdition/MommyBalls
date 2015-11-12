@@ -14,6 +14,10 @@ public class LevelChooseCameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+
+	void FixedUpdate() {
+		
 		moveCamera ();
 	}
 

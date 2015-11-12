@@ -10,6 +10,7 @@ public class BlowerController : MonoBehaviour {
 	void Start(){
 	
 		currentBlowerPower = BASE_BLOWER_POWER * powerMultiplier;
+		gameObject.GetComponent<SpriteRenderer> ().enabled = false;
 	}
 
 	void OnTriggerStay2D(Collider2D trigger){

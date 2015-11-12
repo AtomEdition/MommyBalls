@@ -45,6 +45,7 @@ GameObject:
   - 61: {fileID: 6114180}
   - 114: {fileID: 11473682}
   - 114: {fileID: 11441454}
+  - 114: {fileID: 11488922}
   m_Layer: 0
   m_Name: MainMenuButton
   m_TagString: Untagged
@@ -205,6 +206,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a434d1561775943964e1a2e346a7d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11488922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e69ea4c84f3b9041a6fe08eeab6dd59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11498332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,7 +229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 1
-  buttonText: Play
 --- !u!212 &21225738
 SpriteRenderer:
   m_ObjectHideFlags: 1

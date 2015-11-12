@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1d20cec768632479e10cd6635ddebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 100000, guid: 6c40abf28a6862e46841a9088f957964, type: 2}
   buttonUp: {fileID: 0}
   buttonDown: {fileID: 0}
   buttonBack: {fileID: 0}
@@ -159,6 +160,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 100000, guid: 6c40abf28a6862e46841a9088f957964, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179126}

@@ -4,35 +4,12 @@ using System.Collections;
 public class MainMenuButtonController : MonoBehaviour {
 
 	public int sceneIndex;
-	public string buttonText;
 	private InputService inputService = Singleton<InputService>.GetInstance();
-	public float buttonAngle = 30F;
 
-	// Use this for initialization
-	void Start () {
-		
-		SetButtonText ();
-		SetButtonAngle ();
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		
 		ToSceneListener ();
-	}
-	
-	private void SetButtonText() {
-
-		if (buttonText != null && buttonText.Length != 0) {
-			TextMesh text = GetComponentInChildren<TextMesh> ();
-			text.text = buttonText;
-		}
-	}
-	
-	private void SetButtonAngle (){
-
-		float index = Random.Range(-buttonAngle, buttonAngle);
-		gameObject.transform.eulerAngles = new Vector3 (0, 0, index);
 	}
 
 	private void ToSceneListener() {

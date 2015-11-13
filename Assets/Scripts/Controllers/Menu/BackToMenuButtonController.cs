@@ -5,10 +5,6 @@ public class BackToMenuButtonController : MonoBehaviour {
 
 	InputService inputService = Singleton<InputService>.GetInstance();
 
-	void Start() {
-
-	}
-
 	void Update() {
 
 		ToMenuListener ();

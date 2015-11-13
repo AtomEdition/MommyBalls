@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d7d59e37edee4b9459af799a254f2c5e
-timeCreated: 1447260558
+timeCreated: 1447411288
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,7 @@ TextureImporter:
     21300002: MenuButtons_1
     21300004: MenuButtons_2
     21300006: MenuButtons_3
+    21300008: MenuButtons_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -91,6 +92,16 @@ TextureImporter:
         y: 14
         width: 497
         height: 514
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MenuButtons_4
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 523
+        width: 495
+        height: 512
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

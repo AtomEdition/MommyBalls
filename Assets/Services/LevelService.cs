@@ -36,18 +36,7 @@ public class LevelService {
 		OnBallGrounded.RemoveAllEvents ();
 		OnBallDestroy.RemoveAllEvents ();
 		OnAfterBallDestroy.RemoveAllEvents ();
-		OnAfterBallDestroy.eventAttachTo += CheckForLevelEnded;
-	}
-
-	public void CheckForLevelEnded() {		
-		
-		if (BallCount <= 0 
-		    && GameObject.FindGameObjectsWithTag(Tags.BALL).Length == 0) {
-
-			Application.LoadLevel (Scenes.LEVEL_COMPLETE);
-		}
-	}
-		
+	}		
 
 	public int GetStarCount(){
 		

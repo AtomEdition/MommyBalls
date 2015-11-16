@@ -9,12 +9,10 @@ public class ProgressService {
 	private const char DELIMITER = '-';
 	private const string PREFS_PROGRESS_KEY = "progress";
 
+	private int starsCountTotal = 0;
+
 	private int[] progress = new int[LEVEL_COUNT];
 
-	public ProgressService ()
-	{
-	}
-	
 	public void UpdateScore(int currentLevel, int starsCount) {
 		int oldScore = Progress [currentLevel - 1];
 		Progress [currentLevel - 1] = starsCount > oldScore 
@@ -28,6 +26,7 @@ public class ProgressService {
 	}
 
 	private string EncodeArrayInString(){
+
 		StringBuilder sb = new StringBuilder ();
 		foreach (int number in Progress) {
 			sb.Append(number).Append(DELIMITER);
@@ -36,15 +35,31 @@ public class ProgressService {
 	}
 
 	public void LoadArrayFromString() {
+
 		char[] charsToTrim = {' ', '-'};
 		string input = PlayerPrefs.GetString (PREFS_PROGRESS_KEY).Trim(charsToTrim);
 		string[] splittedString = input.Split (DELIMITER);
 		progress = Array.ConvertAll<string, int> (splittedString, int.Parse);
+		SetStarsCountTotal ();
+	}
+
+	private void SetStarsCountTotal(){
+
+		starsCountTotal = 0;
+		foreach (int number in Progress) {
+			starsCountTotal += number;
+		}
 	}
 
 	public int[] Progress {
 		get {
 			return this.progress;
+		}
+	}
+
+	public int StarsCountTotal {
+		get {
+			return this.starsCountTotal;
 		}
 	}
 }

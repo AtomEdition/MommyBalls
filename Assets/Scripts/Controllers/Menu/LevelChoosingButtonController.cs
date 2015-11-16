@@ -4,6 +4,7 @@ using System.Collections;
 public class LevelChoosingButtonController : MonoBehaviour {
 
 	public int levelNumber;
+	public int starsToUnlock;
 
 	public Sprite spriteLocked;
 	public Sprite spriteEmpty;
@@ -18,6 +19,7 @@ public class LevelChoosingButtonController : MonoBehaviour {
 
 		SetButtonText ();
 		SetButtonImage ();
+		SetLockedButtons ();
 	}
 	
 	void Update() {
@@ -63,6 +65,16 @@ public class LevelChoosingButtonController : MonoBehaviour {
 		default:
 			GetComponent<SpriteRenderer>().sprite = spriteLocked;
 			break;
+		}
+	}
+
+	private void SetLockedButtons() {
+
+		if (starsToUnlock > progressService.StarsCountTotal) {	
+
+			GetComponent<SpriteRenderer>().sprite = spriteLocked;
+			GetComponent<CircleCollider2D>().enabled = false;
+			GetComponentInChildren<TextMesh> ().text = "";
 		}
 	}
 }

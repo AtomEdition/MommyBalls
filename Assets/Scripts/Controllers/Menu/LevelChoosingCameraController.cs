@@ -15,9 +15,12 @@ public class LevelChoosingCameraController : MonoBehaviour {
 	public GameObject buttonDown;
 	public GameObject buttonBack;
 
+	private ProgressService progressService = Singleton<ProgressService>.GetInstance();
+
 	// Use this for initialization
 	void Start () {
 		
+		progressService.LoadArrayFromString ();
 		InvokeRepeating ("SpawnBall", 0, SPAWN_BALL_REPEAT_INTERVAL);
 	}
 	

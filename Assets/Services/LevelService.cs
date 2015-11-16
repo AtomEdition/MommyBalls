@@ -8,6 +8,7 @@ public class LevelService {
 	private int scoreStars3;
 	private int scoreStars2;
 	private int scoreStars1;
+	private int currentLevel;
 	private bool isLevelPaused;
 
 	public CustomEvent OnBallCreate = new CustomEvent();
@@ -94,6 +95,14 @@ public class LevelService {
 		}
 	}
 
+	public int CurrentLevel {
+		get {
+			return this.currentLevel;
+		}
+		set {
+			currentLevel = value;
+		}
+	}
 	public bool IsLevelPaused {
 		get {
 			return this.isLevelPaused;

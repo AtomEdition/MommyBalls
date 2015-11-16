@@ -4,6 +4,7 @@ using System.Collections;
 public class GameCameraController : MonoBehaviour {
 
 	public int[] levelData = new int[4];
+	public int levelNumber = 1;
 
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
@@ -14,6 +15,7 @@ public class GameCameraController : MonoBehaviour {
 		levelService.ScoreStars3 = levelData [1];
 		levelService.ScoreStars2 = levelData [2];
 		levelService.ScoreStars1 = levelData [3];
+		levelService.CurrentLevel = levelNumber;
 	}
 	
 	// Update is called once per frame

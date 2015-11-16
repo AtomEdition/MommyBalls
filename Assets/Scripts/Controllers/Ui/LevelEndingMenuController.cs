@@ -4,6 +4,7 @@ using System.Collections;
 public class LevelEndingMenuController : MonoBehaviour {
 	
 	LevelService levelService = Singleton<LevelService>.GetInstance();
+	ProgressService progressService = Singleton<ProgressService>.GetInstance();
 	public GameObject menuPrefab;
 
 	// Use this for initialization
@@ -20,6 +21,7 @@ public class LevelEndingMenuController : MonoBehaviour {
 			
 			GameObject menu = Instantiate(menuPrefab, new Vector2 (), Quaternion.identity) as GameObject;
 			levelService.IsLevelPaused = true;
+			progressService.UpdateScore(levelService.CurrentLevel, levelService.GetStarCount());
 		}
 	}
 }

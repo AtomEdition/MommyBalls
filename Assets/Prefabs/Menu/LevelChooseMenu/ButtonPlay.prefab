@@ -132,6 +132,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelNumber: 1
+  spriteLocked: {fileID: 21300002, guid: 380840021977f2a4d90bc177eaf1d8d8, type: 3}
+  spriteEmpty: {fileID: 21300006, guid: 380840021977f2a4d90bc177eaf1d8d8, type: 3}
+  spriteBronze: {fileID: 21300008, guid: 380840021977f2a4d90bc177eaf1d8d8, type: 3}
+  spriteSilver: {fileID: 21300004, guid: 380840021977f2a4d90bc177eaf1d8d8, type: 3}
+  spriteGold: {fileID: 21300000, guid: 380840021977f2a4d90bc177eaf1d8d8, type: 3}
 --- !u!212 &21296492
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -178,6 +183,31 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: .899999976
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spriteLocked
+      value: 
+      objectReference: {fileID: 21300002, guid: 380840021977f2a4d90bc177eaf1d8d8,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: spriteEmpty
+      value: 
+      objectReference: {fileID: 21300006, guid: 380840021977f2a4d90bc177eaf1d8d8,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: spriteBronze
+      value: 
+      objectReference: {fileID: 21300008, guid: 380840021977f2a4d90bc177eaf1d8d8,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: spriteSilver
+      value: 
+      objectReference: {fileID: 21300004, guid: 380840021977f2a4d90bc177eaf1d8d8,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: spriteGold
+      value: 
+      objectReference: {fileID: 21300000, guid: 380840021977f2a4d90bc177eaf1d8d8,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190604}

@@ -1,14 +1,11 @@
 fileFormatVersion: 2
-guid: 380840021977f2a4d90bc177eaf1d8d8
-timeCreated: 1447684160
+guid: b9b6de2527b2fca4e8d734f8e6e9cfb0
+timeCreated: 1447685471
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: LevelButton_0
-    21300002: LevelButton_1
-    21300004: LevelButton_2
-    21300006: LevelButton_3
-    21300008: LevelButton_4
+    21300000: star_0
+    21300002: star_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,7 +31,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -49,59 +46,29 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 210
+  spritePixelsToUnits: 350
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: LevelButton_0
+    - name: star_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 811
-        width: 397
-        height: 397
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_1
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 811
-        width: 397
-        height: 397
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 400
-        width: 397
-        height: 397
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_3
-      rect:
-        serializedVersion: 2
-        x: 403
-        y: 404
-        width: 397
-        height: 397
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: LevelButton_4
-      rect:
-        serializedVersion: 2
-        x: 2
+        x: 1
         y: 0
-        width: 397
-        height: 397
+        width: 248
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 3
+        width: 242
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

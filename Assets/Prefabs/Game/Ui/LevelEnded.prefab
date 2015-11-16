@@ -315,6 +315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9cc723255cf4f4ab90477a997b6f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteEmpty: {fileID: 21300002, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0, type: 3}
+  spriteFull: {fileID: 21300000, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0, type: 3}
+  starIndex: 1
 --- !u!114 &11444146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -326,6 +329,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9cc723255cf4f4ab90477a997b6f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteEmpty: {fileID: 21300002, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0, type: 3}
+  spriteFull: {fileID: 21300000, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0, type: 3}
+  starIndex: 2
 --- !u!114 &11455758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -348,6 +354,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9cc723255cf4f4ab90477a997b6f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteEmpty: {fileID: 21300002, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0, type: 3}
+  spriteFull: {fileID: 21300000, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0, type: 3}
+  starIndex: 3
 --- !u!114 &11477872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -577,6 +586,20 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Name
       value: MenuButtons_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spriteEmpty
+      value: 
+      objectReference: {fileID: 21300002, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: spriteFull
+      value: 
+      objectReference: {fileID: 21300000, guid: b9b6de2527b2fca4e8d734f8e6e9cfb0,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: starIndex
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

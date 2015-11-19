@@ -43,20 +43,28 @@ public class LevelChoosingCameraController : MonoBehaviour {
 
 	private void moveCamera() {
 
-		if (inputService.IsInputHold()) {
+		if (inputService.IsInputHold ()) {
 
-			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
 
-			if (hit.collider == null) { return; }
+			if (hit.collider == null) {
+				return;
+			}
 
 			if (hit.collider.gameObject.Equals (buttonUp)) { 
 
-				this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, CAMERA_MOVING_POWER));
+				this.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, CAMERA_MOVING_POWER));
 			
 			} else if (hit.collider.gameObject.Equals (buttonDown)) {
 				
-				this.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -CAMERA_MOVING_POWER));
+				this.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, -CAMERA_MOVING_POWER));
 			}
+
+			GetComponentInChildren<ControlPanelLightAppearance> ().SetCondition (true);
+
+		} else {
+			
+			GetComponentInChildren<ControlPanelLightAppearance> ().SetCondition (false);
 		}
 	}
 }

@@ -5,16 +5,31 @@ public class NextLevelButtonController : MonoBehaviour {
 	
 	InputService inputService = Singleton<InputService>.GetInstance();
 	LevelService levelService = Singleton<LevelService>.GetInstance();
+	ProgressService progressService = Singleton<ProgressService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 	
+		SetButtonCondition ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 		OnClick ();
+	}
+
+	private void SetButtonCondition() {
+
+		if (progressService.StarsCountTotal + levelService.GetStarCount() < progressService.LevelsStarsToUnlock [levelService.CurrentLevel]) {
+
+			GetComponent<CircleCollider2D>().enabled = false;
+			GetComponent<NextLevelButtonAppearance>().SetCondition (false);
+		} else {
+			
+			GetComponent<CircleCollider2D>().enabled = true;
+			GetComponent<NextLevelButtonAppearance>().SetCondition (true);
+		}
 	}
 
 	private void OnClick(){

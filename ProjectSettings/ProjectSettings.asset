@@ -83,7 +83,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleIdentifier: com.kii.twodplatformer
+  bundleIdentifier: com.Atomedition
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
@@ -152,7 +152,7 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: 5818ae4c0cd3dbb44936cde922535001, type: 3}
       m_Size: 128
   m_BuildTargetBatching:
   - m_BuildTarget: Android

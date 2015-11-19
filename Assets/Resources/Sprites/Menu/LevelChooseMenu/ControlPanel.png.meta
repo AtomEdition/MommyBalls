@@ -1,15 +1,12 @@
 fileFormatVersion: 2
-guid: d7d59e37edee4b9459af799a254f2c5e
-timeCreated: 1447935601
+guid: 5491a11628e419f4b8572042cca918dc
+timeCreated: 1447946556
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MenuButtons_0
-    21300002: MenuButtons_1
-    21300004: MenuButtons_2
-    21300006: MenuButtons_3
-    21300008: MenuButtons_4
-    21300010: MenuButtons_5
+    21300000: ControlPanel_0
+    21300002: ControlPanel_1
+    21300004: ControlPanel_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,69 +47,39 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: MenuButtons_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 524
-        width: 491
-        height: 508
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_1
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 528
-        width: 497
-        height: 507
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_2
+    - name: ControlPanel_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 493
-        height: 520
+        width: 450
+        height: 387
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_3
+    - name: ControlPanel_1
       rect:
         serializedVersion: 2
-        x: 494
-        y: 14
-        width: 497
-        height: 514
+        x: 364
+        y: 389
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_4
+    - name: ControlPanel_2
       rect:
         serializedVersion: 2
-        x: 992
-        y: 523
-        width: 495
-        height: 512
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: MenuButtons_5
-      rect:
-        serializedVersion: 2
-        x: 994
-        y: 15
-        width: 496
-        height: 508
+        x: 390
+        y: 389
+        width: 19
+        height: 19
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -12,6 +12,7 @@ public class ProgressService {
 	private int starsCountTotal = 0;
 
 	private int[] progress = new int[LEVEL_COUNT];
+	private int[] levelsStarsToUnlock = new int[LEVEL_COUNT];
 
 	public void UpdateScore(int currentLevel, int starsCount) {
 		int oldScore = Progress [currentLevel - 1];
@@ -60,6 +61,15 @@ public class ProgressService {
 	public int StarsCountTotal {
 		get {
 			return this.starsCountTotal;
+		}
+	}
+
+	public int[] LevelsStarsToUnlock {
+		get {
+			return this.levelsStarsToUnlock;
+		}
+		set {
+			levelsStarsToUnlock = value;
 		}
 	}
 }

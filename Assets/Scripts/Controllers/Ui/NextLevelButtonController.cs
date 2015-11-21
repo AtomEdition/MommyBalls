@@ -21,7 +21,7 @@ public class NextLevelButtonController : MonoBehaviour {
 
 	private void SetButtonCondition() {
 
-		if (progressService.StarsCountTotal + levelService.GetStarCount() < progressService.LevelsStarsToUnlock [levelService.CurrentLevel]) {
+		if (progressService.StarsCountTotal < progressService.LevelsStarsToUnlock [levelService.CurrentLevel]) {
 
 			GetComponent<CircleCollider2D>().enabled = false;
 			GetComponent<NextLevelButtonAppearance>().SetCondition (false);

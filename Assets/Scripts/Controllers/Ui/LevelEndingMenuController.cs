@@ -22,6 +22,7 @@ public class LevelEndingMenuController : MonoBehaviour {
 			GameObject menu = Instantiate(menuPrefab, new Vector2 (), Quaternion.identity) as GameObject;
 			levelService.IsLevelPaused = true;
 			progressService.UpdateScore(levelService.CurrentLevel, levelService.GetStarCount());
+			progressService.SetStarsCountTotal ();
 		}
 	}
 }

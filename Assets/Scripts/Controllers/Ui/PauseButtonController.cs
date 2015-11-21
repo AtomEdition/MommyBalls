@@ -8,7 +8,10 @@ public class PauseButtonController : MonoBehaviour {
 	LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
-	void Start () {
+	void Start () {		
+
+		gameObject.GetComponent<CircleCollider2D>().enabled = false;		
+		gameObject.GetComponent<CircleCollider2D>().enabled = true;
 
 		gameObject.GetComponent<Renderer>().sortingLayerName = "Ui";
 	}

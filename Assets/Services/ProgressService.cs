@@ -44,7 +44,7 @@ public class ProgressService {
 		SetStarsCountTotal ();
 	}
 
-	private void SetStarsCountTotal(){
+	public void SetStarsCountTotal(){
 
 		starsCountTotal = 0;
 		foreach (int number in Progress) {

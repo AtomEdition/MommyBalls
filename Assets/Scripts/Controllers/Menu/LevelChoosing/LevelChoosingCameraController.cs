@@ -27,7 +27,6 @@ public class LevelChoosingCameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//currentSpawnBallHeigth = 
 		moveCamera ();
 	}
 	

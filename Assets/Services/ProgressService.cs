@@ -50,6 +50,16 @@ public class ProgressService {
 		foreach (int number in Progress) {
 			starsCountTotal += number;
 		}
+	}	
+	
+	public int GetLastUnlockedLevel() {
+
+		for (int i = 0; i < ProgressProperties.STARS_TO_UNLOCK.Length; i++) {
+
+			if (starsCountTotal < ProgressProperties.STARS_TO_UNLOCK[i]) { return i; }
+		}
+
+		return 0;
 	}
 
 	public int[] Progress {

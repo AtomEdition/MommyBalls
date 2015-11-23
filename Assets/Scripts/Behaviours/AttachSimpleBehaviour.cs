@@ -8,7 +8,7 @@ public class AttachSimpleBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		this.gameObject.transform.parent = parent.transform;
+		gameObject.transform.parent = parent.transform;
 	}
 	
 	// Update is called once per frame

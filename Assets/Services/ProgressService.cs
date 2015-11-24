@@ -22,8 +22,12 @@ public class ProgressService {
 		PlayerPrefs.Save ();
 	}
 
-	public int GetScoreForLevel(int level) {
+	public int GetProgressForLevel(int level) {
 		return Progress [level - 1];
+	}
+	
+	public int GetStarsNeededForLevel(int level) {
+		return ProgressProperties.STARS_TO_UNLOCK [level - 1];
 	}
 
 	private string EncodeArrayInString(){

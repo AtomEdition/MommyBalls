@@ -51,7 +51,7 @@ public class LevelChoosingButtonController : MonoBehaviour {
 
 	private void SetButtonImage() {
 
-		switch (progressService.GetScoreForLevel (levelNumber)) {
+		switch (progressService.GetProgressForLevel (levelNumber)) {
 		case 0:
 			GetComponent<SpriteRenderer>().sprite = spriteEmpty;
 			break;
@@ -76,8 +76,18 @@ public class LevelChoosingButtonController : MonoBehaviour {
 
 			GetComponent<SpriteRenderer>().sprite = spriteLocked;
 			GetComponent<CircleCollider2D>().enabled = false;
-			GetComponentInChildren<TextMesh> ().text = "";
+			GetComponentInChildren<TextMesh>().color = Color.white;
+			GetComponentInChildren<TextMesh> ().text = GetStarsToUnlockTextForButton();
 		}
+	}
+
+	private string GetStarsToUnlockTextForButton() {
+
+		if (levelNumber - progressService.GetLastUnlockedLevel () == 1) {
+			int count = progressService.GetStarsNeededForLevel(levelNumber) - progressService.StarsCountTotal;
+			return count.ToString();
+		}
+		return "";
 	}
 }
 

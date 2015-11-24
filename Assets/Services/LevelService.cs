@@ -14,7 +14,6 @@ public class LevelService {
 	public CustomEvent OnBallCreate = new CustomEvent();
 	public CustomEvent OnBallRelease = new CustomEvent();
 	public CustomEvent OnBallCatch = new CustomEvent();
-	public CustomEvent OnBallGrounded = new CustomEvent();
 	public CustomEvent OnBallDestroy = new CustomEvent();
 	public CustomEvent OnAfterBallDestroy = new CustomEvent();
 
@@ -34,7 +33,6 @@ public class LevelService {
 		OnBallCreate.RemoveAllEvents ();
 		OnBallRelease.RemoveAllEvents ();
 		OnBallCatch.RemoveAllEvents ();
-		OnBallGrounded.RemoveAllEvents ();
 		OnBallDestroy.RemoveAllEvents ();
 		OnAfterBallDestroy.RemoveAllEvents ();
 	}		

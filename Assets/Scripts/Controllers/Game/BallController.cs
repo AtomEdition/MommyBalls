@@ -9,6 +9,10 @@ public class BallController : MonoBehaviour {
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	private bool isSafeColliding = false;
+	
+	public CustomEvent OnCreated = new CustomEvent();
+	public CustomEvent OnReleased = new CustomEvent();
+	public CustomEvent OnGrounded = new CustomEvent();	
 
 	// Use this for initialization
 	private void Start () {
@@ -37,7 +41,8 @@ public class BallController : MonoBehaviour {
 
 	public void OnDestroy() {
 
-		levelService.OnAfterBallDestroy.Call ();
+		levelService.OnAfterBallDestroy.Call ();		
+		OnGrounded.RemoveAllEvents ();
 	}
 
 	public bool IsSafeColliding {

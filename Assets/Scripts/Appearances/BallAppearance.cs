@@ -17,9 +17,9 @@ public class BallAppearance : Appearance {
 	// Use this for initialization
 	void Start () {
 			
-		levelService.OnBallCreate.eventAttachTo += SetIdleAnimation;
-		levelService.OnBallGrounded.eventAttachTo += SetIdleAnimation;
-		levelService.OnBallRelease.eventAttachTo += SetFlyingAnimation;
+		gameObject.GetComponent<BallController>().OnCreated.eventAttachTo += SetIdleAnimation;
+		gameObject.GetComponent<BallController>().OnGrounded.eventAttachTo += SetIdleAnimation;
+		gameObject.GetComponent<BallController>().OnReleased.eventAttachTo += SetFlyingAnimation;
 		levelService.OnAfterBallDestroy.eventAttachTo += UnattachMethods;
 	}
 
@@ -63,9 +63,9 @@ public class BallAppearance : Appearance {
 	
 	private void UnattachMethods() {
 		
-		levelService.OnBallCreate.eventAttachTo -= SetIdleAnimation;
-		levelService.OnBallGrounded.eventAttachTo -= SetIdleAnimation;
-		levelService.OnBallRelease.eventAttachTo -= SetFlyingAnimation;
+		gameObject.GetComponent<BallController>().OnCreated.eventAttachTo -= SetIdleAnimation;
+		gameObject.GetComponent<BallController>().OnGrounded.eventAttachTo -= SetIdleAnimation;
+		gameObject.GetComponent<BallController>().OnReleased.eventAttachTo -= SetFlyingAnimation;
 		levelService.OnAfterBallDestroy.eventAttachTo -= UnattachMethods;
 	}
 

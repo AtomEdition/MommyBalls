@@ -37,7 +37,7 @@ public class StickyPlatformController : MonoBehaviour {
 			collision.gameObject.transform.SetParent (this.gameObject.transform);
 
 			onBallCollide.Call ();
-			levelService.OnBallGrounded.Call ();
+			collision.gameObject.GetComponent<BallController>().OnGrounded.Call ();
 		}
 	}
 
@@ -80,6 +80,8 @@ public class StickyPlatformController : MonoBehaviour {
 				isCharging = false;
 				
 				collision.gameObject.GetComponent<BallController>().IsSafeColliding = false;
+
+				collision.gameObject.GetComponent<BallController>().OnReleased.Call();
 				onBallRelease.Call ();
 				levelService.OnBallRelease.Call ();
 			}

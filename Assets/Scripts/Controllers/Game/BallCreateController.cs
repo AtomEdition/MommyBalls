@@ -18,6 +18,8 @@ public class BallCreateController : MonoBehaviour {
 		
 		levelService.BallCount--;
 		levelService.OnBallCreate.Call ();
+		GetComponent<BallController> ().OnCreated.Call ();
+
 		GetComponent<BallAppearance> ().AttachAnimation ();
 	}
 	
@@ -29,6 +31,7 @@ public class BallCreateController : MonoBehaviour {
 			gameObject.GetComponent<Rigidbody2D> ().isKinematic = false;
 			gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (GetPowerX (), GetPowerY ()));
 			levelService.OnBallRelease.Call();
+			gameObject.GetComponent<BallController>().OnReleased.Call();
 		}
 	}	
 	

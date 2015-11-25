@@ -13,9 +13,8 @@ public class MommySounds : MonoBehaviour {
 	void Start () {
 		
 		onMommyCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		levelService.OnBallCatch.eventAttachTo += this.makeMommySound;
-	}
-	
+		levelService.OnBallCatch.eventAttachTo += makeMommySound;
+	}	
 	
 	private void makeMommySound(){
 		

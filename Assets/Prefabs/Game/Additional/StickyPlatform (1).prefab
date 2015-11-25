@@ -66,6 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b3ff3ee399ff94b978553fb0c55a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireButton: {fileID: 190048, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
   platformPowerMultiplier: 1
   delaySecondsMaximum: 1
 --- !u!212 &21207620
@@ -134,6 +135,10 @@ Prefab:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fireButton
+      value: 
+      objectReference: {fileID: 190048, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 198272}

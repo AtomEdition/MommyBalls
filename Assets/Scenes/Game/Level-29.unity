@@ -187,6 +187,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11491054, guid: e6c43805fe18fdc49a7a89e98f034362, type: 2}
+      propertyPath: fireButton
+      value: 
+      objectReference: {fileID: 1866267406}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6c43805fe18fdc49a7a89e98f034362, type: 2}
   m_IsPrefabParent: 0
@@ -285,6 +289,10 @@ Prefab:
       propertyPath: m_Name
       value: StickyPlatform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 11491054, guid: e6c43805fe18fdc49a7a89e98f034362, type: 2}
+      propertyPath: fireButton
+      value: 
+      objectReference: {fileID: 1866267406}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6c43805fe18fdc49a7a89e98f034362, type: 2}
   m_IsPrefabParent: 0
@@ -1156,6 +1164,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 625d7a1848db71e4a9d7a1ebf296b1f4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1866267405
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.89600003
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.42000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 475352, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1866267406 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 190048, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+  m_PrefabInternal: {fileID: 1866267405}
 --- !u!1001 &2045632570
 Prefab:
   m_ObjectHideFlags: 0
@@ -1262,6 +1316,10 @@ Prefab:
       propertyPath: m_Name
       value: StickyPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 11491054, guid: e6c43805fe18fdc49a7a89e98f034362, type: 2}
+      propertyPath: fireButton
+      value: 
+      objectReference: {fileID: 1866267406}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6c43805fe18fdc49a7a89e98f034362, type: 2}
   m_IsPrefabParent: 0

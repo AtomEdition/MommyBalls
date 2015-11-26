@@ -28,6 +28,7 @@ public class LevelChoosingCameraMover : MonoBehaviour {
 		levelsUnlocks.Add (20, 16.65F);
 		levelsUnlocks.Add (26, 24.0F);
 		levelsUnlocks.Add (31, 27.15F);
+		levelsUnlocks.Add (36, 29.15F);
 	}
 	
 	public float GetCameraY(int lastUnlockedLevel) {

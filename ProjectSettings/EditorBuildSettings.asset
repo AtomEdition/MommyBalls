@@ -81,3 +81,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Game/Level-34.unity
   - enabled: 1
     path: Assets/Scenes/Game/Level-35.unity
+  - enabled: 1
+    path: Assets/Scenes/Game/Level-36.unity

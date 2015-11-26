@@ -4,7 +4,7 @@ using System.Collections;
 public class LevelChoosingButtonController : MonoBehaviour {
 
 	public int levelNumber;
-	public int starsToUnlock;
+	private int starsToUnlock;
 
 	public Sprite spriteLocked;
 	public Sprite spriteEmpty;

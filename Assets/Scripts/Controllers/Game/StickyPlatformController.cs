@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class StickyPlatformController : MonoBehaviour {
+	
+	public GameObject fireButton;
 
 	private InputService inputService = Singleton<InputService>.GetInstance();
 
@@ -52,7 +54,7 @@ public class StickyPlatformController : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);			
 			
 			if (hit.collider != null
-			    && hit.collider.gameObject.tag == Tags.STICKY_PLATFORM) {
+			    && fireButton.Equals(hit.collider.gameObject)) {
 				
 				isCharging = true;
 				
@@ -65,7 +67,7 @@ public class StickyPlatformController : MonoBehaviour {
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 		    
 			if (hit.collider != null
-			    && hit.collider.gameObject == this.gameObject
+			    && fireButton.Equals (hit.collider.gameObject)
 			    || isCharging) {
 				
 				platformPowerCurrent *= inputService.GetTimeOfClick() > delaySecondsMaximum 

@@ -12,15 +12,12 @@ public class PortalController : MonoBehaviour {
 	public delegate void MethodContainer(bool flag);
 	public event MethodContainer onSwitchPortalCondition;
 
+	public CustomEvent onTeleportate = new CustomEvent();
+
 	// Use this for initialization
 	void Start () {
 
-		this.onSwitchPortalCondition += SetPortalCondition;	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		onSwitchPortalCondition += SetPortalCondition;	
 	}
 
 	void OnTriggerEnter2D(Collider2D trigger){
@@ -30,6 +27,7 @@ public class PortalController : MonoBehaviour {
 			if (!isTeleportatingNow) {
 		
 				onSwitchPortalCondition (false);
+				onTeleportate.Call();
 		
 				TurnOnExitsFromPortal (this);
 

@@ -12,12 +12,7 @@ public class PlatformSounds : MonoBehaviour {
 	void Start () {
 		
 		onPlatformCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		gameObject.GetComponent<PlatformController> ().onBallCollide.eventAttachTo += this.makePlatformSound;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+		gameObject.GetComponent<PlatformController> ().onBallCollide.eventAttachTo += makePlatformSound;
 	}
 
 	private void makePlatformSound(){

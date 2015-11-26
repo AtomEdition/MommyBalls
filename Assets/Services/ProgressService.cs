@@ -61,7 +61,7 @@ public class ProgressService {
 	public void SetStarsCountTotal(){
 
 		starsCountTotal = 0;
-		foreach (int number in Progress) {
+		foreach (int number in progress) {
 			starsCountTotal += number;
 		}
 	}	

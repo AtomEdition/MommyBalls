@@ -5,35 +5,14 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SPAnimationAction
+  m_Name: SPAnimationCharge
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
   m_CompressedRotationCurves: []
-  m_PositionCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: -.0289999992, y: 0, z: 0}
-        inSlope: {x: 1.77999997, y: 0, z: 0}
-        outSlope: {x: 1.77999997, y: 0, z: 0}
-        tangentMode: 0
-      - time: .0500000007
-        value: {x: .0599999987, y: 0, z: 0}
-        inSlope: {x: .732941151, y: 0, z: 0}
-        outSlope: {x: .732941151, y: 0, z: 0}
-        tangentMode: 0
-      - time: .333333343
-        value: {x: -.0289999992, y: 0, z: 0}
-        inSlope: {x: -.31411764, y: 0, z: 0}
-        outSlope: {x: -.31411764, y: 0, z: 0}
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    path: sticky_platform_1
+  m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves:
   - curve:
@@ -44,16 +23,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Color.g
-    path: sticky_platform_1
-    classID: 212
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
+      - time: .583333313
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .666666687
         value: 1
         inSlope: 0
         outSlope: 0
@@ -69,8 +44,42 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: -1.13445377
+        outSlope: -1.13445377
+        tangentMode: 10
+      - time: .583333313
+        value: .338235319
+        inSlope: 3.40335941
+        outSlope: 3.40335941
+        tangentMode: 10
+      - time: .666666687
+        value: 1
+        inSlope: 7.9411726
+        outSlope: 7.9411726
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.g
+    path: sticky_platform_1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -1.13445377
+        outSlope: -1.13445377
+        tangentMode: 10
+      - time: .583333313
+        value: .338235319
+        inSlope: 3.40335941
+        outSlope: 3.40335941
+        tangentMode: 10
+      - time: .666666687
+        value: 1
+        inSlope: 7.9411726
+        outSlope: 7.9411726
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -78,7 +87,58 @@ AnimationClip:
     path: sticky_platform_1
     classID: 212
     script: {fileID: 0}
-  m_PPtrCurves: []
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -1.95588231
+        outSlope: -1.95588231
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.r
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -1.53772831
+        outSlope: -1.53772831
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.g
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.b
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 0}
+    - time: .666666687
+      value: {fileID: 0}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -87,19 +147,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - path: 3934931707
-      attribute: 1
-      script: {fileID: 0}
-      classID: 4
-      customType: 0
-      isPPtrCurve: 0
-    - path: 3934931707
       attribute: 4215373228
-      script: {fileID: 0}
-      classID: 212
-      customType: 0
-      isPPtrCurve: 0
-    - path: 3934931707
-      attribute: 2526845255
       script: {fileID: 0}
       classID: 212
       customType: 0
@@ -110,11 +158,43 @@ AnimationClip:
       classID: 212
       customType: 0
       isPPtrCurve: 0
-    pptrCurveMapping: []
+    - path: 0
+      attribute: 2526845255
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 4215373228
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 0
+      script: {fileID: 0}
+      classID: 212
+      customType: 23
+      isPPtrCurve: 1
+    - path: 3934931707
+      attribute: 2526845255
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    - path: 0
+      attribute: 2334886179
+      script: {fileID: 0}
+      classID: 212
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping:
+    - {fileID: 0}
+    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .333333343
+    m_StopTime: .683333337
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -133,92 +213,16 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -.0289999992
-        inSlope: 1.77999997
-        outSlope: 1.77999997
-        tangentMode: 10
-      - time: .0500000007
-        value: .0599999987
-        inSlope: .732941151
-        outSlope: .732941151
-        tangentMode: 10
-      - time: .333333343
-        value: -.0289999992
-        inSlope: -.31411764
-        outSlope: -.31411764
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.x
-    path: sticky_platform_1
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0500000007
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .333333343
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.y
-    path: sticky_platform_1
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0500000007
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .333333343
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.z
-    path: sticky_platform_1
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_Color.g
-    path: sticky_platform_1
-    classID: 212
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
+      - time: .583333313
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: .666666687
         value: 1
         inSlope: 0
         outSlope: 0
@@ -234,13 +238,89 @@ AnimationClip:
       m_Curve:
       - time: 0
         value: 1
+        inSlope: -1.13445377
+        outSlope: -1.13445377
+        tangentMode: 10
+      - time: .583333313
+        value: .338235319
+        inSlope: 3.40335941
+        outSlope: 3.40335941
+        tangentMode: 10
+      - time: .666666687
+        value: 1
+        inSlope: 7.9411726
+        outSlope: 7.9411726
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.g
+    path: sticky_platform_1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -1.13445377
+        outSlope: -1.13445377
+        tangentMode: 10
+      - time: .583333313
+        value: .338235319
+        inSlope: 3.40335941
+        outSlope: 3.40335941
+        tangentMode: 10
+      - time: .666666687
+        value: 1
+        inSlope: 7.9411726
+        outSlope: 7.9411726
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.b
+    path: sticky_platform_1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -1.95588231
+        outSlope: -1.95588231
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.r
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: -1.53772831
+        outSlope: -1.53772831
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Color.g
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_Color.b
-    path: sticky_platform_1
+    path: 
     classID: 212
     script: {fileID: 0}
   m_EulerEditorCurves: []

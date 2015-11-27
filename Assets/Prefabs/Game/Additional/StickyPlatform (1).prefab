@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 11491054}
   - 61: {fileID: 6176818}
   - 114: {fileID: 11402766}
+  - 95: {fileID: 9547580}
   m_Layer: 0
   m_Name: StickyPlatform (1)
   m_TagString: StickyPlatform
@@ -102,6 +103,23 @@ BoxCollider2D:
   m_Offset: {x: -.0507090092, y: 0}
   serializedVersion: 2
   m_Size: {x: .398582518, y: 2}
+--- !u!95 &9547580
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 25ed2380cdce28c42b129ddb3695f22a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11402766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b3ff3ee399ff94b978553fb0c55a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireButton: {fileID: 190048, guid: 2bc3b0a1519eb8c438a080d5fcb7c6cd, type: 2}
+  fireButton: {fileID: 0}
   platformPowerMultiplier: 1
   delaySecondsMaximum: 1
 --- !u!212 &21207620

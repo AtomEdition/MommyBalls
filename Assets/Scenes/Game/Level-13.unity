@@ -1908,7 +1908,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 409642, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 11440882, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: secondsOfDelay
@@ -1922,6 +1922,10 @@ Prefab:
       propertyPath: elementsToActivateDelay.Array.data[1]
       value: 
       objectReference: {fileID: 1749149543}
+    - target: {fileID: 19870192, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 4294904832
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
   m_IsPrefabParent: 0

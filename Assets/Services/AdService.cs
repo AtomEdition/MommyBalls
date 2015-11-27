@@ -5,9 +5,14 @@ public class AdService : MonoBehaviour {
 
 	public void ShowAd()
 	{
-		if (Advertisement.IsReady())
-		{
-			Advertisement.Show();
+		try {
+			if (Advertisement.IsReady()) {
+
+				Advertisement.Show();
+			}
+		} catch (UnityException e) {
+
+			Debug.LogWarning(e.Message);
 		}
 	}
 

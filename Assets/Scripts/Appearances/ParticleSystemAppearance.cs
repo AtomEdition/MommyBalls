@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BallDieParticleSystem : MonoBehaviour {
+public class ParticleSystemAppearance : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

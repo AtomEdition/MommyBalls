@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SwitcherBehaviour : MonoBehaviour {
+public class SwitcherBehaviour : SwitcherBaseClass {
 
 	public bool turnedOnFromScene = false;
 	private bool turnedOn;
@@ -17,11 +17,6 @@ public class SwitcherBehaviour : MonoBehaviour {
 
 		TurnedOn = turnedOnFromScene;
 		AttachMethodsToEvent ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 	
 	void OnCollisionEnter2D(Collision2D collision){
@@ -58,18 +53,7 @@ public class SwitcherBehaviour : MonoBehaviour {
 
 		foreach (GameObject obj in switchingElements) {
 
-			if (obj.GetComponent<SpriteRenderer>() != null) {
-
-				obj.GetComponent<SpriteRenderer>().enabled = !obj.GetComponent<SpriteRenderer>().enabled;
-			}
-			if (obj.GetComponent<BoxCollider2D>() != null) {
-
-				obj.GetComponent<BoxCollider2D>().enabled = !obj.GetComponent<BoxCollider2D>().enabled;
-			}
-			if (obj.GetComponent<CircleCollider2D>() != null) {
-				
-				obj.GetComponent<CircleCollider2D>().enabled = !obj.GetComponent<CircleCollider2D>().enabled;
-			}
+			SwitchAllComponents(obj);
 		}
 	}
 

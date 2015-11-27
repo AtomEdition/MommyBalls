@@ -1032,6 +1032,10 @@ Prefab:
       propertyPath: m_Name
       value: DelayActivator (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 19870192, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 4278226687
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
   m_IsPrefabParent: 0
@@ -1234,6 +1238,14 @@ Prefab:
     - target: {fileID: 5874634, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19870192, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19870192, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 4278226687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
@@ -2235,7 +2247,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11440882, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: elementsToActivateDelay.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 409642, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2297,6 +2309,14 @@ Prefab:
       propertyPath: elementsToActivateDelay.Array.data[2]
       value: 
       objectReference: {fileID: 1863551927}
+    - target: {fileID: 19870192, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19870192, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.rgba
+      value: 4278226687
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d586b793cdd51a24f9fa4755581759ae, type: 2}
   m_IsPrefabParent: 0

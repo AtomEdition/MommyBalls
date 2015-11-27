@@ -131,6 +131,94 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 125c08d81fd06f84aa4e8b0ebc7adc05, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1007883638
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.54999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.82999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 452968, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6116798, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21253134, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bced015653bee33408773c8efb329844,
+        type: 3}
+    - target: {fileID: 137142, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+      propertyPath: m_Name
+      value: PromotionButton
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1007883639 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 137142, guid: da3666aa5c7970e4a8d6d0367c8b925a, type: 2}
+  m_PrefabInternal: {fileID: 1007883638}
+--- !u!114 &1007883640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1007883639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a394b9ef9d4744f929a29448ac60ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: ac0e2e0056367cd43ab902c8910ef3bf, type: 3}
+  - {fileID: 21300000, guid: cce88f6c728489c4abaf4a2aef39a059, type: 3}
+  - {fileID: 21300000, guid: bced015653bee33408773c8efb329844, type: 3}
+  - {fileID: 21300000, guid: 6d6ba910fb574884ab716fa79ca9d2c6, type: 3}
+  urls:
+  - https://play.google.com/store/apps/details?id=com.atomEdition.mexicanAdopt
+  - https://play.google.com/store/apps/details?id=com.AtomEdition.CatClicker
+  - https://play.google.com/store/apps/details?id=com.atomEdition.FortuneCookies
+  - https://play.google.com/store/apps/details?id=com.AtomEdition.HitTheNail
 --- !u!1001 &1390208610
 Prefab:
   m_ObjectHideFlags: 0

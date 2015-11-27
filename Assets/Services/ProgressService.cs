@@ -5,7 +5,7 @@ using System;
 
 public class ProgressService {
 
-	private const int LEVEL_COUNT = 35;
+	private const int LEVEL_COUNT = 36;
 	private const char DELIMITER = '-';
 	private const string PREFS_PROGRESS_KEY = "progress";
 
@@ -42,16 +42,26 @@ public class ProgressService {
 	public void LoadArrayFromString() {
 
 		char[] charsToTrim = {' ', '-'};
-		string input = PlayerPrefs.GetString (PREFS_PROGRESS_KEY).Trim(charsToTrim);
+
+		string input = "2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2";//PlayerPrefs.GetString (PREFS_PROGRESS_KEY).Trim(charsToTrim);
+		CheckSavesOnCorrectBounds (input);
+	}
+
+	private void CheckSavesOnCorrectBounds(string input) {
 		string[] splittedString = input.Split (DELIMITER);
-		progress = Array.ConvertAll<string, int> (splittedString, int.Parse);
-		SetStarsCountTotal ();
+		if (splittedString.Length < LEVEL_COUNT) {
+			input += "-0";
+			CheckSavesOnCorrectBounds (input);
+		} else {
+			progress = Array.ConvertAll<string, int> (splittedString, int.Parse);
+			SetStarsCountTotal ();
+		}
 	}
 
 	public void SetStarsCountTotal(){
 
 		starsCountTotal = 0;
-		foreach (int number in Progress) {
+		foreach (int number in progress) {
 			starsCountTotal += number;
 		}
 	}	

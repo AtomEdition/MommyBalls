@@ -19,9 +19,9 @@ public class LevelChoosingButtonController : MonoBehaviour {
 
 		SetButtonText ();
 		SetButtonImage ();
-		SetLockedButtons ();
 		starsToUnlock = ProgressProperties.STARS_TO_UNLOCK [levelNumber - 1];
 		progressService.LevelsStarsToUnlock [levelNumber - 1] = starsToUnlock;
+		SetLockedButtons ();
 	}
 	
 	void Update() {

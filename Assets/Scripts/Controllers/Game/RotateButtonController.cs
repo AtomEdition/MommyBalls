@@ -12,13 +12,11 @@ public class RotateButtonController : MonoBehaviour {
 	private float currentRotationPower;
 
 	private InputService inputService = Singleton<InputService>.GetInstance();
-	private RotateButtonSpriteChanger spriteChanger;
 
 	// Use this for initialization
 	void Start () {
 
-		this.spriteChanger = this.gameObject.GetComponent<RotateButtonSpriteChanger>();
-		this.currentRotationPower = BASE_ROTATION_POWER * rotationMultiplier;
+		currentRotationPower = BASE_ROTATION_POWER * rotationMultiplier;
 	}
 	
 	// Update is called once per frame
@@ -45,16 +43,10 @@ public class RotateButtonController : MonoBehaviour {
 
 						currentRotation += currentRotationPower;
 						attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
-						spriteChanger.SetCondition (true);
 					}
-				} else {
-					spriteChanger.SetCondition(false);
-				}
+				} 
 			}
 
-		} else {
-
-			spriteChanger.SetCondition (false);
-		}
+		} 
 	}
 }

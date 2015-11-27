@@ -468,7 +468,7 @@ PlayerSettings:
   WebGL::template: APPLICATION:Default
   additionalIl2CppArgs::additionalIl2CppArgs: 
   firstStreamedSceneWithResources: 0
-  cloudProjectId: 
-  projectName: 
-  organizationId: 
+  cloudProjectId: bd490c54-3884-4684-9c2a-e11259286bbf
+  projectName: MommyBalls
+  organizationId: fuzzywuzzy
   cloudEnabled: 0

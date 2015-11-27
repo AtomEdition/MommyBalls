@@ -5,6 +5,7 @@ public class ExitButtonController : MonoBehaviour {
 
 	InputService inputService = Singleton<InputService>.GetInstance();
 	LevelService levelService = Singleton<LevelService>.GetInstance();
+	AdService adService = Singleton<AdService>.GetInstance();
 
 	void Update () {
 
@@ -19,6 +20,7 @@ public class ExitButtonController : MonoBehaviour {
 			
  			if (hit.collider != null && gameObject.Equals (hit.collider.gameObject)) {
 
+				adService.ShowAd();
 				Application.LoadLevel(Scenes.LEVEL_CHOOSING);
 				levelService.PrepareForNewLevel();
 			}

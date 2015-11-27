@@ -722,7 +722,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 441270, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .899999976
+      value: .159999996
       objectReference: {fileID: 0}
     - target: {fileID: 441270, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: m_LocalPosition.z
@@ -746,11 +746,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 441270, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 441270, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2.70000005
+      value: 3.43859363
       objectReference: {fileID: 0}
     - target: {fileID: 6119332, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: m_IsTrigger
@@ -762,7 +762,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 441270, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: m_LocalScale.y
-      value: 2.875
+      value: 2.87500143
       objectReference: {fileID: 0}
     - target: {fileID: 11484448, guid: 55a41f89275775748a29af97aec48c60, type: 2}
       propertyPath: powerMultiplier

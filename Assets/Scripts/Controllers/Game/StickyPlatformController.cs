@@ -16,6 +16,7 @@ public class StickyPlatformController : MonoBehaviour {
 
 	private LevelService levelService = Singleton<LevelService>.GetInstance();
 	public CustomEvent onBallCollide = new CustomEvent();
+	public CustomEvent onBallCharging = new CustomEvent();
 	public CustomEvent onBallRelease = new CustomEvent();
 
 	// Use this for initialization
@@ -57,10 +58,9 @@ public class StickyPlatformController : MonoBehaviour {
 			    && fireButton.Equals(hit.collider.gameObject)) {
 				
 				isCharging = true;
-				
+				onBallCharging.Call ();
 			}
-		}
-		
+		}		
 		
 		if (inputService.IsInputUp()) {
 

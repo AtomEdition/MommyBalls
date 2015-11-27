@@ -118,12 +118,12 @@ TextMesh:
   m_Alignment: 1
   m_TabSize: 4
   m_FontSize: 90
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: 0b5b0c814885e8641b4d3ff0d5fca40f, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4280756032
 --- !u!23 &237602985
 MeshRenderer:
   m_ObjectHideFlags: 0

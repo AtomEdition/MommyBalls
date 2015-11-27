@@ -14,6 +14,7 @@ public class LevelChoosingButtonController : MonoBehaviour {
 
 	InputService inputService = Singleton<InputService>.GetInstance();
 	ProgressService progressService = Singleton<ProgressService>.GetInstance();
+	AdService adService = Singleton<AdService>.GetInstance();
 	
 	void Start() {
 
@@ -31,7 +32,7 @@ public class LevelChoosingButtonController : MonoBehaviour {
 	
 	private void ToLevelListener() {
 		
-		if (inputService.IsInputDown()) {
+		if (inputService.IsInputDown() && !adService.IsShowingNow()) {
 			
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			

@@ -1174,11 +1174,19 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385181323}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3fd130b2c9e44740908cc2ba362845e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e36698fd97d98546a38c6fc0224b8fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnedOnFromScene: 0
+  switchingElements: []
+  switchingSwitchers:
+  - {fileID: 1521498181}
+--- !u!1 &1521498181 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 121450, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+  m_PrefabInternal: {fileID: 1241199888}
 --- !u!1001 &1549389929
 Prefab:
   m_ObjectHideFlags: 0

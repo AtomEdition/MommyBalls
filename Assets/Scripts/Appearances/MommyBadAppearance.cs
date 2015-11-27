@@ -33,16 +33,16 @@ public class MommyBadAppearance : Appearance {
 		
 	private void SetIdleAnimation() {
 
-		this.GetComponentInChildren<Animator> ().SetTrigger (IDLE_ANIMATION_TAG);
+		GetComponentInChildren<Animator> ().SetTrigger (IDLE_ANIMATION_TAG);
 	}
 
 	private void SetDieAnimation() {
 
-		this.GetComponentInChildren<Animator> ().SetTrigger (DIE_ANIMATION_TAG);
+		GetComponentInChildren<Animator> ().SetTrigger (DIE_ANIMATION_TAG);
 	}
 
 	private void SetCatchedAnimation() {
 
-		this.GetComponentInChildren<Animator> ().SetTrigger (CATCH_ANIMATION_TAG);
+		GetComponentInChildren<Animator> ().SetTrigger (CATCH_ANIMATION_TAG);
 	}
 }

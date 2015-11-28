@@ -40,6 +40,7 @@ public class StickyPlatformController : MonoBehaviour {
 			collision.gameObject.transform.SetParent (this.gameObject.transform);
 
 			onBallCollide.Call ();
+			levelService.OnBallStick.Call ();
 			collision.gameObject.GetComponent<BallController>().OnGrounded.Call ();
 		}
 	}

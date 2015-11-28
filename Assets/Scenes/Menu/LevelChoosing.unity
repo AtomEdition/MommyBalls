@@ -1784,6 +1784,23 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7118ee58364ba349bab47790b286313, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &348647488 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 164898, guid: b31c3c67d26e2a7409b50a4914593e1a, type: 2}
+  m_PrefabInternal: {fileID: 1513573939}
+--- !u!114 &348647494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 348647488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2c315ff58346e43a1eb8f192059782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300002, guid: d7d59e37edee4b9459af799a254f2c5e, type: 3}
+  hold: {fileID: 21300002, guid: 6eb5e57e2caf89748a4e0137de2d30cc, type: 3}
 --- !u!1001 &368559071
 Prefab:
   m_ObjectHideFlags: 0
@@ -1854,6 +1871,19 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 109914, guid: b31c3c67d26e2a7409b50a4914593e1a, type: 2}
   m_PrefabInternal: {fileID: 1513573939}
+--- !u!114 &436020955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 436020950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2c315ff58346e43a1eb8f192059782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 816e0ab33c87bf9429a94dce6d6126c1, type: 3}
+  hold: {fileID: 21300004, guid: 6eb5e57e2caf89748a4e0137de2d30cc, type: 3}
 --- !u!1001 &480676666
 Prefab:
   m_ObjectHideFlags: 0
@@ -5365,6 +5395,19 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 132510, guid: b31c3c67d26e2a7409b50a4914593e1a, type: 2}
   m_PrefabInternal: {fileID: 1513573939}
+--- !u!114 &1861801461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1861801456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2c315ff58346e43a1eb8f192059782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300002, guid: 816e0ab33c87bf9429a94dce6d6126c1, type: 3}
+  hold: {fileID: 21300010, guid: 6eb5e57e2caf89748a4e0137de2d30cc, type: 3}
 --- !u!1001 &1864035769
 Prefab:
   m_ObjectHideFlags: 0

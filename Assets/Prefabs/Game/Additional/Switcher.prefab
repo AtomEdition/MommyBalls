@@ -139,6 +139,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35a434d1561775943964e1a2e346a7d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorEnabled: {r: 0, g: .867647052, b: .00598372426, a: 0}
+  colorDisabled: {r: 1, g: 0, b: 0, a: 0}
 --- !u!212 &21204136
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -267,6 +269,30 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorEnabled.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorEnabled.g
+      value: .867647052
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorEnabled.b
+      value: .00598372426
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorDisabled.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorDisabled.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: colorDisabled.b
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

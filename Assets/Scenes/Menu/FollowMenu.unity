@@ -377,15 +377,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 449820, guid: 125c08d81fd06f84aa4e8b0ebc7adc05, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .629999995
+      value: -.0599999987
       objectReference: {fileID: 0}
     - target: {fileID: 449820, guid: 125c08d81fd06f84aa4e8b0ebc7adc05, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.889999986
+      value: -.0299999993
       objectReference: {fileID: 0}
     - target: {fileID: 11498332, guid: 125c08d81fd06f84aa4e8b0ebc7adc05, type: 2}
       propertyPath: sceneIndex
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10281152, guid: 125c08d81fd06f84aa4e8b0ebc7adc05, type: 2}
+      propertyPath: m_OffsetZ
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11488922, guid: 125c08d81fd06f84aa4e8b0ebc7adc05, type: 2}

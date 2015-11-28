@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class SwitcherSpriteChanger : MonoBehaviour {
-	
-	private const string PATH_SPRITE_SWITCH_ENABLED = "Sprites/Game/Additional/SwitcherOn";
-	private const string PATH_SPRITE_SWITCH_DISABLED = "Sprites/Game/Additional/SwitcherOff";
+
+	public Color colorEnabled;
+	public Color colorDisabled;
 
 	private SwitcherBehaviour swCtrl;
 

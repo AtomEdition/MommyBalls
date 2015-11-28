@@ -43,7 +43,7 @@ public class ProgressService {
 
 		char[] charsToTrim = {' ', '-'};
 
-		string input = "2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2";//PlayerPrefs.GetString (PREFS_PROGRESS_KEY).Trim(charsToTrim);
+		string input = PlayerPrefs.GetString (PREFS_PROGRESS_KEY).Trim(charsToTrim);//"2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2";//
 		CheckSavesOnCorrectBounds (input);
 	}
 

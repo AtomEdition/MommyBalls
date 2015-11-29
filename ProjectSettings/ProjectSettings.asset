@@ -138,8 +138,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/keystoreAdopt
+  AndroidKeyaliasName: mommyballs
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1

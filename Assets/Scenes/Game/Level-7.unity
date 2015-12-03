@@ -270,7 +270,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 456600, guid: 8efb6151ae02ed1499e9e625c2341534, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 439228, guid: 8efb6151ae02ed1499e9e625c2341534, type: 2}
       propertyPath: m_LocalScale.x
@@ -1091,7 +1091,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22456988, guid: 9b25bc8f54b2d4747a62f8a5e068fcf0, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 496258, guid: 9b25bc8f54b2d4747a62f8a5e068fcf0, type: 2}
       propertyPath: m_LocalRotation.z

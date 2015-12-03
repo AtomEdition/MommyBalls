@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: 978c74bd39e87434b918dde9c21d59b3
-timeCreated: 1447412727
+timeCreated: 1449146101
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - levelEndedMenuPrefab: {fileID: 107906, guid: 98d9dd61800d5fc4d864f290e69cd682,
+      type: 2}
+  - pauseMenuPrefab: {fileID: 179868, guid: 8efb6151ae02ed1499e9e625c2341534, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

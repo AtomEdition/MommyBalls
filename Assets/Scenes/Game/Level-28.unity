@@ -1154,7 +1154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 416118, guid: 15951b8b64ccb87459db5e5b3f7aa122, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 19858136, guid: 15951b8b64ccb87459db5e5b3f7aa122, type: 2}
       propertyPath: EmissionModule.rate.maxCurve.m_Curve.Array.data[0].value

@@ -41,8 +41,7 @@ public class BallCreateController : MonoBehaviour {
 		powerX *= BALL_POWER_MULTIPLIER;
 
 		return powerX < BALL_POWER_MAXIMUM ? powerX : BALL_POWER_MAXIMUM;
-	}
-	
+	}	
 	
 	private float GetPowerY()
 	{

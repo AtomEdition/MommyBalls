@@ -12,10 +12,10 @@ public class JumperSounds : MonoBehaviour {
 	void Start () {
 		
 		onJumperCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		gameObject.GetComponent<JumperController> ().onBallCollide.eventAttachTo += this.makePlatformSound;
+		gameObject.GetComponent<JumperController> ().onBallCollide.eventAttachTo += MakePlatformSound;
 	}
 	
-	private void makePlatformSound(){
+	private void MakePlatformSound(){
 		
 		onJumperCollideAudioSource.clip = Resources.Load<AudioClip> (PLATFORM_SOUND_CLIP_PATH + Random.Range (0, JUMPER_SOUNDS_COUNT));
 		onJumperCollideAudioSource.Play ();

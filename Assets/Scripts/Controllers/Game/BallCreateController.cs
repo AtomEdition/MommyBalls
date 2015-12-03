@@ -7,9 +7,9 @@ public class BallCreateController : MonoBehaviour {
 	public const float BALL_POWER_MULTIPLIER = 280F;
 	public const float BALL_POWER_MAXIMUM = 1000F;	
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
-	private InputService inputService = Singleton<InputService>.GetInstance();	
-	private bool isMovingByMouse = false;
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();	
+	private bool isMovingByMouse;
 
 	public void SetBallBehaviourOnContinuousClick() {
 		

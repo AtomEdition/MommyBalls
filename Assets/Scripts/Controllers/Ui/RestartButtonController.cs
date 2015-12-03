@@ -3,8 +3,8 @@ using System.Collections;
 
 public class RestartButtonController : MonoBehaviour {
 
-	InputService inputService = Singleton<InputService>.GetInstance();
-	LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 	
 	// Update is called once per frame
 	void Update () {

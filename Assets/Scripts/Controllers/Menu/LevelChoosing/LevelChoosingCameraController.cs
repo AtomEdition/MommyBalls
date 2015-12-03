@@ -3,7 +3,7 @@ using System.Collections;
 
 public class LevelChoosingCameraController : MonoBehaviour {
 
-	private InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();
 	private const float CAMERA_MOVING_POWER = 10F;
 	private const float BALL_POWER = 300F;
 	private const float SPAWN_BALL_HEIGTH = 3F;
@@ -15,7 +15,7 @@ public class LevelChoosingCameraController : MonoBehaviour {
 	public GameObject buttonDown;
 	public GameObject buttonBack;
 
-	private ProgressService progressService = Singleton<ProgressService>.GetInstance();
+	private readonly ProgressService progressService = Singleton<ProgressService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +27,7 @@ public class LevelChoosingCameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		moveCamera ();
+		MoveCamera ();
 	}
 	
 	private void SpawnBall() {
@@ -40,7 +40,7 @@ public class LevelChoosingCameraController : MonoBehaviour {
 		newBall.GetComponent<CircleCollider2D> ().enabled = false;
 	}
 
-	private void moveCamera() {
+	private void MoveCamera() {
 
 		if (inputService.IsInputHold ()) {
 

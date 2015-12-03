@@ -13,10 +13,10 @@ public class BallDestroyingSounds : MonoBehaviour {
 
 		onDestroyBallAudioSource = gameObject.AddComponent<AudioSource> ();	
 
-		gameObject.GetComponent<DestroyBallBehaviour> ().onBallCollide.eventAttachTo += this.makeOnDestroySound;
+		gameObject.GetComponent<DestroyBallBehaviour> ().onBallCollide.eventAttachTo += MakeOnDestroySound;
 	}
 	
-	private void makeOnDestroySound(){
+	private void MakeOnDestroySound(){
 		
 		onDestroyBallAudioSource.clip = Resources.Load<AudioClip> (DESTROY_CLIP_PATH + Random.Range(0, DESTROY_SOUNDS_COUNT));
 		onDestroyBallAudioSource.Play ();

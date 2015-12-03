@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MommyController : MonoBehaviour {
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	private const float BALL_DESTROY_DELAY = 0.05F;
 

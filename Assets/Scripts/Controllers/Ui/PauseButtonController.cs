@@ -4,8 +4,8 @@ using System.Collections;
 public class PauseButtonController : MonoBehaviour {
 	
 	public GameObject menuPrefab;
-	InputService inputService = Singleton<InputService>.GetInstance();
-	LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {		

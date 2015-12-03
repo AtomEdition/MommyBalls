@@ -6,7 +6,7 @@ public class Singleton<T> where T : new() {
 	}
 
 	public static T GetInstance(){
-		if (instance == null) {
+		if (object.Equals(instance, default(T))) {
 			instance = new T();
 		}
 		return instance;

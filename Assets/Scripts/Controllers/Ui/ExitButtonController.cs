@@ -3,9 +3,9 @@ using System.Collections;
 
 public class ExitButtonController : MonoBehaviour {
 
-	InputService inputService = Singleton<InputService>.GetInstance();
-	LevelService levelService = Singleton<LevelService>.GetInstance();
-	AdService adService = Singleton<AdService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly AdService adService = Singleton<AdService>.GetInstance();
 
 	void Update () {
 

@@ -4,7 +4,7 @@ using System.Collections;
 public class MainMenuButtonController : MonoBehaviour {
 
 	public int sceneIndex;
-	private InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();
 
 	// Update is called once per frame
 	void Update () {

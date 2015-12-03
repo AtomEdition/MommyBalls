@@ -12,10 +12,10 @@ public class PlatformSounds : MonoBehaviour {
 	void Start () {
 		
 		onPlatformCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		gameObject.GetComponent<PlatformController> ().onBallCollide.eventAttachTo += makePlatformSound;
+		gameObject.GetComponent<PlatformController> ().onBallCollide.eventAttachTo += MakePlatformSound;
 	}
 
-	private void makePlatformSound(){
+	private void MakePlatformSound(){
 		
 		onPlatformCollideAudioSource.clip = Resources.Load<AudioClip> (PLATFORM_SOUND_CLIP_PATH + Random.Range(0, PLATFORM_SOUNDS_COUNT));
 		onPlatformCollideAudioSource.Play ();

@@ -4,7 +4,7 @@ using System.Collections;
 public class FollowButtonController : MonoBehaviour {
 
 	public string url;
-	InputService inputService = Singleton<InputService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
 	
 	// Update is called once per frame
 	void Update () {

@@ -10,9 +10,4 @@ public class AttachSimpleBehaviour : MonoBehaviour {
 
 		gameObject.transform.parent = parent.transform;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

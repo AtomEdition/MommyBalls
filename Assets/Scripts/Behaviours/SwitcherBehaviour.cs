@@ -3,9 +3,9 @@ using System.Collections;
 
 public class SwitcherBehaviour : SwitcherBaseClass {
 
-	public bool turnedOnFromScene = false;
+	public bool turnedOnFromScene;
 	private bool turnedOn;
-	private bool isTriggered = false;
+	private bool isTriggered;
 
 	public GameObject[] switchingElements = {};
 	public GameObject[] switchingSwitchers = {};

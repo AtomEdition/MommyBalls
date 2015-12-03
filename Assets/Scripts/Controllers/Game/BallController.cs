@@ -6,18 +6,13 @@ public class BallController : MonoBehaviour {
 	private const float OUT_OF_LEVEL_RANGE = -8F;	
 	private const float LEVEL_ENDED_DELAY = 0.5F;
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
-	private bool isSafeColliding = false;
+	private bool isSafeColliding;
 	
 	public CustomEvent OnCreated = new CustomEvent();
 	public CustomEvent OnReleased = new CustomEvent();
 	public CustomEvent OnGrounded = new CustomEvent();	
-
-	// Use this for initialization
-	private void Start () {
-
-	}
 
 	// Update is called once per frame
 	private void Update () {

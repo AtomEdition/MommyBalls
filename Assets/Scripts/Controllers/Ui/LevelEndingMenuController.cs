@@ -3,8 +3,8 @@ using System.Collections;
 
 public class LevelEndingMenuController : MonoBehaviour {
 	
-	LevelService levelService = Singleton<LevelService>.GetInstance();
-	ProgressService progressService = Singleton<ProgressService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly ProgressService progressService = Singleton<ProgressService>.GetInstance();
 	public GameObject menuPrefab;
 
 	// Use this for initialization
@@ -19,7 +19,7 @@ public class LevelEndingMenuController : MonoBehaviour {
 		if (levelService.BallCount <= 0 
 		    && GameObject.FindGameObjectsWithTag(Tags.BALL).Length == 0) {
 			
-			GameObject menu = Instantiate(menuPrefab, new Vector2 (), Quaternion.identity) as GameObject;
+			Instantiate(menuPrefab, new Vector2 (), Quaternion.identity);
 			levelService.IsLevelPaused = true;
 			progressService.UpdateScore(levelService.CurrentLevel, levelService.GetStarCount());
 			progressService.SetStarsCountTotal ();

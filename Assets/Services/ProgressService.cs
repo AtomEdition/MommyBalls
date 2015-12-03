@@ -9,7 +9,7 @@ public class ProgressService {
 	private const char DELIMITER = '-';
 	private const string PREFS_PROGRESS_KEY = "progress";
 
-	private int starsCountTotal = 0;
+	private int starsCountTotal;
 
 	private int[] progress = new int[LEVEL_COUNT];
 	private int[] levelsStarsToUnlock = new int[LEVEL_COUNT];
@@ -48,10 +48,11 @@ public class ProgressService {
 	}
 
 	private void CheckSavesOnCorrectBounds(string input) {
-		string[] splittedString = input.Split (DELIMITER);
+		string newString = input.Clone () as String;
+		string[] splittedString = newString.Split (DELIMITER);
 		if (splittedString.Length < LEVEL_COUNT) {
-			input += "-0";
-			CheckSavesOnCorrectBounds (input);
+			newString += "-0";
+			CheckSavesOnCorrectBounds (newString);
 		} else {
 			progress = Array.ConvertAll<string, int> (splittedString, int.Parse);
 			SetStarsCountTotal ();

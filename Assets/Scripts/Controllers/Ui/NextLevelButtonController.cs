@@ -3,9 +3,9 @@ using System.Collections;
 
 public class NextLevelButtonController : MonoBehaviour {
 	
-	InputService inputService = Singleton<InputService>.GetInstance();
-	LevelService levelService = Singleton<LevelService>.GetInstance();
-	ProgressService progressService = Singleton<ProgressService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly ProgressService progressService = Singleton<ProgressService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

@@ -3,16 +3,11 @@ using System.Collections;
 
 public class ResumeButtonController : MonoBehaviour {
 	
-	InputService inputService = Singleton<InputService>.GetInstance();
-	LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 	private GameObject pauseButtonAppearTo;
 	public GameObject menuToDestroy;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () {
 		

@@ -12,10 +12,10 @@ public class SwitcherSounds : MonoBehaviour {
 	void Start () {
 		
 		onSwitchAudioSource = gameObject.AddComponent<AudioSource> ();
-		gameObject.GetComponent<SwitcherBehaviour> ().onSwitchEvent.eventAttachTo += this.makeSwitcherSound;
+		gameObject.GetComponent<SwitcherBehaviour> ().onSwitchEvent.eventAttachTo += MakeSwitcherSound;
 	}
 	
-	private void makeSwitcherSound(){
+	private void MakeSwitcherSound(){
 		
 		onSwitchAudioSource.clip = Resources.Load<AudioClip> (SWITCHER_SOUND_CLIP_PATH + Random.Range (0, SWITCHER_SOUNDS_COUNT));
 		onSwitchAudioSource.Play ();

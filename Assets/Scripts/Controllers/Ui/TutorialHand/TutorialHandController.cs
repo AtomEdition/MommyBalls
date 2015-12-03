@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TutorialHandController : MonoBehaviour {
 
-	InputService inputService = Singleton<InputService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
 
 	// Update is called once per frame
 	void Update () {

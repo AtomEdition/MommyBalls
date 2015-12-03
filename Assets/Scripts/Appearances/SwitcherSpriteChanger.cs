@@ -15,11 +15,6 @@ public class SwitcherSpriteChanger : MonoBehaviour {
 		AttachMethodsToEvent ();
 		ChangeSprite ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	private void AttachMethodsToEvent() {
 

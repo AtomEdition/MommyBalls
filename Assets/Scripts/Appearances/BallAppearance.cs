@@ -12,7 +12,7 @@ public class BallAppearance : Appearance {
 
 	private GameObject currentAppearance;
 
-	LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

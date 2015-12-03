@@ -1,9 +1,10 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class CustomEvent {
 
-	private ArrayList delegates = new ArrayList();
+	private readonly List<EventHandler> delegates = new List<EventHandler>();
 	public delegate void EventHandler();
 
 	private event EventHandler customEvent;

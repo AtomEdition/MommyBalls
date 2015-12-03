@@ -5,11 +5,6 @@ public class CloudController : MonoBehaviour {
 
 	private const float OUT_OF_LEVEL_RANGE = 8F;	
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () {
 

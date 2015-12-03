@@ -5,13 +5,13 @@ public class RotateButtonController : MonoBehaviour {
 
 	public GameObject[] attachedObjects = {};
 
-	public float rotationAngleTo = 0;
+	public float rotationAngleTo;
 
 	public float rotationMultiplier = 1;
 	private const float BASE_ROTATION_POWER = 0.8F;
 	private float currentRotationPower;
 
-	private InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
@@ -37,13 +37,12 @@ public class RotateButtonController : MonoBehaviour {
 				float currentRotation = attachedObject.transform.eulerAngles.z;
 
 				if (hit.collider != null
-					&& hit.collider.gameObject == this.gameObject){
-					if ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
-						|| (currentRotation >= rotationAngleTo && rotationMultiplier < 0)) {
+					&& hit.collider.gameObject == this.gameObject
+				    && ((currentRotation <= rotationAngleTo && rotationMultiplier > 0)
+				    || (currentRotation >= rotationAngleTo && rotationMultiplier < 0))){
 
 						currentRotation += currentRotationPower;
 						attachedObject.gameObject.transform.rotation = Quaternion.Euler (0, 0, currentRotation);
-					}
 				} 
 			}
 

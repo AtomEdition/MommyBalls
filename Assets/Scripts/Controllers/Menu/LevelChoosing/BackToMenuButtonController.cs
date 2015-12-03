@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BackToMenuButtonController : MonoBehaviour {
 
-	InputService inputService = Singleton<InputService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
 
 	void Update() {
 

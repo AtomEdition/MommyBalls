@@ -12,9 +12,9 @@ public class LevelChoosingButtonController : MonoBehaviour {
 	public Sprite spriteSilver;
 	public Sprite spriteGold;
 
-	InputService inputService = Singleton<InputService>.GetInstance();
-	ProgressService progressService = Singleton<ProgressService>.GetInstance();
-	AdService adService = Singleton<AdService>.GetInstance();
+	readonly InputService inputService = Singleton<InputService>.GetInstance();
+	readonly ProgressService progressService = Singleton<ProgressService>.GetInstance();
+	readonly AdService adService = Singleton<AdService>.GetInstance();
 	
 	void Start() {
 

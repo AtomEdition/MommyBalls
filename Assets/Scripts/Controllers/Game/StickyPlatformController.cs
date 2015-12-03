@@ -5,16 +5,16 @@ public class StickyPlatformController : MonoBehaviour {
 	
 	public GameObject fireButton;
 
-	private InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();
 
 	private const float PLATFORM_POWER_BASE = 1000;
 	public float platformPowerMultiplier = 1;
 	public float delaySecondsMaximum = 1;
 	private float platformPowerCurrent;
 
-	private bool isCharging = false;
+	private bool isCharging;
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 	public CustomEvent onBallCollide = new CustomEvent();
 	public CustomEvent onBallCharging = new CustomEvent();
 	public CustomEvent onBallRelease = new CustomEvent();

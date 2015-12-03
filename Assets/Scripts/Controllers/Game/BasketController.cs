@@ -4,8 +4,8 @@ using System.Collections;
 public class BasketController : MonoBehaviour {
 
 	public GameObject ball;
-	private InputService inputService = Singleton<InputService>.GetInstance();
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Update is called once per frame
 	void Update () {

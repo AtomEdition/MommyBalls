@@ -7,16 +7,16 @@ public class MommySounds : MonoBehaviour {
 	private const string MOMMY_SOUNDS_CLIP_PATH = "Sounds/Mommy/mommy";
 	
 	private AudioSource onMommyCollideAudioSource; 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 		
 		onMommyCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		levelService.OnBallCatch.eventAttachTo += makeMommySound;
+		levelService.OnBallCatch.eventAttachTo += MakeMommySound;
 	}	
 	
-	private void makeMommySound(){
+	private void MakeMommySound(){
 		
 		onMommyCollideAudioSource.clip = Resources.Load<AudioClip> (MOMMY_SOUNDS_CLIP_PATH + Random.Range (0, MOMMY_SOUNDS_COUNT));
 		onMommyCollideAudioSource.Play ();

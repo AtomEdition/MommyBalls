@@ -8,9 +8,4 @@ public class ParticleSystemAppearance : MonoBehaviour {
 		GetComponent<Renderer>().sortingLayerName = "Foreground";
 		GetComponent<Renderer>().sortingOrder = 10;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class LevelChoosingCameraMover : MonoBehaviour {
 
-	private ProgressService progressService = Singleton<ProgressService>.GetInstance();
-	private Dictionary<int, float> levelsUnlocks = new Dictionary<int, float>();
+	private readonly ProgressService progressService = Singleton<ProgressService>.GetInstance();
+	private readonly Dictionary<int, float> levelsUnlocks = new Dictionary<int, float>();
 	
 	void Start () {
 

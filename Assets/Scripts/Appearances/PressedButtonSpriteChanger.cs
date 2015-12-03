@@ -6,24 +6,17 @@ public class PressedButtonSpriteChanger : MonoBehaviour {
 	public Sprite idle;
 	public Sprite hold;
 
-	private bool isPressed = false;
+	private bool isPressed;
 
-	private InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly InputService inputService = Singleton<InputService>.GetInstance();
 
 	public void Update() {		
 		
 		if (inputService.IsInputHold ()) {			
 			
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
+			IsPressed = hit.collider != null && hit.collider.gameObject == gameObject;
 
-			if (hit.collider != null && hit.collider.gameObject == gameObject) {
-
-				IsPressed = true;
-			
-			} else {
-
-				IsPressed = false;
-			}
 		} else {
 
 			IsPressed = false;
@@ -31,11 +24,8 @@ public class PressedButtonSpriteChanger : MonoBehaviour {
 	}
 
 	public void SetCondition(bool isHold) {
-		if (isHold) {
-			gameObject.GetComponent<SpriteRenderer> ().sprite = hold;
-		} else {
-			gameObject.GetComponent<SpriteRenderer> ().sprite = idle;			
-		}
+
+		gameObject.GetComponent<SpriteRenderer> ().sprite = isHold ? hold : idle;
 	}
 
 	private bool IsPressed {

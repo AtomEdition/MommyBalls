@@ -3,17 +3,12 @@ using System.Collections;
 
 public class AppearWhenNoBallsBehaviour : MonoBehaviour {
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 
 		levelService.OnBallCreate.eventAttachTo += OnBallsOut;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
 	}
 
 	private void OnBallsOut() {

@@ -7,16 +7,16 @@ public class MommyBadSounds : MonoBehaviour {
 	private const string MOMMY_SOUNDS_CLIP_PATH = "Sounds/MommyBad/BadLaugh";
 	
 	private AudioSource onMommyCollideAudioSource; 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 		
 		onMommyCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		levelService.OnBallDestroy.eventAttachTo += makeBadSound;
+		levelService.OnBallDestroy.eventAttachTo += MakeBadSound;
 	}
 	
-	private void makeBadSound(){
+	private void MakeBadSound(){
 
 		if (GetComponent<SpriteRenderer> ().enabled) {
 

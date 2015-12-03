@@ -12,10 +12,10 @@ public class PortalSounds : MonoBehaviour {
 	void Start () {
 		
 		onPortalCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		gameObject.GetComponent<PortalController> ().onTeleportate.eventAttachTo += makePortalSound;
+		gameObject.GetComponent<PortalController> ().onTeleportate.eventAttachTo += MakePortalSound;
 	}
 	
-	private void makePortalSound(){
+	private void MakePortalSound(){
 		
 		onPortalCollideAudioSource.clip = Resources.Load<AudioClip> (PORTAL_SOUND_CLIP_PATH + Random.Range(0, PORTAL_SOUNDS_COUNT));
 		onPortalCollideAudioSource.Play ();

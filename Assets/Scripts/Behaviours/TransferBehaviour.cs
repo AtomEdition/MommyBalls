@@ -10,7 +10,7 @@ public class TransferBehaviour : MonoBehaviour {
 
 	private int direction;
 	private float speed;
-	private bool isTriggered = false;
+	private bool isTriggered;
 
 	// Use this for initialization
 	void Start () {
@@ -36,7 +36,7 @@ public class TransferBehaviour : MonoBehaviour {
 		} 
 	}
 
-	void OnTriggerExit2D(Collider2D trigger){
+	void OnTriggerExit2D(){
 
 		isTriggered = false;
 	}

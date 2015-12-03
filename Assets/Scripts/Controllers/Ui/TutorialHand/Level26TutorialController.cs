@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Level26TutorialController : MonoBehaviour {
 
-	LevelService levelService = Singleton<LevelService>.GetInstance();
+	readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

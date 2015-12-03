@@ -7,7 +7,7 @@ public class StarCreateListener : MonoBehaviour {
 	public Sprite spriteFull;
 	public int starIndex = 1;
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {

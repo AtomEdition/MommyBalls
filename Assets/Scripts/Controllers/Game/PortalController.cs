@@ -7,7 +7,7 @@ public class PortalController : MonoBehaviour {
 	public GameObject ball;
 
 	private bool isActive = true;
-	private static bool isTeleportatingNow = false;
+	private static bool isTeleportatingNow;
 
 	public delegate void MethodContainer(bool flag);
 	public event MethodContainer onSwitchPortalCondition;
@@ -22,9 +22,7 @@ public class PortalController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D trigger){
 
-		if (trigger.gameObject.tag == Tags.BALL) {
-
-			if (!isTeleportatingNow) {
+		if (trigger.gameObject.tag == Tags.BALL && !isTeleportatingNow) {
 		
 				onSwitchPortalCondition (false);
 				onTeleportate.Call();
@@ -51,7 +49,6 @@ public class PortalController : MonoBehaviour {
 
 					createdBall.GetComponent<Rigidbody2D> ().velocity = speed;
 					Destroy (trigger.gameObject);
-				} 
 			}
 		}
 	}
@@ -65,14 +62,14 @@ public class PortalController : MonoBehaviour {
 		return new Vector2 (x, y);
 	}
 
-	void OnTriggerExit2D(Collider2D trigger){
+	void OnTriggerExit2D(){
 
 		onSwitchPortalCondition (true);
 	}
 
 	private void SetPortalCondition(bool isEnabled) {
 
-		this.IsActive = isEnabled;
+		IsActive = isEnabled;
 		isTeleportatingNow = !isEnabled;
 	}
 

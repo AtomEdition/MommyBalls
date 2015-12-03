@@ -41,11 +41,10 @@ public class InputService {
 
 	public Vector2 GetCurrentPosition() {
 		if (IsInputDown() || IsInputHold() || IsInputUp()) {
-			if (Input.touchCount > 0) {
-				return Camera.main.ScreenToWorldPoint(Input.GetTouch (0).position);
-			} else {
-				return Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			}
+
+			return (Input.touchCount > 0) 
+				? Camera.main.ScreenToWorldPoint(Input.GetTouch (0).position)
+				: Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		}
 		return new Vector2();
 	}

@@ -14,17 +14,17 @@ public class StickyPlatformSounds : MonoBehaviour {
 	void Start () {
 		
 		onStickyPlatformCollideAudioSource = gameObject.AddComponent<AudioSource> ();
-		gameObject.GetComponent<StickyPlatformController> ().onBallCollide.eventAttachTo += this.makeStickySound;
-		gameObject.GetComponent<StickyPlatformController> ().onBallRelease.eventAttachTo += this.makeReleaseSound;
+		gameObject.GetComponent<StickyPlatformController> ().onBallCollide.eventAttachTo += MakeStickySound;
+		gameObject.GetComponent<StickyPlatformController> ().onBallRelease.eventAttachTo += MakeReleaseSound;
 	}
 	
-	private void makeStickySound(){
+	private void MakeStickySound(){
 		
 		onStickyPlatformCollideAudioSource.clip = Resources.Load<AudioClip> (STICK_SOUNDS_CLIP_PATH + Random.Range (0, STICK_SOUNDS_COUNT));
 		onStickyPlatformCollideAudioSource.Play ();
 	}
 	
-	private void makeReleaseSound(){
+	private void MakeReleaseSound(){
 		
 		onStickyPlatformCollideAudioSource.clip = Resources.Load<AudioClip> (RELEASE_SOUNDS_CLIP_PATH + Random.Range (0, RELEASE_SOUNDS_COUNT));
 		onStickyPlatformCollideAudioSource.Play ();

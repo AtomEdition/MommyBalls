@@ -8,29 +8,24 @@ public class BallCreatingSounds : MonoBehaviour {
 
 	private AudioSource onCreateBallAudioSource; 
 
-	private LevelService levelService = Singleton<LevelService>.GetInstance();
+	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 
 	// Use this for initialization
 	void Start () {
 	
-		levelService.OnBallRelease.eventAttachTo += makeOnReleaseSound;
-		levelService.OnBallDestroy.eventAttachTo += stopOnReleaseSound;
+		levelService.OnBallRelease.eventAttachTo += MakeOnReleaseSound;
+		levelService.OnBallDestroy.eventAttachTo += StopOnReleaseSound;
 
 		onCreateBallAudioSource = gameObject.AddComponent<AudioSource> ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-	private void makeOnReleaseSound(){
+	private void MakeOnReleaseSound(){
 		
 		onCreateBallAudioSource.clip = Resources.Load<AudioClip> (CREATE_CLIP_PATH + Random.Range(0, CREATE_SOUNDS_COUNT));
 		onCreateBallAudioSource.Play ();
 	}
 		
-	private void stopOnReleaseSound(){
+	private void StopOnReleaseSound(){
 
 		if (onCreateBallAudioSource != null) {
 		

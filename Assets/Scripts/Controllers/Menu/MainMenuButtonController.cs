@@ -20,7 +20,8 @@ public class MainMenuButtonController : MonoBehaviour {
 			
 			if (hit.collider != null
 			    && hit.collider.gameObject == gameObject) {
-				
+
+				Handheld.ClearShaderCache ();
 				Application.LoadLevel(sceneIndex);
 			}
 		}

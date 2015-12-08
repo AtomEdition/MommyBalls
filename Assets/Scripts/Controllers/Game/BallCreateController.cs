@@ -3,9 +3,9 @@ using System.Collections;
 
 public class BallCreateController : MonoBehaviour {
 	
-	public const float BALL_MOVE_SPEED = 20F;	
-	public const float BALL_POWER_MULTIPLIER = 280F;
-	public const float BALL_POWER_MAXIMUM = 1000F;	
+	public const float BALL_MOVE_SPEED = 30F;	
+	public const float BALL_POWER_MULTIPLIER = 360F;
+	public const float BALL_POWER_MAXIMUM = 1400F;	
 
 	private readonly LevelService levelService = Singleton<LevelService>.GetInstance();
 	private readonly InputService inputService = Singleton<InputService>.GetInstance();	

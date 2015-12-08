@@ -1457,6 +1457,14 @@ Prefab:
       propertyPath: switchingSwitchers.Array.data[10]
       value: 
       objectReference: {fileID: 858721411}
+    - target: {fileID: 21292952, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 21262662, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f40f32cbda3478146b50f73c7593c3b4, type: 2}
   m_IsPrefabParent: 0

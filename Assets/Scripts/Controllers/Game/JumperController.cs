@@ -3,7 +3,7 @@ using System.Collections;
 
 public class JumperController : MonoBehaviour {
 
-	private const int JUMPER_POWER = 300;
+	private const int JUMPER_POWER = 400;
 
 	public float jumperPowerMultiplier = 1;
 	private float chosenJumperPower;

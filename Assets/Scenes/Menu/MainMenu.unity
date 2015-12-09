@@ -282,8 +282,8 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: ac0e2e0056367cd43ab902c8910ef3bf, type: 3}
   - {fileID: 21300000, guid: cce88f6c728489c4abaf4a2aef39a059, type: 3}
-  - {fileID: 21300000, guid: bced015653bee33408773c8efb329844, type: 3}
-  - {fileID: 21300000, guid: 6d6ba910fb574884ab716fa79ca9d2c6, type: 3}
+  - {fileID: 21300000, guid: f62ed8cfd8898d44c9d20f2d5075389b, type: 3}
+  - {fileID: 21300000, guid: f8c5e1dce8d321241807c403fe19da26, type: 3}
   urls:
   - https://play.google.com/store/apps/details?id=com.atomEdition.mexicanAdopt
   - https://play.google.com/store/apps/details?id=com.AtomEdition.CatClicker

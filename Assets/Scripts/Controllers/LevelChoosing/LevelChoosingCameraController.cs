@@ -52,11 +52,11 @@ public class LevelChoosingCameraController : MonoBehaviour {
 
 			if (hit.collider.gameObject.Equals (buttonUp)) { 
 
-				this.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, CAMERA_MOVING_POWER));
+				gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, CAMERA_MOVING_POWER));
 			
 			} else if (hit.collider.gameObject.Equals (buttonDown)) {
 				
-				this.gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, -CAMERA_MOVING_POWER));
+				gameObject.GetComponent<Rigidbody2D> ().AddForce (new Vector2 (0, -CAMERA_MOVING_POWER));
 			}
 
 			GetComponentInChildren<ControlPanelLightAppearance> ().SetCondition (true);

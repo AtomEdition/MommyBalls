@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class NextLevelButtonController : MonoBehaviour {
 	
@@ -40,7 +41,7 @@ public class NextLevelButtonController : MonoBehaviour {
 			
 			if (hit.collider != null && gameObject.Equals (hit.collider.gameObject)) {
 				
-				Application.LoadLevel(Application.loadedLevel + 1);
+				SceneManager.LoadScene (Application.loadedLevel + 1);
 				levelService.PrepareForNewLevel();
 			}			
 		}

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ExitButtonController : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class ExitButtonController : MonoBehaviour {
 		OnClick ();
 	}
 
-	private void OnClick(){
+	private void OnClick() {
 		
 		if (inputService.IsInputDown ()) {
 
@@ -21,7 +22,7 @@ public class ExitButtonController : MonoBehaviour {
  			if (hit.collider != null && gameObject.Equals (hit.collider.gameObject)) {
 
 				adService.ShowAd();
-				Application.LoadLevel(Scenes.LEVEL_CHOOSING);
+				SceneManager.LoadScene (Scenes.LEVEL_CHOOSING);
 				levelService.PrepareForNewLevel();
 			}
 

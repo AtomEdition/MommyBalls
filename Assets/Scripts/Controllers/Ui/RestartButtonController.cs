@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class RestartButtonController : MonoBehaviour {
 
@@ -20,7 +21,7 @@ public class RestartButtonController : MonoBehaviour {
 			
 			if (hit.collider != null && gameObject.Equals (hit.collider.gameObject)) {
 				
-				Application.LoadLevel(Application.loadedLevel);
+				SceneManager.LoadScene (Application.loadedLevel);
 				levelService.PrepareForNewLevel();
 			}			
 		}

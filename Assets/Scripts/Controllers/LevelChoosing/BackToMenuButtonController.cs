@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class BackToMenuButtonController : MonoBehaviour {
 
@@ -18,8 +19,8 @@ public class BackToMenuButtonController : MonoBehaviour {
 
 			if (hit.collider != null
 				&& hit.collider.gameObject == this.gameObject) {
-			
-				Application.LoadLevel(Scenes.LEVEL_CHOOSING);
+		
+				SceneManager.LoadScene (Scenes.LEVEL_CHOOSING);
 			}
 		}
 	}

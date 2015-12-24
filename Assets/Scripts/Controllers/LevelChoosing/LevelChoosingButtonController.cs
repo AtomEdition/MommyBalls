@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelChoosingButtonController : MonoBehaviour {
 
@@ -39,7 +40,7 @@ public class LevelChoosingButtonController : MonoBehaviour {
 			if (hit.collider != null
 			    && hit.collider.gameObject == gameObject) {
 				
-				Application.LoadLevel(Scenes.LEVEL_PREFIX + levelNumber);
+				SceneManager.LoadScene (Scenes.LEVEL_PREFIX + levelNumber);
 			}
 		}
 	}

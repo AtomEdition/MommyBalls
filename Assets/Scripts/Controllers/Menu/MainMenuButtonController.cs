@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MainMenuButtonController : MonoBehaviour {
 
@@ -22,7 +23,7 @@ public class MainMenuButtonController : MonoBehaviour {
 			    && hit.collider.gameObject == gameObject) {
 
 				Handheld.ClearShaderCache ();
-				Application.LoadLevel(sceneIndex);
+				SceneManager.LoadScene (sceneIndex);
 			}
 		}
 	}

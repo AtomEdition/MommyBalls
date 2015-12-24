@@ -9,7 +9,7 @@ public class InputService {
 
 		if (Input.GetMouseButtonDown (0)
 		    || (Input.touchCount > 0 
-		    && Input.GetTouch(0).phase == TouchPhase.Began)) {
+				&& Input.touches[Input.touches.Length - 1].phase == TouchPhase.Began)) {
 
 			timeInputDown = Time.fixedTime;
 			return true;

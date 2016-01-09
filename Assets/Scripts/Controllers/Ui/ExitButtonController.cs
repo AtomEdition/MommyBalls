@@ -21,7 +21,7 @@ public class ExitButtonController : MonoBehaviour {
 			
  			if (hit.collider != null && gameObject.Equals (hit.collider.gameObject)) {
 
-				adService.ShowAd();
+				adService.ShowAdmobInterstial();
 				SceneManager.LoadScene (Scenes.LEVEL_CHOOSING);
 				levelService.PrepareForNewLevel();
 			}

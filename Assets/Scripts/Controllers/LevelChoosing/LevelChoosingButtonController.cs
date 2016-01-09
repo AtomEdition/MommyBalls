@@ -33,13 +33,14 @@ public class LevelChoosingButtonController : MonoBehaviour {
 	
 	private void ToLevelListener() {
 		
-		if (inputService.IsInputDown() && !adService.IsShowingNow()) {
+		if (inputService.IsInputDown()) {
 			
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			
 			if (hit.collider != null
 			    && hit.collider.gameObject == gameObject) {
-				
+
+				adService.LoadAdmobInterstial ();
 				SceneManager.LoadScene (Scenes.LEVEL_PREFIX + levelNumber);
 			}
 		}

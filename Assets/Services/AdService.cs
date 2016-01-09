@@ -1,23 +1,55 @@
 ﻿using UnityEngine;
-using UnityEngine.Advertisements;
+using GoogleMobileAds.Api;
 
 public class AdService : MonoBehaviour {
 
-	public void ShowAd()
-	{
-		try {
-			if (Advertisement.IsReady()) {
+	private const string SMALL_MENU_BANNER_ID = "ca-app-pub-9550981282535152/6062764220";
+	private const string INTERSTIAL_ID = "ca-app-pub-9550981282535152/7539497424";
 
-				Advertisement.Show();
-			}
-		} catch (UnityException e) {
+	private BannerView bannerView;
+	private InterstitialAd interstialAd;
 
-			Debug.LogWarning(e.Message);
+	public void ShowAdmobSmallBanner() {
+		bannerView = new BannerView (SMALL_MENU_BANNER_ID, AdSize.Banner, AdPosition.Top);
+		AdRequest request = new AdRequest.Builder ().Build ();
+		bannerView.LoadAd (request);
+	}
+
+	public void HideAdmobSmallBanner() {
+
+		bannerView.Hide ();
+	}
+
+	public void LoadAdmobInterstial() {
+		interstialAd = new InterstitialAd (INTERSTIAL_ID);
+		AdRequest request = new AdRequest.Builder ().Build ();
+		if (!interstialAd.IsLoaded ()) {
+			interstialAd.LoadAd (request);
 		}
 	}
 
-	public bool IsShowingNow() {
-
-		return Advertisement.isShowing;
+	public void ShowAdmobInterstial() {
+		
+		if (interstialAd.IsLoaded ()) {
+			interstialAd.Show();
+		}
 	}
+
+	//public void ShowUnityServiceAd()
+	//{
+	//	try {
+	//		if (Advertisement.IsReady()) {
+	//
+	//			Advertisement.Show();
+	//		}
+	//	} catch (UnityException e) {
+	//
+	//		Debug.LogWarning(e.Message);
+	//	}
+	//}
+
+	//public bool IsUnityAdShowingNow() {
+
+	//	return Advertisement.isShowing;
+	//}
 }

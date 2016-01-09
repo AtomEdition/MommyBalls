@@ -6,6 +6,7 @@ public class MainMenuButtonController : MonoBehaviour {
 
 	public int sceneIndex;
 	private readonly InputService inputService = Singleton<InputService>.GetInstance();
+	private readonly AdService adService = Singleton<AdService>.GetInstance();
 
 	// Update is called once per frame
 	void Update () {
@@ -22,7 +23,7 @@ public class MainMenuButtonController : MonoBehaviour {
 			if (hit.collider != null
 			    && hit.collider.gameObject == gameObject) {
 
-				Handheld.ClearShaderCache ();
+				adService.HideAdmobSmallBanner ();
 				SceneManager.LoadScene (sceneIndex);
 			}
 		}
